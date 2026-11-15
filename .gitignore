@@ -1,0 +1,12 @@
+.work/
+build/
+dist/
+__pycache__/
+*.pyc
+*.ipa
+*.dylib
+*.dll
+*.o
+*.lib
+*.deb
+*.zip

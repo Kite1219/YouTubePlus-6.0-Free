@@ -2,10 +2,21 @@
 
 Private personal build based on YouTubePlus 6.0 / YouTube 21.43.5.
 
-Download the IPA from Releases and sign it using your own sideloading setup.
+[Download the latest IPA](https://github.com/Kite1219/YouTubePlus-6.0-Free/releases/latest) · [Development guide](docs/DEVELOPMENT.md)
 
-Latest package: test.4 (Manual PiP). Preserves working background audio and corrects manual PiP activation and automatic-entry guards. Package integrity and 28 mocked host tests passed; actual device PiP behavior remains unverified.
+Latest package: **test.4 — Manual PiP**. Preserves background audio and corrects manual PiP activation and automatic-entry guards. Package checks and 28 mocked host tests passed; on-device PiP remains unverified.
 
-## Development and backups
+## Project layout
 
-See [development](development/README.md) for helper sources, tests and records. The release includes a complete, checksummed development backup ZIP.
+| Folder | Contents |
+| --- | --- |
+| [src](src/) | Current PersonalPlayback helper source |
+| [tests](tests/) | Playback regression tests and generated host fixture |
+| [tools](tools/) | Workspace setup and historical build, packaging and inspection scripts |
+| [docs](docs/) | Development guide, PiP notes and historical findings |
+| [analysis](analysis/) | Build reports, extracted metadata and audit evidence |
+| [third_party](third_party/) | YouPiP license |
+| [releases](releases/) | Complete backup file manifest |
+| [archive](archive/) | Previous helper revision and historical tool cache files |
+
+The IPA and complete binary development backup remain in the private release assets. This repository contains our helper and integration work, **not the original complete YouTube/YouTubePlus application source**.

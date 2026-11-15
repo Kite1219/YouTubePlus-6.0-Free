@@ -1,0 +1,134 @@
+[
+  {
+    "offset": "0x17d950a",
+    "text": "show license"
+  },
+  {
+    "offset": "0x17d9517",
+    "text": "license"
+  },
+  {
+    "offset": "0x17e0255",
+    "text": "the Free Software Foundation; either version 3 of the License, or"
+  },
+  {
+    "offset": "0x18787c9",
+    "text": "ASF_License_URL"
+  },
+  {
+    "offset": "0x1893b0c",
+    "text": "purchase_date"
+  },
+  {
+    "offset": "0x18aaa71",
+    "text": "setsockopt(IP_ADD_SOURCE_MEMBERSHIP)"
+  },
+  {
+    "offset": "0x18aaab2",
+    "text": "setsockopt(IP_ADD_MEMBERSHIP)"
+  },
+  {
+    "offset": "0x18aaad0",
+    "text": "setsockopt(IPV6_ADD_MEMBERSHIP)"
+  },
+  {
+    "offset": "0x18aac3d",
+    "text": "setsockopt(IP_DROP_MEMBERSHIP)"
+  },
+  {
+    "offset": "0x18aac5c",
+    "text": "setsockopt(IPV6_DROP_MEMBERSHIP)"
+  },
+  {
+    "offset": "0x18b99d3",
+    "text": "WARNING: SSL: CURLOPT_SSLKEY is ignored by Secure Transport. The private key must be in the Keychain."
+  },
+  {
+    "offset": "0x18b9be6",
+    "text": "SSL: Can't find the certificate \"%s\" and its private key in the Keychain."
+  },
+  {
+    "offset": "0x1cff919",
+    "text": "patreonSection:"
+  },
+  {
+    "offset": "0x1d033ca",
+    "text": "appStoreReceiptURL"
+  },
+  {
+    "offset": "0x1d0bda7",
+    "text": "keychainAccessGroup"
+  },
+  {
+    "offset": "0x1d0bdbb",
+    "text": "keychainQuery"
+  },
+  {
+    "offset": "0x1d0dece",
+    "text": "patreonButtonCellWithType:model:"
+  },
+  {
+    "offset": "0x1d0deef",
+    "text": "patreonStatusCell"
+  },
+  {
+    "offset": "0x1d1a277",
+    "text": "DVNPatreonContext"
+  },
+  {
+    "offset": "0x1d1ab23",
+    "text": "DVNSupportersVC"
+  },
+  {
+    "offset": "0x239cdc1",
+    "text": "license"
+  },
+  {
+    "offset": "0x239d4ec",
+    "text": "license"
+  },
+  {
+    "offset": "0x239e148",
+    "text": "license"
+  },
+  {
+    "offset": "0x23cff6c",
+    "text": "license"
+  },
+  {
+    "offset": "0x23d0519",
+    "text": "license"
+  },
+  {
+    "offset": "0x2458d81",
+    "text": "_OBJC_CLASS_$_DVNSupportersVC"
+  },
+  {
+    "offset": "0x2459fa5",
+    "text": "_OBJC_METACLASS_$_DVNSupportersVC"
+  },
+  {
+    "offset": "0x2491075",
+    "text": "_avdevice_license"
+  },
+  {
+    "offset": "0x2491435",
+    "text": "_avfilter_license"
+  },
+  {
+    "offset": "0x249167e",
+    "text": "_avformat_license"
+  },
+  {
+    "offset": "0x2492329",
+    "text": "_avutil_license"
+  },
+  {
+    "offset": "0x24c5b23",
+    "text": "_show_license"
+  },
+  {
+    "offset": "0x24c5f86",
+    "text": "_swresample_license"
+  }
+]

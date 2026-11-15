@@ -1,0 +1,111 @@
+{
+  "ipa": "C:\\Users\\Kiet\\.codex\\.chatgpt-projects\\g-p-6acbfd0c578c81918d04030c234c5004\\ytplus-analysis\\YouTubePlus-Personal-6.0-test.4-ManualPiP.ipa",
+  "sha256": "4ad31f12f9008ad233cbfadc59e4a0796133d88fec7957a545d6daf627b19044",
+  "missing_dependencies": [],
+  "zip_integrity": null,
+  "info": {
+    "CFBundleIdentifier": "com.google.ios.youtube",
+    "CFBundleShortVersionString": "21.43.5",
+    "MinimumOSVersion": "17.0",
+    "UIBackgroundModes": [
+      "remote-notification",
+      "audio",
+      "fetch",
+      "external-accessory"
+    ],
+    "UIDeviceFamily": [
+      1,
+      2
+    ]
+  },
+  "system_swift_runtime_references": [
+    {
+      "loader": "Payload/YouTube.app/Frameworks/CydiaSubstrate.framework/CydiaSubstrate",
+      "dependency": "@rpath/libswiftCore.dylib",
+      "weak": false
+    },
+    {
+      "loader": "Payload/YouTube.app/Frameworks/CydiaSubstrate.framework/CydiaSubstrate",
+      "dependency": "@rpath/libswiftCoreFoundation.dylib",
+      "weak": true
+    },
+    {
+      "loader": "Payload/YouTube.app/Frameworks/CydiaSubstrate.framework/CydiaSubstrate",
+      "dependency": "@rpath/libswiftDarwin.dylib",
+      "weak": true
+    },
+    {
+      "loader": "Payload/YouTube.app/Frameworks/CydiaSubstrate.framework/CydiaSubstrate",
+      "dependency": "@rpath/libswiftDispatch.dylib",
+      "weak": false
+    },
+    {
+      "loader": "Payload/YouTube.app/Frameworks/CydiaSubstrate.framework/CydiaSubstrate",
+      "dependency": "@rpath/libswiftObjectiveC.dylib",
+      "weak": true
+    },
+    {
+      "loader": "Payload/YouTube.app/Frameworks/CydiaSubstrate.framework/CydiaSubstrate",
+      "dependency": "@rpath/libswiftos.dylib",
+      "weak": true
+    },
+    {
+      "loader": "Payload/YouTube.app/Frameworks/CydiaSubstrate.framework/CydiaSubstrate",
+      "dependency": "@rpath/libswiftFoundation.dylib",
+      "weak": false
+    }
+  ],
+  "pip_named_artifacts": [
+    "Payload/YouTube.app/YouPiP.bundle/ko.lproj/Localizable.strings",
+    "Payload/YouTube.app/YouPiP.bundle/vi.lproj/Localizable.strings",
+    "Payload/YouTube.app/YouPiP.bundle/LICENSE.txt",
+    "Payload/YouTube.app/YouPiP.bundle/yt-pip-overlay@3x.png",
+    "Payload/YouTube.app/YouPiP.bundle/pt.lproj/",
+    "Payload/YouTube.app/YouPiP.bundle/pt.lproj/Localizable.strings",
+    "Payload/YouTube.app/YouPiP.bundle/Info.plist",
+    "Payload/YouTube.app/YouPiP.bundle/ja.lproj/",
+    "Payload/YouTube.app/YouPiP.bundle/de.lproj/",
+    "Payload/YouTube.app/YouPiP.bundle/hu.lproj/",
+    "Payload/YouTube.app/YouPiP.bundle/pl.lproj/Localizable.strings",
+    "Payload/YouTube.app/YouPiP.bundle/zh_cn.lproj/",
+    "Payload/YouTube.app/YouPiP.bundle/zh_cn.lproj/Localizable.strings",
+    "Payload/YouTube.app/YouPiP.bundle/ko.lproj/",
+    "Payload/YouTube.app/YouPiP.bundle/ro.lproj/Localizable.strings",
+    "Payload/YouTube.app/YouPiP.bundle/hu.lproj/Localizable.strings",
+    "Payload/YouTube.app/YouPiP.bundle/es.lproj/Localizable.strings",
+    "Payload/YouTube.app/YouPiP.bundle/yt-pip-overlay.png",
+    "Payload/YouTube.app/YouPiP.bundle/zh_tw.lproj/",
+    "Payload/YouTube.app/YouPiP.bundle/ar.lproj/Localizable.strings",
+    "Payload/YouTube.app/YouPiP.bundle/tr.lproj/Localizable.strings",
+    "Payload/YouTube.app/YouPiP.bundle/nl.lproj/",
+    "Payload/YouTube.app/YouPiP.bundle/it.lproj/Localizable.strings",
+    "Payload/YouTube.app/YouPiP.bundle/zh_tw.lproj/Localizable.strings",
+    "Payload/YouTube.app/YouPiP.bundle/ru.lproj/Localizable.strings",
+    "Payload/YouTube.app/YouPiP.bundle/vi.lproj/",
+    "Payload/YouTube.app/YouPiP.bundle/",
+    "Payload/YouTube.app/YouPiP.bundle/de.lproj/Localizable.strings",
+    "Payload/YouTube.app/YouPiP.bundle/pl.lproj/",
+    "Payload/YouTube.app/YouPiP.bundle/ar.lproj/",
+    "Payload/YouTube.app/YouPiP.bundle/es.lproj/",
+    "Payload/YouTube.app/YouPiP.bundle/yt-pip-overlay@2x.png",
+    "Payload/YouTube.app/YouPiP.bundle/ja.lproj/Localizable.strings",
+    "Payload/YouTube.app/YouPiP.bundle/th.lproj/Localizable.strings",
+    "Payload/YouTube.app/YouPiP.bundle/fr.lproj/",
+    "Payload/YouTube.app/YouPiP.bundle/ro.lproj/",
+    "Payload/YouTube.app/YouPiP.bundle/yt-pip-tabbar.png",
+    "Payload/YouTube.app/YouPiP.bundle/en.lproj/",
+    "Payload/YouTube.app/YouPiP.bundle/yt-pip-tabbar@3x.png",
+    "Payload/YouTube.app/YouPiP.bundle/fr.lproj/Localizable.strings",
+    "Payload/YouTube.app/YouPiP.bundle/it.lproj/",
+    "Payload/YouTube.app/Frameworks/YouPiP.dylib",
+    "Payload/YouTube.app/YouPiP.bundle/nl.lproj/Localizable.strings",
+    "Payload/YouTube.app/YouPiP.bundle/ru.lproj/",
+    "Payload/YouTube.app/YouPiP.bundle/yt-pip-tabbar@2x.png",
+    "Payload/YouTube.app/YouPiP.bundle/tr.lproj/",
+    "Payload/YouTube.app/YouPiP.bundle/en.lproj/Localizable.strings",
+    "Payload/YouTube.app/YouPiP.bundle/th.lproj/"
+  ],
+  "main_directly_loads_yltite": true
+}
+ARM64 binaries inspected 13
+Encrypted binaries []

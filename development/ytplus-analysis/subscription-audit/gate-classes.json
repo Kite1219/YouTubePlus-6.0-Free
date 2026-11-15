@@ -1,0 +1,1274 @@
+[
+  {
+    "class": "YTPAPIHelper",
+    "methods": [
+      {
+        "name": "requestVideo:authorized:forPlayback:completion:",
+        "types": "v40@0:8@16B24B28@?32",
+        "imp": 2114280,
+        "imp_hex": "0x2042e8",
+        "entry": "0x17a7c7c"
+      },
+      {
+        "name": "performRequestVideo:authorized:forPlayback:completion:",
+        "types": "v40@0:8@16B24B28@?32",
+        "imp": 2115720,
+        "imp_hex": "0x204888",
+        "entry": "0x17a7c88"
+      },
+      {
+        "name": "loadRestOfPlaylist:authorized:page:progress:completion:",
+        "types": "v52@0:8@16B24Q28@?36@?44",
+        "imp": 2139020,
+        "imp_hex": "0x20a38c",
+        "entry": "0x17a7ce8"
+      },
+      {
+        "name": "requestContinuation:authorized:completion:",
+        "types": "v36@0:8@16B24@?28",
+        "imp": 2140356,
+        "imp_hex": "0x20a8c4",
+        "entry": "0x17a7cf4"
+      },
+      {
+        "name": "requestPlaylist:authorized:completion:",
+        "types": "v36@0:8@16B24@?28",
+        "imp": 2140944,
+        "imp_hex": "0x20ab10",
+        "entry": "0x17a7d00"
+      },
+      {
+        "name": "requestBrowseBody:authorized:completion:",
+        "types": "v36@0:8@16B24@?28",
+        "imp": 2141492,
+        "imp_hex": "0x20ad34",
+        "entry": "0x17a7d0c"
+      }
+    ],
+    "ivars": []
+  },
+  {
+    "class": "RPCMedia",
+    "methods": [
+      {
+        "name": "author",
+        "types": "@16@0:8",
+        "imp": 2544804,
+        "imp_hex": "0x26d4a4",
+        "entry": "0x17ab7a8"
+      }
+    ],
+    "ivars": [
+      {
+        "name": "_isPaused",
+        "type": "B",
+        "offset_address": "0x225622c",
+        "offset": 8
+      },
+      {
+        "name": "_videoID",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256230",
+        "offset": 16
+      },
+      {
+        "name": "_title",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256234",
+        "offset": 24
+      },
+      {
+        "name": "_author",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256238",
+        "offset": 32
+      },
+      {
+        "name": "_totalTime",
+        "type": "d",
+        "offset_address": "0x225623c",
+        "offset": 40
+      },
+      {
+        "name": "_currentTime",
+        "type": "d",
+        "offset_address": "0x2256240",
+        "offset": 48
+      },
+      {
+        "name": "_thumbnailURL",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256244",
+        "offset": 56
+      }
+    ]
+  },
+  {
+    "class": "ParentalManager",
+    "methods": [
+      {
+        "name": "keychainQuery",
+        "types": "@16@0:8",
+        "imp": 2786172,
+        "imp_hex": "0x2a837c",
+        "entry": "0x17a7214"
+      },
+      {
+        "name": "isUnlocked",
+        "types": "B16@0:8",
+        "imp": 2791564,
+        "imp_hex": "0x2a988c",
+        "entry": "0x17a7280"
+      },
+      {
+        "name": "needsUnlock",
+        "types": "B16@0:8",
+        "imp": 2791660,
+        "imp_hex": "0x2a98ec",
+        "entry": "0x17a728c"
+      },
+      {
+        "name": "requireUnlock:",
+        "types": "v24@0:8@?16",
+        "imp": 2797600,
+        "imp_hex": "0x2ab020",
+        "entry": "0x17a72e0"
+      },
+      {
+        "name": "startUnlockedSession",
+        "types": "v16@0:8",
+        "imp": 2809064,
+        "imp_hex": "0x2adce8",
+        "entry": "0x17a734c"
+      },
+      {
+        "name": "tickUnlockedSession",
+        "types": "v16@0:8",
+        "imp": 2809352,
+        "imp_hex": "0x2ade08",
+        "entry": "0x17a7358"
+      }
+    ],
+    "ivars": []
+  },
+  {
+    "class": "ParentalChannels",
+    "methods": [
+      {
+        "name": "showBlockWithMessage:unlockHandler:closeHandler:",
+        "types": "v40@0:8@16@?24@?32",
+        "imp": 2870472,
+        "imp_hex": "0x2bccc8",
+        "entry": "0x17a7008"
+      }
+    ],
+    "ivars": []
+  },
+  {
+    "class": "ParentalHistoryEntry",
+    "methods": [
+      {
+        "name": "author",
+        "types": "@16@0:8",
+        "imp": 2890664,
+        "imp_hex": "0x2c1ba8",
+        "entry": "0x17ab2d8"
+      }
+    ],
+    "ivars": [
+      {
+        "name": "_isShort",
+        "type": "B",
+        "offset_address": "0x2256310",
+        "offset": 8
+      },
+      {
+        "name": "_videoID",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256314",
+        "offset": 16
+      },
+      {
+        "name": "_title",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256318",
+        "offset": 24
+      },
+      {
+        "name": "_author",
+        "type": "@\"NSString\"",
+        "offset_address": "0x225631c",
+        "offset": 32
+      },
+      {
+        "name": "_channelID",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256320",
+        "offset": 40
+      },
+      {
+        "name": "_duration",
+        "type": "q",
+        "offset_address": "0x2256324",
+        "offset": 48
+      },
+      {
+        "name": "_watchedAt",
+        "type": "d",
+        "offset_address": "0x2256328",
+        "offset": 56
+      }
+    ]
+  },
+  {
+    "class": "YTPSettingsBuilder",
+    "methods": [
+      {
+        "name": "patreonSection:",
+        "types": "@24@0:8@16",
+        "imp": 3453280,
+        "imp_hex": "0x34b160",
+        "entry": "0x17b0af0"
+      },
+      {
+        "name": "patreonStatusCell",
+        "types": "@16@0:8",
+        "imp": 3456220,
+        "imp_hex": "0x34bcdc",
+        "entry": "0x17b0afc"
+      },
+      {
+        "name": "patreonButtonCellWithType:model:",
+        "types": "@32@0:8@16@24",
+        "imp": 3457476,
+        "imp_hex": "0x34c1c4",
+        "entry": "0x17b0b08"
+      }
+    ],
+    "ivars": [
+      {
+        "name": "_presenter",
+        "type": "@\"UIViewController\"",
+        "offset_address": "0x22563e4",
+        "offset": 8
+      }
+    ]
+  },
+  {
+    "class": "DVNSupportersVC",
+    "methods": [
+      {
+        "name": "viewDidLoad",
+        "types": "v16@0:8",
+        "imp": 3570580,
+        "imp_hex": "0x367b94",
+        "entry": "0x17aa270"
+      },
+      {
+        "name": "webView:didStartProvisionalNavigation:",
+        "types": "v32@0:8@16@24",
+        "imp": 3573444,
+        "imp_hex": "0x3686c4",
+        "entry": "0x17aa27c"
+      },
+      {
+        "name": "webView:didFinishNavigation:",
+        "types": "v32@0:8@16@24",
+        "imp": 3573468,
+        "imp_hex": "0x3686dc",
+        "entry": "0x17aa288"
+      },
+      {
+        "name": "webView:didFailProvisionalNavigation:withError:",
+        "types": "v40@0:8@16@24@32",
+        "imp": 3573532,
+        "imp_hex": "0x36871c",
+        "entry": "0x17aa294"
+      },
+      {
+        "name": ".cxx_destruct",
+        "types": "v16@0:8",
+        "imp": 3574656,
+        "imp_hex": "0x368b80",
+        "entry": "0x17aa2a0"
+      }
+    ],
+    "ivars": [
+      {
+        "name": "_webView",
+        "type": "@\"WKWebView\"",
+        "offset_address": "0x22564f0",
+        "offset": 8
+      },
+      {
+        "name": "_activityIndicator",
+        "type": "@\"UIActivityIndicatorView\"",
+        "offset_address": "0x22564f4",
+        "offset": 16
+      }
+    ]
+  },
+  {
+    "class": "YTPDownloadsBundle",
+    "methods": [
+      {
+        "name": "authorName",
+        "types": "@16@0:8",
+        "imp": 3671884,
+        "imp_hex": "0x38074c",
+        "entry": "0x17adae4"
+      }
+    ],
+    "ivars": [
+      {
+        "name": "_usesPlaylistThumb",
+        "type": "B",
+        "offset_address": "0x22565a4",
+        "offset": 8
+      },
+      {
+        "name": "_isPrivate",
+        "type": "B",
+        "offset_address": "0x22565a8",
+        "offset": 9
+      },
+      {
+        "name": "_playlistID",
+        "type": "@\"NSString\"",
+        "offset_address": "0x22565ac",
+        "offset": 16
+      },
+      {
+        "name": "_title",
+        "type": "@\"NSString\"",
+        "offset_address": "0x22565b0",
+        "offset": 24
+      },
+      {
+        "name": "_authorName",
+        "type": "@\"NSString\"",
+        "offset_address": "0x22565b4",
+        "offset": 32
+      },
+      {
+        "name": "_thumbName",
+        "type": "@\"NSString\"",
+        "offset_address": "0x22565b8",
+        "offset": 40
+      },
+      {
+        "name": "_total",
+        "type": "Q",
+        "offset_address": "0x22565bc",
+        "offset": 48
+      },
+      {
+        "name": "_done",
+        "type": "Q",
+        "offset_address": "0x22565c0",
+        "offset": 56
+      },
+      {
+        "name": "_doneBytes",
+        "type": "q",
+        "offset_address": "0x22565c4",
+        "offset": 64
+      },
+      {
+        "name": "_finishedAt",
+        "type": "d",
+        "offset_address": "0x22565c8",
+        "offset": 72
+      },
+      {
+        "name": "_createdAt",
+        "type": "d",
+        "offset_address": "0x22565cc",
+        "offset": 80
+      },
+      {
+        "name": "_current",
+        "type": "@\"YTPDownloadRecord\"",
+        "offset_address": "0x22565d0",
+        "offset": 88
+      },
+      {
+        "name": "_activeRecords",
+        "type": "@\"NSMutableArray\"",
+        "offset_address": "0x22565d4",
+        "offset": 96
+      }
+    ]
+  },
+  {
+    "class": "YTPDownloadsVC",
+    "methods": [
+      {
+        "name": "unlockTapped",
+        "types": "v16@0:8",
+        "imp": 3744408,
+        "imp_hex": "0x392298",
+        "entry": "0x17ae16c"
+      }
+    ],
+    "ivars": [
+      {
+        "name": "_pagesBar",
+        "type": "@\"UIView\"",
+        "offset_address": "0x22565f0",
+        "offset": 8
+      },
+      {
+        "name": "_pagesScroll",
+        "type": "@\"UIScrollView\"",
+        "offset_address": "0x2256624",
+        "offset": 16
+      },
+      {
+        "name": "_sortBar",
+        "type": "@\"UIScrollView\"",
+        "offset_address": "0x22565f4",
+        "offset": 24
+      },
+      {
+        "name": "_pinnedBox",
+        "type": "@\"UIView\"",
+        "offset_address": "0x2256634",
+        "offset": 32
+      },
+      {
+        "name": "_pinnedTab",
+        "type": "@\"UIButton\"",
+        "offset_address": "0x2256650",
+        "offset": 40
+      },
+      {
+        "name": "_pinnedUnderline",
+        "type": "@\"UIView\"",
+        "offset_address": "0x2256654",
+        "offset": 48
+      },
+      {
+        "name": "_scrollLeadingPinned",
+        "type": "@\"NSLayoutConstraint\"",
+        "offset_address": "0x2256640",
+        "offset": 56
+      },
+      {
+        "name": "_scrollLeadingPlain",
+        "type": "@\"NSLayoutConstraint\"",
+        "offset_address": "0x2256644",
+        "offset": 64
+      },
+      {
+        "name": "_stackLeading",
+        "type": "@\"NSLayoutConstraint\"",
+        "offset_address": "0x225663c",
+        "offset": 72
+      },
+      {
+        "name": "_underline",
+        "type": "@\"UIView\"",
+        "offset_address": "0x2256630",
+        "offset": 80
+      },
+      {
+        "name": "_underlineLeading",
+        "type": "@\"NSLayoutConstraint\"",
+        "offset_address": "0x2256648",
+        "offset": 88
+      },
+      {
+        "name": "_underlineWidth",
+        "type": "@\"NSLayoutConstraint\"",
+        "offset_address": "0x225664c",
+        "offset": 96
+      },
+      {
+        "name": "_tableView",
+        "type": "@\"UITableView\"",
+        "offset_address": "0x22565f8",
+        "offset": 104
+      },
+      {
+        "name": "_emptyState",
+        "type": "@\"UIStackView\"",
+        "offset_address": "0x22565fc",
+        "offset": 112
+      },
+      {
+        "name": "_lockView",
+        "type": "@\"UIView\"",
+        "offset_address": "0x2256660",
+        "offset": 120
+      },
+      {
+        "name": "_showsPrivate",
+        "type": "B",
+        "offset_address": "0x2256600",
+        "offset": 128
+      },
+      {
+        "name": "_pages",
+        "type": "@\"NSArray\"",
+        "offset_address": "0x22565d8",
+        "offset": 136
+      },
+      {
+        "name": "_sorts",
+        "type": "@\"NSArray\"",
+        "offset_address": "0x22565e4",
+        "offset": 144
+      },
+      {
+        "name": "_pageButtons",
+        "type": "@\"NSArray\"",
+        "offset_address": "0x2256658",
+        "offset": 152
+      },
+      {
+        "name": "_pagesStack",
+        "type": "@\"UIStackView\"",
+        "offset_address": "0x2256638",
+        "offset": 160
+      },
+      {
+        "name": "_selectedPage",
+        "type": "Q",
+        "offset_address": "0x22565dc",
+        "offset": 168
+      },
+      {
+        "name": "_selectedSort",
+        "type": "Q",
+        "offset_address": "0x225662c",
+        "offset": 176
+      },
+      {
+        "name": "_selected",
+        "type": "@\"NSMutableDictionary\"",
+        "offset_address": "0x22565e0",
+        "offset": 184
+      },
+      {
+        "name": "_didRevealPages",
+        "type": "B",
+        "offset_address": "0x2256620",
+        "offset": 192
+      },
+      {
+        "name": "_didRevealSort",
+        "type": "B",
+        "offset_address": "0x2256628",
+        "offset": 193
+      },
+      {
+        "name": "_showsDownloading",
+        "type": "B",
+        "offset_address": "0x225665c",
+        "offset": 194
+      },
+      {
+        "name": "_records",
+        "type": "@\"NSArray\"",
+        "offset_address": "0x2256610",
+        "offset": 200
+      },
+      {
+        "name": "_active",
+        "type": "@\"NSArray\"",
+        "offset_address": "0x2256604",
+        "offset": 208
+      },
+      {
+        "name": "_rows",
+        "type": "@\"NSArray\"",
+        "offset_address": "0x225660c",
+        "offset": 216
+      },
+      {
+        "name": "_playlistID",
+        "type": "@\"NSString\"",
+        "offset_address": "0x22565e8",
+        "offset": 224
+      },
+      {
+        "name": "_playlistTitle",
+        "type": "@\"NSString\"",
+        "offset_address": "0x22565ec",
+        "offset": 232
+      },
+      {
+        "name": "_progressTimer",
+        "type": "@\"NSTimer\"",
+        "offset_address": "0x2256608",
+        "offset": 240
+      },
+      {
+        "name": "_liftedRow",
+        "type": "@\"UIView\"",
+        "offset_address": "0x2256664",
+        "offset": 248
+      },
+      {
+        "name": "_liftedIndexPath",
+        "type": "@\"NSIndexPath\"",
+        "offset_address": "0x2256668",
+        "offset": 256
+      },
+      {
+        "name": "_liftOffset",
+        "type": "d",
+        "offset_address": "0x2256670",
+        "offset": 264
+      },
+      {
+        "name": "_touchY",
+        "type": "d",
+        "offset_address": "0x225666c",
+        "offset": 272
+      },
+      {
+        "name": "_autoScrollSpeed",
+        "type": "d",
+        "offset_address": "0x2256674",
+        "offset": 280
+      },
+      {
+        "name": "_autoScroll",
+        "type": "@\"CADisplayLink\"",
+        "offset_address": "0x2256678",
+        "offset": 288
+      },
+      {
+        "name": "_backTransition",
+        "type": "@\"UIPercentDrivenInteractiveTransition\"",
+        "offset_address": "0x2256614",
+        "offset": 296
+      },
+      {
+        "name": "_backWatchdog",
+        "type": "@\"NSTimer\"",
+        "offset_address": "0x225661c",
+        "offset": 304
+      },
+      {
+        "name": "_lastPanAt",
+        "type": "d",
+        "offset_address": "0x2256618",
+        "offset": 312
+      },
+      {
+        "name": "_settingsNav",
+        "type": "@\"UINavigationController\"",
+        "offset_address": "0x225667c",
+        "offset": 320
+      }
+    ]
+  },
+  {
+    "class": "ParentalBlockVC",
+    "methods": [
+      {
+        "name": "presentWithTitle:message:unlockHandler:closeHandler:",
+        "types": "@48@0:8@16@24@?32@?40",
+        "imp": 3996492,
+        "imp_hex": "0x3cfb4c",
+        "entry": "0x17a6f60"
+      }
+    ],
+    "ivars": [
+      {
+        "name": "_unlockHandler",
+        "type": "@?",
+        "offset_address": "0x2256740",
+        "offset": 8
+      },
+      {
+        "name": "_closeHandler",
+        "type": "@?",
+        "offset_address": "0x2256744",
+        "offset": 16
+      },
+      {
+        "name": "_titleLabel",
+        "type": "@\"UILabel\"",
+        "offset_address": "0x2256748",
+        "offset": 24
+      },
+      {
+        "name": "_messageLabel",
+        "type": "@\"UILabel\"",
+        "offset_address": "0x225674c",
+        "offset": 32
+      }
+    ]
+  },
+  {
+    "class": "YTPAuthorModel",
+    "methods": [
+      {
+        "name": "authorWithVideoDetails:",
+        "types": "@24@0:8@16",
+        "imp": 4587092,
+        "imp_hex": "0x45fe54",
+        "entry": "0x17a8030"
+      },
+      {
+        "name": "authorWithName:channelID:",
+        "types": "@32@0:8@16@24",
+        "imp": 4587348,
+        "imp_hex": "0x45ff54",
+        "entry": "0x17a803c"
+      }
+    ],
+    "ivars": [
+      {
+        "name": "_name",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256aac",
+        "offset": 8
+      },
+      {
+        "name": "_channelID",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256ab0",
+        "offset": 16
+      },
+      {
+        "name": "_avatarURL",
+        "type": "@\"NSURL\"",
+        "offset_address": "0x2256ab4",
+        "offset": 24
+      }
+    ]
+  },
+  {
+    "class": "YTPPlaylistModel",
+    "methods": [
+      {
+        "name": "authorName",
+        "types": "@16@0:8",
+        "imp": 4634496,
+        "imp_hex": "0x46b780",
+        "entry": "0x17b056c"
+      },
+      {
+        "name": "authorFromMetadata:",
+        "types": "@24@0:8@16",
+        "imp": 4609460,
+        "imp_hex": "0x4655b4",
+        "entry": "0x17a87b8"
+      },
+      {
+        "name": "authorFromResponse:",
+        "types": "@24@0:8@16",
+        "imp": 4611172,
+        "imp_hex": "0x465c64",
+        "entry": "0x17a87c4"
+      }
+    ],
+    "ivars": [
+      {
+        "name": "_playlistID",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256ab8",
+        "offset": 8
+      },
+      {
+        "name": "_title",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256abc",
+        "offset": 16
+      },
+      {
+        "name": "_authorName",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256ac0",
+        "offset": 24
+      },
+      {
+        "name": "_thumbnailURL",
+        "type": "@\"NSURL\"",
+        "offset_address": "0x2256ac4",
+        "offset": 32
+      },
+      {
+        "name": "_videos",
+        "type": "@\"NSArray\"",
+        "offset_address": "0x2256ac8",
+        "offset": 40
+      },
+      {
+        "name": "_continuationToken",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256acc",
+        "offset": 48
+      }
+    ]
+  },
+  {
+    "class": "YTPMediaModel",
+    "methods": [
+      {
+        "name": "author",
+        "types": "@16@0:8",
+        "imp": 4692068,
+        "imp_hex": "0x479864",
+        "entry": "0x17aea94"
+      }
+    ],
+    "ivars": [
+      {
+        "name": "_lengthSeconds",
+        "type": "Q",
+        "offset_address": "0x2256b3c",
+        "offset": 8
+      },
+      {
+        "name": "_isLive",
+        "type": "B",
+        "offset_address": "0x2256b40",
+        "offset": 16
+      },
+      {
+        "name": "_isShort",
+        "type": "B",
+        "offset_address": "0x2256b44",
+        "offset": 17
+      },
+      {
+        "name": "_isMultilang",
+        "type": "B",
+        "offset_address": "0x2256b48",
+        "offset": 18
+      },
+      {
+        "name": "_videoID",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256b4c",
+        "offset": 24
+      },
+      {
+        "name": "_title",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256b50",
+        "offset": 32
+      },
+      {
+        "name": "_shortDescription",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256b54",
+        "offset": 40
+      },
+      {
+        "name": "_author",
+        "type": "@\"YTPAuthorModel\"",
+        "offset_address": "0x2256b58",
+        "offset": 48
+      },
+      {
+        "name": "_thumbnailURL",
+        "type": "@\"NSURL\"",
+        "offset_address": "0x2256b5c",
+        "offset": 56
+      },
+      {
+        "name": "_hlsManifestURL",
+        "type": "@\"NSURL\"",
+        "offset_address": "0x2256b60",
+        "offset": 64
+      },
+      {
+        "name": "_avc1Formats",
+        "type": "@\"NSArray\"",
+        "offset_address": "0x2256b64",
+        "offset": 72
+      },
+      {
+        "name": "_av01Formats",
+        "type": "@\"NSArray\"",
+        "offset_address": "0x2256b68",
+        "offset": 80
+      },
+      {
+        "name": "_vp9Formats",
+        "type": "@\"NSArray\"",
+        "offset_address": "0x2256b6c",
+        "offset": 88
+      },
+      {
+        "name": "_audioFormats",
+        "type": "@\"NSArray\"",
+        "offset_address": "0x2256b70",
+        "offset": 96
+      },
+      {
+        "name": "_selectedVideoFormat",
+        "type": "@\"YTPFormatModel\"",
+        "offset_address": "0x2256b74",
+        "offset": 104
+      },
+      {
+        "name": "_selectedAudioFormat",
+        "type": "@\"YTPFormatModel\"",
+        "offset_address": "0x2256b78",
+        "offset": 112
+      },
+      {
+        "name": "_segmentsToRemove",
+        "type": "@\"NSArray\"",
+        "offset_address": "0x2256b7c",
+        "offset": 120
+      },
+      {
+        "name": "_metadata",
+        "type": "@\"YTPMetadataModel\"",
+        "offset_address": "0x2256b80",
+        "offset": 128
+      },
+      {
+        "name": "_saveAction",
+        "type": "Q",
+        "offset_address": "0x2256b84",
+        "offset": 136
+      },
+      {
+        "name": "_audioContainer",
+        "type": "Q",
+        "offset_address": "0x2256b88",
+        "offset": 144
+      },
+      {
+        "name": "_encodePreset",
+        "type": "Q",
+        "offset_address": "0x2256b8c",
+        "offset": 152
+      },
+      {
+        "name": "_fileName",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256b90",
+        "offset": 160
+      },
+      {
+        "name": "_videoFileURL",
+        "type": "@\"NSURL\"",
+        "offset_address": "0x2256b94",
+        "offset": 168
+      },
+      {
+        "name": "_audioFileURL",
+        "type": "@\"NSURL\"",
+        "offset_address": "0x2256b98",
+        "offset": 176
+      },
+      {
+        "name": "_captionFiles",
+        "type": "@\"NSArray\"",
+        "offset_address": "0x2256b9c",
+        "offset": 184
+      },
+      {
+        "name": "_thumbnailFileURL",
+        "type": "@\"NSURL\"",
+        "offset_address": "0x2256ba0",
+        "offset": 192
+      },
+      {
+        "name": "_outputFileURL",
+        "type": "@\"NSURL\"",
+        "offset_address": "0x2256ba4",
+        "offset": 200
+      },
+      {
+        "name": "_sessionId",
+        "type": "q",
+        "offset_address": "0x2256ba8",
+        "offset": 208
+      },
+      {
+        "name": "_captions",
+        "type": "@\"NSArray\"",
+        "offset_address": "0x2256bac",
+        "offset": 216
+      }
+    ]
+  },
+  {
+    "class": "YTPDownloadsDB",
+    "methods": [
+      {
+        "name": "updateAuthorForID:author:",
+        "types": "B32@0:8@16@24",
+        "imp": 4746096,
+        "imp_hex": "0x486b70",
+        "entry": "0x17adcb4"
+      },
+      {
+        "name": "moveRecord:toPlaylistID:title:author:",
+        "types": "B48@0:8@16@24@32@40",
+        "imp": 4757328,
+        "imp_hex": "0x489750",
+        "entry": "0x17add20"
+      }
+    ],
+    "ivars": [
+      {
+        "name": "_db",
+        "type": "^{sqlite3=}",
+        "offset_address": "0x2256bb0",
+        "offset": 8
+      },
+      {
+        "name": "_queue",
+        "type": "@\"NSObject<OS_dispatch_queue>\"",
+        "offset_address": "0x2256bb4",
+        "offset": 16
+      }
+    ]
+  },
+  {
+    "class": "YTPDownloadRecord",
+    "methods": [
+      {
+        "name": "authorName",
+        "types": "@16@0:8",
+        "imp": 4823364,
+        "imp_hex": "0x499944",
+        "entry": "0x17ad320"
+      },
+      {
+        "name": "authorID",
+        "types": "@16@0:8",
+        "imp": 4823420,
+        "imp_hex": "0x49997c",
+        "entry": "0x17ad338"
+      }
+    ],
+    "ivars": [
+      {
+        "name": "_segmentsRemoved",
+        "type": "B",
+        "offset_address": "0x2256bb8",
+        "offset": 8
+      },
+      {
+        "name": "_isPlaylistBundle",
+        "type": "B",
+        "offset_address": "0x2256bbc",
+        "offset": 9
+      },
+      {
+        "name": "_isStream",
+        "type": "B",
+        "offset_address": "0x2256bc0",
+        "offset": 10
+      },
+      {
+        "name": "_isLive",
+        "type": "B",
+        "offset_address": "0x2256bc4",
+        "offset": 11
+      },
+      {
+        "name": "_stageProgress",
+        "type": "f",
+        "offset_address": "0x2256bc8",
+        "offset": 12
+      },
+      {
+        "name": "_recordID",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256bcc",
+        "offset": 16
+      },
+      {
+        "name": "_videoID",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256bd0",
+        "offset": 24
+      },
+      {
+        "name": "_title",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256bd4",
+        "offset": 32
+      },
+      {
+        "name": "_authorName",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256bd8",
+        "offset": 40
+      },
+      {
+        "name": "_authorID",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256bdc",
+        "offset": 48
+      },
+      {
+        "name": "_duration",
+        "type": "q",
+        "offset_address": "0x2256be0",
+        "offset": 56
+      },
+      {
+        "name": "_kind",
+        "type": "q",
+        "offset_address": "0x2256be4",
+        "offset": 64
+      },
+      {
+        "name": "_playlistID",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256be8",
+        "offset": 72
+      },
+      {
+        "name": "_playlistTitle",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256bec",
+        "offset": 80
+      },
+      {
+        "name": "_playlistAuthor",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256bf0",
+        "offset": 88
+      },
+      {
+        "name": "_fileName",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256bf4",
+        "offset": 96
+      },
+      {
+        "name": "_thumbName",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256bf8",
+        "offset": 104
+      },
+      {
+        "name": "_videoItag",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256bfc",
+        "offset": 112
+      },
+      {
+        "name": "_audioItag",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256c00",
+        "offset": 120
+      },
+      {
+        "name": "_container",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256c04",
+        "offset": 128
+      },
+      {
+        "name": "_videoQuality",
+        "type": "q",
+        "offset_address": "0x2256c08",
+        "offset": 136
+      },
+      {
+        "name": "_sourceCodec",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256c0c",
+        "offset": 144
+      },
+      {
+        "name": "_finalCodec",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256c10",
+        "offset": 152
+      },
+      {
+        "name": "_receivedBytes",
+        "type": "q",
+        "offset_address": "0x2256c14",
+        "offset": 160
+      },
+      {
+        "name": "_totalBytes",
+        "type": "q",
+        "offset_address": "0x2256c18",
+        "offset": 168
+      },
+      {
+        "name": "_status",
+        "type": "q",
+        "offset_address": "0x2256c1c",
+        "offset": 176
+      },
+      {
+        "name": "_segmentsDump",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256c20",
+        "offset": 184
+      },
+      {
+        "name": "_prefs",
+        "type": "@\"NSDictionary\"",
+        "offset_address": "0x2256c24",
+        "offset": 192
+      },
+      {
+        "name": "_bundleCounter",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256c28",
+        "offset": 200
+      },
+      {
+        "name": "_streamURL",
+        "type": "@\"NSURL\"",
+        "offset_address": "0x2256c2c",
+        "offset": 208
+      },
+      {
+        "name": "_streamMedia",
+        "type": "@\"YTPMediaModel\"",
+        "offset_address": "0x2256c30",
+        "offset": 216
+      },
+      {
+        "name": "_originalLanguage",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256c34",
+        "offset": 224
+      },
+      {
+        "name": "_playbackPosition",
+        "type": "d",
+        "offset_address": "0x2256c38",
+        "offset": 232
+      },
+      {
+        "name": "_speed",
+        "type": "d",
+        "offset_address": "0x2256c3c",
+        "offset": 240
+      },
+      {
+        "name": "_stageText",
+        "type": "@\"NSString\"",
+        "offset_address": "0x2256c40",
+        "offset": 248
+      },
+      {
+        "name": "_createdAt",
+        "type": "d",
+        "offset_address": "0x2256c44",
+        "offset": 256
+      },
+      {
+        "name": "_finishedAt",
+        "type": "d",
+        "offset_address": "0x2256c48",
+        "offset": 264
+      }
+    ]
+  }
+]

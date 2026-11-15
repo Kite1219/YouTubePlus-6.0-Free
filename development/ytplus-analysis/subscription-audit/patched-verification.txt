@@ -1,0 +1,89 @@
+[0.026s][warning][cds] Archived non-system classes are disabled because the java.system.class.loader property is specified (value = "ghidra.GhidraClassLoader"). To use archived non-system classes, this property must not be set
+INFO  Using log config file: jar:file:/C:/Users/Kiet/Documents/Codex/2026-10-11/https-github-com-morluto-rea-https/tools/ghidra_12.1.4_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: C:\Users\Kiet\.codex\.chatgpt-projects\g-p-6acbfd0c578c81918d04030c234c5004\ytplus-analysis\subscription-audit\ghidra-followup.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Users\Kiet\.codex\.chatgpt-projects\g-p-6acbfd0c578c81918d04030c234c5004\ytplus-analysis\settings\ghidra\ghidra_12.1.4_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (2996 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (8667 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    C:\Users\Kiet\.codex\.chatgpt-projects\g-p-6acbfd0c578c81918d04030c234c5004\ytplus-analysis\subscription-audit
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\8051\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: C:\Users\Kiet\AppData\Local\Temp\ytplus-subscription-audit-20261108\SubscriptionAudit (HeadlessAnalyzer)  
+INFO  Opening project: C:\Users\Kiet\AppData\Local\Temp\ytplus-subscription-audit-20261108\SubscriptionAudit (HeadlessProject)  
+INFO  REPORT: Processing read-only project file: /YTLite.dylib (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: GateVerify.java 'C:\Users\Kiet\.codex\.chatgpt-projects\g-p-6acbfd0c578c81918d04030c234c5004/ytplus-analysis/subscription-audit/YTLite-Personal.dylib' ''  (HeadlessAnalyzer)  
+INFO  SCRIPT: C:\Users\Kiet\.codex\.chatgpt-projects\g-p-6acbfd0c578c81918d04030c234c5004\ytplus-analysis\subscription-audit\GateVerify.java (HeadlessAnalyzer)  
+INFO  GateVerify.java> PATCHED_LIBRARY_SHA256 e5fcfe886c1089b300be474590530ddd5659f8cde62cec0142fe1ae0291a383c (GhidraScript)  
+INFO  GateVerify.java> VERIFIED_INSTRUCTION 000c24bc mov w0,#0x1 (GhidraScript)  
+INFO  GateVerify.java> VERIFIED_INSTRUCTION 000c24c0 ret (GhidraScript)  
+INFO  GateVerify.java> VERIFIED_INSTRUCTION 000c1bd8 mov x0,#0x0 (GhidraScript)  
+INFO  GateVerify.java> VERIFIED_INSTRUCTION 000c1bdc ret (GhidraScript)  
+INFO  GateVerify.java> VERIFIED_INSTRUCTION 000c4b48 mov x0,#0x0 (GhidraScript)  
+INFO  GateVerify.java> VERIFIED_INSTRUCTION 000c4b4c ret (GhidraScript)  
+INFO  GateVerify.java> VERIFIED_INSTRUCTION 000cac80 ret (GhidraScript)  
+INFO  GateVerify.java> VERIFIED_INSTRUCTION 0034b38c mov x2,xzr (GhidraScript)  
+INFO  GateVerify.java> VERIFIED_INSTRUCTION 0034b3e8 nop (GhidraScript)  
+INFO  GateVerify.java> PATCHED_FUNCTION 000c24bc (GhidraScript)  
+INFO  GateVerify.java> 
+undefined8 FUN_000c24bc(void)
+
+{
+  return 1;
+}
+
+ (GhidraScript)  
+INFO  GateVerify.java> PATCHED_FUNCTION 000c1bd8 (GhidraScript)  
+INFO  GateVerify.java> 
+undefined8 FUN_000c1bd8(void)
+
+{
+  return 0;
+}
+
+ (GhidraScript)  
+INFO  GateVerify.java> PATCHED_FUNCTION 000c4b48 (GhidraScript)  
+INFO  GateVerify.java> 
+undefined8 FUN_000c4b48(void)
+
+{
+  return 0;
+}
+
+ (GhidraScript)  
+INFO  GateVerify.java> PATCHED_FUNCTION 000cac80 (GhidraScript)  
+INFO  GateVerify.java> 
+void FUN_000cac80(void)
+
+{
+  return;
+}
+
+ (GhidraScript)  
+INFO  REPORT: Discarding changes to the following read-only file: /YTLite.dylib (HeadlessAnalyzer)  

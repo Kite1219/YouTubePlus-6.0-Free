@@ -1,0 +1,14 @@
+{
+  "Access.RequestError": "Request error",
+  "Access.Active": "Active",
+  "Access.DeviceNotRegistered": "Device is not linked",
+  "Access.DeviceLimit": "Device limit reached",
+  "Access.InsufficientPlan": "Subscription level is too low",
+  "Access.NotFound": "Account not found",
+  "Access.AppNotFound": "App is not registered",
+  "Access.AccountRequired": "Account required",
+  "Access.LogIn": "Log in",
+  "FeaturesNotActivated": "You are not logged in. To access YouTube Plus features, please log in to an account with an active subscription.",
+  "Access.Status": "Subscription status",
+  "Access.SignInAgain": "Sign in again"
+}

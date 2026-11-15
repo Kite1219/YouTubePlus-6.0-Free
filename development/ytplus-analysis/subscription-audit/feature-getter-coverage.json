@@ -1,0 +1,47 @@
+{
+  "0xc1ddc": {
+    "direct_call_sites": 253,
+    "functions_reaching_getter_within_5_calls": 675,
+    "objc_entry_points": [
+      "ClearModeManager.clearModeDidChangeToState:",
+      "ClearModeManager.handlePinch:",
+      "ClearModeManager.setPivotBarHidden:",
+      "FeedManager.elementDataForRenderer:data:",
+      "FeedManager.hasActiveFilters",
+      "FeedManager.isAdRenderer:",
+      "FeedManager.isMembersOnlyData:",
+      "FeedManager.rule:matchesText:browseId:",
+      "FeedManager.shouldRemoveSection:browseId:rules:",
+      "PlayerManager.applyAutoSettingsForPlayer:",
+      "PlayerManager.audioTrackForFormats:",
+      "PlayerManager.captionTrackFromTracks:languages:",
+      "PlayerManager.captionsModeForPlayer:",
+      "PlayerManager.isLoopEnabled",
+      "PlayerManager.isPiPDisabled",
+      "PlayerManager.showSponsorBlockSheetForOverlay:",
+      "PlayerManager.updateButtonsForOverlay:",
+      "PlayerManager.updateEndTimeForPlayer:video:time:",
+      "ShortsManager.actionBarChildrenWithDownloadButton:",
+      "ShortsManager.hideTopBarButtonForImageNode:image:",
+      "ShortsManager.injectsDownloadNode",
+      "ShortsManager.shouldRemoveReelModel:",
+      "ShortsManager.topBarKeyForImage:"
+    ]
+  },
+  "0xc2aa4": {
+    "direct_call_sites": 75,
+    "functions_reaching_getter_within_5_calls": 202,
+    "objc_entry_points": [
+      "DownloadMenuHelper.presentDownloadFormWithMedia:",
+      "DownloadMenuHelper.savedPresetForSaveAction:",
+      "DownloadMenuHelper.showShortsSheet:withSender:",
+      "PlayerManager.applyAutoSettingsForPlayer:",
+      "PlayerManager.audioTrackForFormats:",
+      "PlayerManager.captionsModeForPlayer:",
+      "PlayerManager.qualityLabelForFormats:",
+      "PlayerManager.selectsCaptions",
+      "PlayerManager.updateButtonsForOverlay:",
+      "ShortsManager.autoSkipLegacyForPlayer:video:time:"
+    ]
+  }
+}

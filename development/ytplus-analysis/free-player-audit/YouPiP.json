@@ -1,0 +1,1093 @@
+{
+  "size": 89712,
+  "sha256": "c85db5b6bde883462082ba24abfe452e9c454dc7a4961ff4ab81eb7127066117",
+  "cpu": "0x100000c",
+  "subtype": "0x0",
+  "filetype": 6,
+  "ncmds": 23,
+  "sizeofcmds": 2960,
+  "flags": "0x100085",
+  "commands": [
+    {
+      "type": "0x19",
+      "offset": 32,
+      "size": 872,
+      "segment": "__TEXT",
+      "vmaddr": 0,
+      "vmsize": 65536,
+      "fileoff": 0,
+      "filesize": 65536,
+      "maxprot": 5,
+      "initprot": 5
+    },
+    {
+      "type": "0x19",
+      "offset": 904,
+      "size": 952,
+      "segment": "__DATA",
+      "vmaddr": 65536,
+      "vmsize": 16384,
+      "fileoff": 65536,
+      "filesize": 16384,
+      "maxprot": 3,
+      "initprot": 3
+    },
+    {
+      "type": "0x19",
+      "offset": 1856,
+      "size": 72,
+      "segment": "__LINKEDIT",
+      "vmaddr": 81920,
+      "vmsize": 16384,
+      "fileoff": 81920,
+      "filesize": 7792,
+      "maxprot": 1,
+      "initprot": 1
+    },
+    {
+      "type": "0xd",
+      "offset": 1928,
+      "size": 80,
+      "name": "/Library/MobileSubstrate/DynamicLibraries/YouPiP.dylib",
+      "current_version": 0,
+      "compat_version": 0
+    },
+    {
+      "type": "0x80000022",
+      "offset": 2008,
+      "size": 48
+    },
+    {
+      "type": "0x2",
+      "offset": 2056,
+      "size": 24,
+      "symoff": 84544,
+      "nsyms": 86,
+      "stroff": 86248,
+      "strsize": 1784
+    },
+    {
+      "type": "0xb",
+      "offset": 2080,
+      "size": 80
+    },
+    {
+      "type": "0x1b",
+      "offset": 2160,
+      "size": 24
+    },
+    {
+      "type": "0x25",
+      "offset": 2184,
+      "size": 16
+    },
+    {
+      "type": "0x2a",
+      "offset": 2200,
+      "size": 16
+    },
+    {
+      "type": "0x2c",
+      "offset": 2216,
+      "size": 24,
+      "cryptoff": 16384,
+      "cryptsize": 49152,
+      "cryptid": 0
+    },
+    {
+      "type": "0xc",
+      "offset": 2240,
+      "size": 56,
+      "name": "/usr/lib/libobjc.A.dylib",
+      "current_version": 14942208,
+      "compat_version": 65536
+    },
+    {
+      "type": "0xc",
+      "offset": 2296,
+      "size": 88,
+      "name": "/System/Library/Frameworks/Foundation.framework/Foundation",
+      "current_version": 229507072,
+      "compat_version": 19660800
+    },
+    {
+      "type": "0xc",
+      "offset": 2384,
+      "size": 96,
+      "name": "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+      "current_version": 229507072,
+      "compat_version": 9830400
+    },
+    {
+      "type": "0xc",
+      "offset": 2480,
+      "size": 88,
+      "name": "/System/Library/Frameworks/AVFoundation.framework/AVFoundation",
+      "current_version": 131072,
+      "compat_version": 65536
+    },
+    {
+      "type": "0xc",
+      "offset": 2568,
+      "size": 80,
+      "name": "/System/Library/Frameworks/AVKit.framework/AVKit",
+      "current_version": 65536,
+      "compat_version": 65536
+    },
+    {
+      "type": "0xc",
+      "offset": 2648,
+      "size": 80,
+      "name": "/System/Library/Frameworks/UIKit.framework/UIKit",
+      "current_version": 557449573,
+      "compat_version": 65536
+    },
+    {
+      "type": "0xc",
+      "offset": 2728,
+      "size": 56,
+      "name": "/usr/lib/libSystem.B.dylib",
+      "current_version": 88539136,
+      "compat_version": 65536
+    },
+    {
+      "type": "0xc",
+      "offset": 2784,
+      "size": 72,
+      "name": "@rpath/CydiaSubstrate.framework/CydiaSubstrate",
+      "current_version": 0,
+      "compat_version": 0
+    },
+    {
+      "type": "0xc",
+      "offset": 2856,
+      "size": 88,
+      "name": "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics",
+      "current_version": 123798787,
+      "compat_version": 4194304
+    },
+    {
+      "type": "0x26",
+      "offset": 2944,
+      "size": 16,
+      "dataoff": 84360,
+      "datasize": 184
+    },
+    {
+      "type": "0x29",
+      "offset": 2960,
+      "size": 16,
+      "dataoff": 84544,
+      "datasize": 0
+    },
+    {
+      "type": "0x1d",
+      "offset": 2976,
+      "size": 16,
+      "dataoff": 88032,
+      "datasize": 1680
+    }
+  ],
+  "sections": [
+    {
+      "sectname": "__text",
+      "segname": "__TEXT",
+      "addr": 16384,
+      "size": 21232,
+      "offset": 16384,
+      "align": 2,
+      "reloff": 0,
+      "nreloc": 0,
+      "flags": 2147484672,
+      "reserved1": 0,
+      "reserved2": 0,
+      "reserved3": 0
+    },
+    {
+      "sectname": "__stubs",
+      "segname": "__TEXT",
+      "addr": 37616,
+      "size": 432,
+      "offset": 37616,
+      "align": 2,
+      "reloff": 0,
+      "nreloc": 0,
+      "flags": 2147484680,
+      "reserved1": 0,
+      "reserved2": 12,
+      "reserved3": 0
+    },
+    {
+      "sectname": "__stub_helper",
+      "segname": "__TEXT",
+      "addr": 38048,
+      "size": 456,
+      "offset": 38048,
+      "align": 2,
+      "reloff": 0,
+      "nreloc": 0,
+      "flags": 2147484672,
+      "reserved1": 0,
+      "reserved2": 0,
+      "reserved3": 0
+    },
+    {
+      "sectname": "__objc_stubs",
+      "segname": "__TEXT",
+      "addr": 38528,
+      "size": 4576,
+      "offset": 38528,
+      "align": 5,
+      "reloff": 0,
+      "nreloc": 0,
+      "flags": 2147484672,
+      "reserved1": 0,
+      "reserved2": 0,
+      "reserved3": 0
+    },
+    {
+      "sectname": "__cstring",
+      "segname": "__TEXT",
+      "addr": 43104,
+      "size": 2596,
+      "offset": 43104,
+      "align": 0,
+      "reloff": 0,
+      "nreloc": 0,
+      "flags": 2,
+      "reserved1": 0,
+      "reserved2": 0,
+      "reserved3": 0
+    },
+    {
+      "sectname": "__const",
+      "segname": "__TEXT",
+      "addr": 45704,
+      "size": 56,
+      "offset": 45704,
+      "align": 3,
+      "reloff": 0,
+      "nreloc": 0,
+      "flags": 0,
+      "reserved1": 0,
+      "reserved2": 0,
+      "reserved3": 0
+    },
+    {
+      "sectname": "__gcc_except_tab",
+      "segname": "__TEXT",
+      "addr": 45760,
+      "size": 88,
+      "offset": 45760,
+      "align": 2,
+      "reloff": 0,
+      "nreloc": 0,
+      "flags": 0,
+      "reserved1": 0,
+      "reserved2": 0,
+      "reserved3": 0
+    },
+    {
+      "sectname": "__objc_methname",
+      "segname": "__TEXT",
+      "addr": 45848,
+      "size": 5441,
+      "offset": 45848,
+      "align": 0,
+      "reloff": 0,
+      "nreloc": 0,
+      "flags": 2,
+      "reserved1": 0,
+      "reserved2": 0,
+      "reserved3": 0
+    },
+    {
+      "sectname": "__objc_classname",
+      "segname": "__TEXT",
+      "addr": 51289,
+      "size": 2,
+      "offset": 51289,
+      "align": 0,
+      "reloff": 0,
+      "nreloc": 0,
+      "flags": 2,
+      "reserved1": 0,
+      "reserved2": 0,
+      "reserved3": 0
+    },
+    {
+      "sectname": "__unwind_info",
+      "segname": "__TEXT",
+      "addr": 51292,
+      "size": 416,
+      "offset": 51292,
+      "align": 2,
+      "reloff": 0,
+      "nreloc": 0,
+      "flags": 0,
+      "reserved1": 0,
+      "reserved2": 0,
+      "reserved3": 0
+    },
+    {
+      "sectname": "__got",
+      "segname": "__DATA",
+      "addr": 65536,
+      "size": 72,
+      "offset": 65536,
+      "align": 3,
+      "reloff": 0,
+      "nreloc": 0,
+      "flags": 6,
+      "reserved1": 36,
+      "reserved2": 0,
+      "reserved3": 0
+    },
+    {
+      "sectname": "__mod_init_func",
+      "segname": "__DATA",
+      "addr": 65608,
+      "size": 24,
+      "offset": 65608,
+      "align": 3,
+      "reloff": 0,
+      "nreloc": 0,
+      "flags": 9,
+      "reserved1": 0,
+      "reserved2": 0,
+      "reserved3": 0
+    },
+    {
+      "sectname": "__const",
+      "segname": "__DATA",
+      "addr": 65632,
+      "size": 512,
+      "offset": 65632,
+      "align": 3,
+      "reloff": 0,
+      "nreloc": 0,
+      "flags": 0,
+      "reserved1": 0,
+      "reserved2": 0,
+      "reserved3": 0
+    },
+    {
+      "sectname": "__cfstring",
+      "segname": "__DATA",
+      "addr": 66144,
+      "size": 1952,
+      "offset": 66144,
+      "align": 3,
+      "reloff": 0,
+      "nreloc": 0,
+      "flags": 0,
+      "reserved1": 0,
+      "reserved2": 0,
+      "reserved3": 0
+    },
+    {
+      "sectname": "__objc_imageinfo",
+      "segname": "__DATA",
+      "addr": 68096,
+      "size": 8,
+      "offset": 68096,
+      "align": 2,
+      "reloff": 0,
+      "nreloc": 0,
+      "flags": 0,
+      "reserved1": 0,
+      "reserved2": 0,
+      "reserved3": 0
+    },
+    {
+      "sectname": "__la_symbol_ptr",
+      "segname": "__DATA",
+      "addr": 68104,
+      "size": 288,
+      "offset": 68104,
+      "align": 3,
+      "reloff": 0,
+      "nreloc": 0,
+      "flags": 7,
+      "reserved1": 45,
+      "reserved2": 0,
+      "reserved3": 0
+    },
+    {
+      "sectname": "__objc_selrefs",
+      "segname": "__DATA",
+      "addr": 68392,
+      "size": 1632,
+      "offset": 68392,
+      "align": 3,
+      "reloff": 0,
+      "nreloc": 0,
+      "flags": 268435461,
+      "reserved1": 0,
+      "reserved2": 0,
+      "reserved3": 0
+    },
+    {
+      "sectname": "__objc_classrefs",
+      "segname": "__DATA",
+      "addr": 70024,
+      "size": 136,
+      "offset": 70024,
+      "align": 3,
+      "reloff": 0,
+      "nreloc": 0,
+      "flags": 268435456,
+      "reserved1": 0,
+      "reserved2": 0,
+      "reserved3": 0
+    },
+    {
+      "sectname": "__data",
+      "segname": "__DATA",
+      "addr": 70160,
+      "size": 8,
+      "offset": 70160,
+      "align": 3,
+      "reloff": 0,
+      "nreloc": 0,
+      "flags": 0,
+      "reserved1": 0,
+      "reserved2": 0,
+      "reserved3": 0
+    },
+    {
+      "sectname": "__bss",
+      "segname": "__DATA",
+      "addr": 70168,
+      "size": 1664,
+      "offset": 0,
+      "align": 3,
+      "reloff": 0,
+      "nreloc": 0,
+      "flags": 1,
+      "reserved1": 0,
+      "reserved2": 0,
+      "reserved3": 0
+    },
+    {
+      "sectname": "__common",
+      "segname": "__DATA",
+      "addr": 71832,
+      "size": 48,
+      "offset": 0,
+      "align": 3,
+      "reloff": 0,
+      "nreloc": 0,
+      "flags": 1,
+      "reserved1": 0,
+      "reserved2": 0,
+      "reserved3": 0
+    }
+  ],
+  "symbols": [
+    {
+      "name": "radr://5614542",
+      "type": 60,
+      "sect": 0,
+      "desc": 0,
+      "value": 90260802
+    },
+    {
+      "name": "_FromUser",
+      "type": 15,
+      "sect": 21,
+      "desc": 0,
+      "value": 71832
+    },
+    {
+      "name": "_InjectMLPIPController",
+      "type": 15,
+      "sect": 21,
+      "desc": 0,
+      "value": 71840
+    },
+    {
+      "name": "_InjectYTBackgroundabilityPolicy",
+      "type": 15,
+      "sect": 21,
+      "desc": 0,
+      "value": 71848
+    },
+    {
+      "name": "_InjectYTHotConfig",
+      "type": 15,
+      "sect": 21,
+      "desc": 0,
+      "value": 71856
+    },
+    {
+      "name": "_InjectYTPlayerViewControllerConfig",
+      "type": 15,
+      "sect": 21,
+      "desc": 0,
+      "value": 71864
+    },
+    {
+      "name": "_InjectYTSystemNotifications",
+      "type": 15,
+      "sect": 21,
+      "desc": 0,
+      "value": 71872
+    },
+    {
+      "name": "_LegacyPiP",
+      "type": 15,
+      "sect": 1,
+      "desc": 0,
+      "value": 30108
+    },
+    {
+      "name": "_NoMiniPlayerPiP",
+      "type": 15,
+      "sect": 1,
+      "desc": 0,
+      "value": 17980
+    },
+    {
+      "name": "_NonBackgroundable",
+      "type": 15,
+      "sect": 1,
+      "desc": 0,
+      "value": 18056
+    },
+    {
+      "name": "_PiPDisabled",
+      "type": 15,
+      "sect": 21,
+      "desc": 0,
+      "value": 71833
+    },
+    {
+      "name": "_TweakEnabled",
+      "type": 15,
+      "sect": 1,
+      "desc": 0,
+      "value": 17676
+    },
+    {
+      "name": "_UseAllPiPMethod",
+      "type": 15,
+      "sect": 1,
+      "desc": 0,
+      "value": 17904
+    },
+    {
+      "name": "_UsePiPButton",
+      "type": 15,
+      "sect": 1,
+      "desc": 0,
+      "value": 17752
+    },
+    {
+      "name": "_UseTabBarPiPButton",
+      "type": 15,
+      "sect": 1,
+      "desc": 0,
+      "value": 17828
+    },
+    {
+      "name": "_YTSingleVideo_isLivePlayback_override",
+      "type": 15,
+      "sect": 21,
+      "desc": 0,
+      "value": 71835
+    },
+    {
+      "name": "_YouPiPBundle",
+      "type": 15,
+      "sect": 1,
+      "desc": 0,
+      "value": 18276
+    },
+    {
+      "name": "_hasSampleBufferPiP",
+      "type": 15,
+      "sect": 21,
+      "desc": 0,
+      "value": 71836
+    },
+    {
+      "name": "_initPlayerPiPControllerIfNeeded",
+      "type": 15,
+      "sect": 1,
+      "desc": 0,
+      "value": 30204
+    },
+    {
+      "name": "_isLegacyVersion",
+      "type": 15,
+      "sect": 21,
+      "desc": 0,
+      "value": 71837
+    },
+    {
+      "name": "_isPictureInPictureActive",
+      "type": 15,
+      "sect": 1,
+      "desc": 0,
+      "value": 18132
+    },
+    {
+      "name": "_shouldUseNewSettingIcon",
+      "type": 15,
+      "sect": 21,
+      "desc": 0,
+      "value": 71834
+    },
+    {
+      "name": "_CGRectContainsPoint",
+      "type": 1,
+      "sect": 0,
+      "desc": 2304,
+      "value": 0
+    },
+    {
+      "name": "_CGRectGetMaxX",
+      "type": 1,
+      "sect": 0,
+      "desc": 2304,
+      "value": 0
+    },
+    {
+      "name": "_CGRectGetMidY",
+      "type": 1,
+      "sect": 0,
+      "desc": 2304,
+      "value": 0
+    },
+    {
+      "name": "_MSFindSymbol",
+      "type": 1,
+      "sect": 0,
+      "desc": 2048,
+      "value": 0
+    },
+    {
+      "name": "_MSGetImageByName",
+      "type": 1,
+      "sect": 0,
+      "desc": 2048,
+      "value": 0
+    },
+    {
+      "name": "_MSHookMessageEx",
+      "type": 1,
+      "sect": 0,
+      "desc": 2048,
+      "value": 0
+    },
+    {
+      "name": "_NSClassFromString",
+      "type": 1,
+      "sect": 0,
+      "desc": 512,
+      "value": 0
+    },
+    {
+      "name": "_OBJC_CLASS_$_AVPictureInPictureController",
+      "type": 1,
+      "sect": 0,
+      "desc": 1280,
+      "value": 0
+    },
+    {
+      "name": "_OBJC_CLASS_$_NSBundle",
+      "type": 1,
+      "sect": 0,
+      "desc": 512,
+      "value": 0
+    },
+    {
+      "name": "_OBJC_CLASS_$_NSDictionary",
+      "type": 1,
+      "sect": 0,
+      "desc": 768,
+      "value": 0
+    },
+    {
+      "name": "_OBJC_CLASS_$_NSMutableArray",
+      "type": 1,
+      "sect": 0,
+      "desc": 768,
+      "value": 0
+    },
+    {
+      "name": "_OBJC_CLASS_$_NSNotificationCenter",
+      "type": 1,
+      "sect": 0,
+      "desc": 512,
+      "value": 0
+    },
+    {
+      "name": "_OBJC_CLASS_$_NSNumber",
+      "type": 1,
+      "sect": 0,
+      "desc": 512,
+      "value": 0
+    },
+    {
+      "name": "_OBJC_CLASS_$_NSString",
+      "type": 1,
+      "sect": 0,
+      "desc": 512,
+      "value": 0
+    },
+    {
+      "name": "_OBJC_CLASS_$_NSUserDefaults",
+      "type": 1,
+      "sect": 0,
+      "desc": 768,
+      "value": 0
+    },
+    {
+      "name": "_OBJC_CLASS_$_NSValue",
+      "type": 1,
+      "sect": 0,
+      "desc": 512,
+      "value": 0
+    },
+    {
+      "name": "_OBJC_CLASS_$_UIApplication",
+      "type": 1,
+      "sect": 0,
+      "desc": 1536,
+      "value": 0
+    },
+    {
+      "name": "_OBJC_CLASS_$_UIButton",
+      "type": 1,
+      "sect": 0,
+      "desc": 1536,
+      "value": 0
+    },
+    {
+      "name": "_OBJC_CLASS_$_UIFont",
+      "type": 1,
+      "sect": 0,
+      "desc": 1536,
+      "value": 0
+    },
+    {
+      "name": "_OBJC_CLASS_$_UIFontMetrics",
+      "type": 1,
+      "sect": 0,
+      "desc": 1536,
+      "value": 0
+    },
+    {
+      "name": "_OBJC_CLASS_$_UIImage",
+      "type": 1,
+      "sect": 0,
+      "desc": 1536,
+      "value": 0
+    },
+    {
+      "name": "_OBJC_CLASS_$_UIImageView",
+      "type": 1,
+      "sect": 0,
+      "desc": 1536,
+      "value": 0
+    },
+    {
+      "name": "_OBJC_CLASS_$_UILabel",
+      "type": 1,
+      "sect": 0,
+      "desc": 1536,
+      "value": 0
+    },
+    {
+      "name": "_OBJC_CLASS_$_UIView",
+      "type": 1,
+      "sect": 0,
+      "desc": 1536,
+      "value": 0
+    },
+    {
+      "name": "_OBJC_EHTYPE_id",
+      "type": 1,
+      "sect": 0,
+      "desc": 256,
+      "value": 0
+    },
+    {
+      "name": "_UIApplicationDidEnterBackgroundNotification",
+      "type": 1,
+      "sect": 0,
+      "desc": 1536,
+      "value": 0
+    },
+    {
+      "name": "_UIFontTextStyleBody",
+      "type": 1,
+      "sect": 0,
+      "desc": 1536,
+      "value": 0
+    },
+    {
+      "name": "__NSConcreteGlobalBlock",
+      "type": 1,
+      "sect": 0,
+      "desc": 1792,
+      "value": 0
+    },
+    {
+      "name": "__NSConcreteStackBlock",
+      "type": 1,
+      "sect": 0,
+      "desc": 1792,
+      "value": 0
+    },
+    {
+      "name": "__Unwind_Resume",
+      "type": 1,
+      "sect": 0,
+      "desc": 1792,
+      "value": 0
+    },
+    {
+      "name": "___CFConstantStringClassReference",
+      "type": 1,
+      "sect": 0,
+      "desc": 768,
+      "value": 0
+    },
+    {
+      "name": "___objc_personality_v0",
+      "type": 1,
+      "sect": 0,
+      "desc": 256,
+      "value": 0
+    },
+    {
+      "name": "___stack_chk_fail",
+      "type": 1,
+      "sect": 0,
+      "desc": 1792,
+      "value": 0
+    },
+    {
+      "name": "___stack_chk_guard",
+      "type": 1,
+      "sect": 0,
+      "desc": 1792,
+      "value": 0
+    },
+    {
+      "name": "_access",
+      "type": 1,
+      "sect": 0,
+      "desc": 1792,
+      "value": 0
+    },
+    {
+      "name": "_class_addMethod",
+      "type": 1,
+      "sect": 0,
+      "desc": 256,
+      "value": 0
+    },
+    {
+      "name": "_class_addProperty",
+      "type": 1,
+      "sect": 0,
+      "desc": 256,
+      "value": 0
+    },
+    {
+      "name": "_class_getClassMethod",
+      "type": 1,
+      "sect": 0,
+      "desc": 256,
+      "value": 0
+    },
+    {
+      "name": "_dispatch_once",
+      "type": 1,
+      "sect": 0,
+      "desc": 1792,
+      "value": 0
+    },
+    {
+      "name": "_dlopen",
+      "type": 1,
+      "sect": 0,
+      "desc": 1792,
+      "value": 0
+    },
+    {
+      "name": "_dlsym",
+      "type": 1,
+      "sect": 0,
+      "desc": 1792,
+      "value": 0
+    },
+    {
+      "name": "_kCFCoreFoundationVersionNumber",
+      "type": 1,
+      "sect": 0,
+      "desc": 768,
+      "value": 0
+    },
+    {
+      "name": "_malloc",
+      "type": 1,
+      "sect": 0,
+      "desc": 1792,
+      "value": 0
+    },
+    {
+      "name": "_objc_alloc",
+      "type": 1,
+      "sect": 0,
+      "desc": 256,
+      "value": 0
+    },
+    {
+      "name": "_objc_autoreleaseReturnValue",
+      "type": 1,
+      "sect": 0,
+      "desc": 256,
+      "value": 0
+    },
+    {
+      "name": "_objc_begin_catch",
+      "type": 1,
+      "sect": 0,
+      "desc": 256,
+      "value": 0
+    },
+    {
+      "name": "_objc_end_catch",
+      "type": 1,
+      "sect": 0,
+      "desc": 256,
+      "value": 0
+    },
+    {
+      "name": "_objc_getAssociatedObject",
+      "type": 1,
+      "sect": 0,
+      "desc": 256,
+      "value": 0
+    },
+    {
+      "name": "_objc_getClass",
+      "type": 1,
+      "sect": 0,
+      "desc": 256,
+      "value": 0
+    },
+    {
+      "name": "_objc_msgSend",
+      "type": 1,
+      "sect": 0,
+      "desc": 256,
+      "value": 0
+    },
+    {
+      "name": "_objc_release",
+      "type": 1,
+      "sect": 0,
+      "desc": 256,
+      "value": 0
+    },
+    {
+      "name": "_objc_retain",
+      "type": 1,
+      "sect": 0,
+      "desc": 256,
+      "value": 0
+    },
+    {
+      "name": "_objc_retainAutorelease",
+      "type": 1,
+      "sect": 0,
+      "desc": 256,
+      "value": 0
+    },
+    {
+      "name": "_objc_retainAutoreleaseReturnValue",
+      "type": 1,
+      "sect": 0,
+      "desc": 256,
+      "value": 0
+    },
+    {
+      "name": "_objc_retainAutoreleasedReturnValue",
+      "type": 1,
+      "sect": 0,
+      "desc": 256,
+      "value": 0
+    },
+    {
+      "name": "_objc_setAssociatedObject",
+      "type": 1,
+      "sect": 0,
+      "desc": 256,
+      "value": 0
+    },
+    {
+      "name": "_object_getClass",
+      "type": 1,
+      "sect": 0,
+      "desc": 256,
+      "value": 0
+    },
+    {
+      "name": "_sel_registerName",
+      "type": 1,
+      "sect": 0,
+      "desc": 256,
+      "value": 0
+    },
+    {
+      "name": "_snprintf",
+      "type": 1,
+      "sect": 0,
+      "desc": 1792,
+      "value": 0
+    },
+    {
+      "name": "_strlcat",
+      "type": 1,
+      "sect": 0,
+      "desc": 1792,
+      "value": 0
+    },
+    {
+      "name": "_strlcpy",
+      "type": 1,
+      "sect": 0,
+      "desc": 1792,
+      "value": 0
+    },
+    {
+      "name": "_strlen",
+      "type": 1,
+      "sect": 0,
+      "desc": 1792,
+      "value": 0
+    },
+    {
+      "name": "_strncmp",
+      "type": 1,
+      "sect": 0,
+      "desc": 1792,
+      "value": 0
+    },
+    {
+      "name": "dyld_stub_binder",
+      "type": 1,
+      "sect": 0,
+      "desc": 1792,
+      "value": 0
+    }
+  ],
+  "header_padding": 13392,
+  "relevant_strings": []
+}

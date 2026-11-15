@@ -1,0 +1,102 @@
+[0.008s][warning][cds] Archived non-system classes are disabled because the java.system.class.loader property is specified (value = "ghidra.GhidraClassLoader"). To use archived non-system classes, this property must not be set
+INFO  Using log config file: jar:file:/C:/Users/Kiet/Documents/Codex/2026-10-11/https-github-com-morluto-rea-https/tools/ghidra_12.1.4_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: C:\Users\Kiet\.codex\.chatgpt-projects\g-p-6acbfd0c578c81918d04030c234c5004\ytplus-analysis\subscription-audit\ghidra-followup.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Users\Kiet\.codex\.chatgpt-projects\g-p-6acbfd0c578c81918d04030c234c5004\ytplus-analysis\settings\ghidra\ghidra_12.1.4_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (724 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (2185 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    C:\Users\Kiet\.codex\.chatgpt-projects\g-p-6acbfd0c578c81918d04030c234c5004\ytplus-analysis\subscription-audit
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\8051\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: C:\Users\Kiet\AppData\Local\Temp\ytplus-subscription-audit-20261108\SubscriptionAudit (HeadlessAnalyzer)  
+INFO  Opening project: C:\Users\Kiet\AppData\Local\Temp\ytplus-subscription-audit-20261108\SubscriptionAudit (HeadlessProject)  
+INFO  REPORT: Processing read-only project file: /YTLite.dylib (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: GatePlayerTrace.java 'unused' 'unused'  (HeadlessAnalyzer)  
+INFO  SCRIPT: C:\Users\Kiet\.codex\.chatgpt-projects\g-p-6acbfd0c578c81918d04030c234c5004\ytplus-analysis\subscription-audit\GatePlayerTrace.java (HeadlessAnalyzer)  
+INFO  GatePlayerTrace.java> PLAYER_METHOD 1a80f0 selected=0 (GhidraScript)  
+WARN  Uninitialized register read at 001a80f4: x29 (EmulatorHelper)  
+WARN  Uninitialized memory read at 001a8110: ram:0236430c:4 (EmulatorHelper)  
+WARN  Uninitialized register read at 000c1de0: x28 (EmulatorHelper)  
+WARN  Uninitialized register read at 000c1de0: x27 (EmulatorHelper)  
+WARN  Uninitialized register read at 000c1de4: x26 (EmulatorHelper)  
+WARN  Uninitialized register read at 000c1de4: x25 (EmulatorHelper)  
+WARN  Uninitialized register read at 000c1de8: x24 (EmulatorHelper)  
+WARN  Uninitialized register read at 000c1de8: x23 (EmulatorHelper)  
+WARN  Uninitialized register read at 000c1dec: x22 (EmulatorHelper)  
+WARN  Uninitialized register read at 000c1dec: x21 (EmulatorHelper)  
+WARN  Uninitialized register read at 000c1df0: x20 (EmulatorHelper)  
+WARN  Uninitialized register read at 000c1df0: x19 (EmulatorHelper)  
+WARN  Uninitialized memory read at 017a47f4: ram:60002010:8 (EmulatorHelper)  
+WARN  Uninitialized memory read at 017a47f4: ram:60003010:8 (EmulatorHelper)  
+INFO  GatePlayerTrace.java> OBJC_CALL currentDevice arg2=0x60002000 arg3=0x60003000 (GhidraScript)  
+INFO  GatePlayerTrace.java> TRACE_BOUNDARY unmodeled UIKit/Foundation call (GhidraScript)  
+INFO  GatePlayerTrace.java> PLAYER_TRACE_STOP 017a47f4 steps=644 (GhidraScript)  
+INFO  GatePlayerTrace.java> PLAYER_METHOD 1a80f0 selected=1 (GhidraScript)  
+WARN  Uninitialized register read at 001a80f4: x29 (EmulatorHelper)  
+WARN  Uninitialized memory read at 001a8110: ram:0236430c:4 (EmulatorHelper)  
+WARN  Uninitialized register read at 000c1de0: x28 (EmulatorHelper)  
+WARN  Uninitialized register read at 000c1de0: x27 (EmulatorHelper)  
+WARN  Uninitialized register read at 000c1de4: x26 (EmulatorHelper)  
+WARN  Uninitialized register read at 000c1de4: x25 (EmulatorHelper)  
+WARN  Uninitialized register read at 000c1de8: x24 (EmulatorHelper)  
+WARN  Uninitialized register read at 000c1de8: x23 (EmulatorHelper)  
+WARN  Uninitialized register read at 000c1dec: x22 (EmulatorHelper)  
+WARN  Uninitialized register read at 000c1dec: x21 (EmulatorHelper)  
+WARN  Uninitialized register read at 000c1df0: x20 (EmulatorHelper)  
+WARN  Uninitialized register read at 000c1df0: x19 (EmulatorHelper)  
+WARN  Uninitialized memory read at 017a47f4: ram:60002010:8 (EmulatorHelper)  
+WARN  Uninitialized memory read at 017a47f4: ram:60003010:8 (EmulatorHelper)  
+INFO  GatePlayerTrace.java> OBJC_CALL currentDevice arg2=0x60002000 arg3=0x60003000 (GhidraScript)  
+INFO  GatePlayerTrace.java> TRACE_BOUNDARY unmodeled UIKit/Foundation call (GhidraScript)  
+INFO  GatePlayerTrace.java> PLAYER_TRACE_STOP 017a47f4 steps=644 (GhidraScript)  
+INFO  GatePlayerTrace.java> PLAYER_METHOD 1ba514 selected=0 (GhidraScript)  
+WARN  Uninitialized register read at 001ba518: x22 (EmulatorHelper)  
+WARN  Uninitialized register read at 001ba518: x21 (EmulatorHelper)  
+WARN  Uninitialized register read at 001ba51c: x20 (EmulatorHelper)  
+WARN  Uninitialized register read at 001ba51c: x19 (EmulatorHelper)  
+WARN  Uninitialized register read at 001ba520: x29 (EmulatorHelper)  
+WARN  Uninitialized memory read at 001ba548: ram:0236443c:4 (EmulatorHelper)  
+WARN  Uninitialized memory read at 017a47f4: ram:60002010:8 (EmulatorHelper)  
+WARN  Uninitialized memory read at 017a47f4: ram:60003010:8 (EmulatorHelper)  
+INFO  GatePlayerTrace.java> OBJC_CALL overlayControllerForOverlay: arg2=0x60002000 arg3=0x60003000 (GhidraScript)  
+INFO  GatePlayerTrace.java> TRACE_BOUNDARY unmodeled UIKit/Foundation call (GhidraScript)  
+INFO  GatePlayerTrace.java> PLAYER_TRACE_STOP 017a47f4 steps=87 (GhidraScript)  
+INFO  GatePlayerTrace.java> PLAYER_METHOD 1ba514 selected=1 (GhidraScript)  
+WARN  Uninitialized register read at 001ba518: x22 (EmulatorHelper)  
+WARN  Uninitialized register read at 001ba518: x21 (EmulatorHelper)  
+WARN  Uninitialized register read at 001ba51c: x20 (EmulatorHelper)  
+WARN  Uninitialized register read at 001ba51c: x19 (EmulatorHelper)  
+WARN  Uninitialized register read at 001ba520: x29 (EmulatorHelper)  
+WARN  Uninitialized memory read at 001ba548: ram:0236443c:4 (EmulatorHelper)  
+WARN  Uninitialized memory read at 017a47f4: ram:60002010:8 (EmulatorHelper)  
+WARN  Uninitialized memory read at 017a47f4: ram:60003010:8 (EmulatorHelper)  
+INFO  GatePlayerTrace.java> OBJC_CALL overlayControllerForOverlay: arg2=0x60002000 arg3=0x60003000 (GhidraScript)  
+INFO  GatePlayerTrace.java> TRACE_BOUNDARY unmodeled UIKit/Foundation call (GhidraScript)  
+INFO  GatePlayerTrace.java> PLAYER_TRACE_STOP 017a47f4 steps=87 (GhidraScript)  

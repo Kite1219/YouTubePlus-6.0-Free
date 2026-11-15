@@ -1,0 +1,6 @@
+{
+  "tests": 28,
+  "failures": 0,
+  "errors": 0,
+  "scope": "Production Rust hooks compiled for Windows with mocked Objective-C, UIKit and dispatch; not an iOS runtime test"
+}

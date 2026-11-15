@@ -1,0 +1,10 @@
+{
+  "Removed": "C:\\Users\\Kiet\\.codex\\.chatgpt-projects\\g-p-6acbfd0c578c81918d04030c234c5004\\ytplus-analysis\\YouTubePlus_6.0_YouTube_21.13.6_unsigned.ipa",
+  "Bytes": 136999640,
+  "SHA256": "86240AF5B1B8B39569151ACAC0564191E721F7DC58892A0015A0842AE86283AE",
+  "Preserved": [
+    "C:\\Users\\Kiet\\.codex\\.chatgpt-projects\\g-p-6acbfd0c578c81918d04030c234c5004\\ytplus-analysis\\YouTubePlus-Personal-6.0-test.2-unsigned.ipa",
+    "C:\\Users\\Kiet\\.codex\\.chatgpt-projects\\g-p-6acbfd0c578c81918d04030c234c5004\\ytplus-analysis\\YouTubePlus_6.0_YouTube_21.43.5_official.ipa",
+    "All reverse-engineering scripts, extracted binaries, Ghidra projects, traces, and reports"
+  ]
+}

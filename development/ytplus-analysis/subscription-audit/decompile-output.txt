@@ -1,0 +1,136 @@
+[0.030s][warning][cds] Archived non-system classes are disabled because the java.system.class.loader property is specified (value = "ghidra.GhidraClassLoader"). To use archived non-system classes, this property must not be set
+INFO  Using log config file: jar:file:/C:/Users/Kiet/Documents/Codex/2026-10-11/https-github-com-morluto-rea-https/tools/ghidra_12.1.4_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: C:\Users\Kiet\.codex\.chatgpt-projects\g-p-6acbfd0c578c81918d04030c234c5004\ytplus-analysis\subscription-audit\ghidra.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Users\Kiet\.codex\.chatgpt-projects\g-p-6acbfd0c578c81918d04030c234c5004\ytplus-analysis\settings\ghidra\ghidra_12.1.4_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (2639 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Starting cache cleanup: C:\Users\Kiet\AppData\Local\ghidra\fscache2 (FileCacheMaintenanceDaemon)  
+INFO  Finished cache cleanup, estimated storage used: 0 (FileCacheMaintenanceDaemon)  
+INFO  Headless startup complete (8760 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    C:\Users\Kiet\.codex\.chatgpt-projects\g-p-6acbfd0c578c81918d04030c234c5004\ytplus-analysis\subscription-audit
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\8051\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Creating project: C:\Users\Kiet\AppData\Local\Temp\ytplus-subscription-audit-20261108\SubscriptionAudit (HeadlessAnalyzer)  
+INFO  Creating project: C:\Users\Kiet\AppData\Local\Temp\ytplus-subscription-audit-20261108\SubscriptionAudit (DefaultProject)  
+INFO  REPORT: Processing input files:  (HeadlessAnalyzer)  
+INFO       project: C:\Users\Kiet\AppData\Local\Temp\ytplus-subscription-audit-20261108\SubscriptionAudit (HeadlessAnalyzer)  
+INFO  IMPORTING: file:///C:/Users/Kiet/.codex/.chatgpt-projects/g-p-6acbfd0c578c81918d04030c234c5004/ytplus-analysis/subscription-audit/YTLite.dylib (HeadlessAnalyzer)  
+INFO  Using Loader: Mac OS X Mach-O (ProgramLoader)  
+INFO  Using Language/Compiler: AARCH64:LE:64:AppleSilicon:default (ProgramLoader)  
+INFO  Using Library Search Path: [., C:\WINDOWS\SysWOW64, C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\jdk-21.0.12.1+1\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Users\Kiet\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell, C:\Users\Kiet\.codex\tmp\arg0-windows\codex-arg0LJlizE, C:\Users\Kiet\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin, C:\Users\Kiet\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin, C:\Users\Kiet\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin, C:\Users\Kiet\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\Microsoft VS Code\bin, C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR, C:\Program Files\nodejs\, C:\Program Files\dotnet\, D:\Matlab\R2025b\bin, D:\MATLAB\R2026a\bin, C:\Program Files\Cloudflare\Cloudflare WARP\, C:\Users\Kiet\AppData\Local\Microsoft\WindowsApps, C:\Users\Kiet\AppData\Roaming\npm, C:\Users\Kiet\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback, C:\Users\Kiet\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin, C:\Users\Kiet\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd, C:\Users\Kiet\AppData\Local\OpenAI\Codex\bin\8dbccda2214d0643, C:\Users\Kiet\AppData\Local\OpenAI\Codex\bin\f71a721e0e6193a9] (ProgramLoader)  
+INFO  Additional info:
+Loading file:///C:/Users/Kiet/.codex/.chatgpt-projects/g-p-6acbfd0c578c81918d04030c234c5004/ytplus-analysis/subscription-audit/YTLite.dylib?MD5=fd4c3e5039b3953d5b79811de2b14a16...
+Discovered 140382 DYLD_CHAINED_PTR_64 chained pointers.
+Fixed up 140382 chained pointers.
+YTLite.dylib: installed 8 objc SpecExtensions
+------------------------------------------------
+
+Linking the External Programs of 'YTLite.dylib' to imported libraries...
+  [/usr/lib/libobjc.A.dylib] -> not found in project
+  [/System/Library/Frameworks/Foundation.framework/Foundation] -> not found in project
+  [/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation] -> not found in project
+  [/System/Library/Frameworks/UIKit.framework/UIKit] -> not found in project
+  [/System/Library/Frameworks/CoreServices.framework/CoreServices] -> not found in project
+  [/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration] -> not found in project
+  [/System/Library/Frameworks/Security.framework/Security] -> not found in project
+  [/System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication] -> not found in project
+  [/System/Library/Frameworks/AVFoundation.framework/AVFoundation] -> not found in project
+  [/System/Library/Frameworks/AVKit.framework/AVKit] -> not found in project
+  [/System/Library/Frameworks/Photos.framework/Photos] -> not found in project
+  [/System/Library/Frameworks/PhotosUI.framework/PhotosUI] -> not found in project
+  [/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox] -> not found in project
+  [/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox] -> not found in project
+  [/System/Library/Frameworks/CoreMedia.framework/CoreMedia] -> not found in project
+  [/System/Library/Frameworks/CoreVideo.framework/CoreVideo] -> not found in project
+  [/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics] -> not found in project
+  [/System/Library/Frameworks/QuartzCore.framework/QuartzCore] -> not found in project
+  [/System/Library/Frameworks/NaturalLanguage.framework/NaturalLanguage] -> not found in project
+  [/usr/lib/libbz2.1.0.dylib] -> not found in project
+  [/usr/lib/libc++.1.dylib] -> not found in project
+  [/usr/lib/libiconv.2.dylib] -> not found in project
+  [/usr/lib/libz.1.dylib] -> not found in project
+  [/usr/lib/libsqlite3.dylib] -> not found in project
+  [/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer] -> not found in project
+  [/usr/lib/libSystem.B.dylib] -> not found in project
+  [@rpath/CydiaSubstrate.framework/CydiaSubstrate] -> not found in project
+  [/System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices] -> not found in project
+  [/System/Library/Frameworks/CoreText.framework/CoreText] -> not found in project
+  [/System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers] -> not found in project
+  [/System/Library/Frameworks/WebKit.framework/WebKit] -> not found in project
+------------------------------------------------
+
+ (ProgramLoader)  
+INFO  IMPORTING: Loaded 0 additional files (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: SubscriptionInspect.java  (HeadlessAnalyzer)  
+INFO  SCRIPT: C:\Users\Kiet\.codex\.chatgpt-projects\g-p-6acbfd0c578c81918d04030c234c5004\ytplus-analysis\subscription-audit\SubscriptionInspect.java (HeadlessAnalyzer)  
+INFO  SubscriptionInspect.java> TARGET_SHA_EXPECTED aec278e47289639a7dc8b22cc4257df9b9f75336d6e187dd82da0d981c1ae59c (GhidraScript)  
+INFO  SubscriptionInspect.java> IMAGE_BASE 00000000 (GhidraScript)  
+INFO  SubscriptionInspect.java> FUNCTION 0034b160 PatreonSection (GhidraScript)  
+INFO  SubscriptionInspect.java> 
+void PatreonSection(void)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x0034b1d4. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)((&PTR_DAT_023174a0)[iRam00000000023660b0 == 0] +
+            (int)-(uRam00000000023174b0 ^ 0x9fa52ee)))();
+  return;
+}
+
+ (GhidraScript)  
+INFO  SubscriptionInspect.java> FUNCTION 0034bcdc PatreonStatusCell (GhidraScript)  
+INFO  SubscriptionInspect.java> 
+void PatreonStatusCell(void)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x0034bd74. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)((&PTR_DAT_02317508)[iRam00000000023660b8 == 0] +
+            (int)-(uRam0000000002317518 ^ 0x8ba1e240)))();
+  return;
+}
+
+ (GhidraScript)  
+INFO  SubscriptionInspect.java> FUNCTION 0034c1c4 PatreonButtonCell (GhidraScript)  
+INFO  SubscriptionInspect.java> 
+void PatreonButtonCell(void)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x0034c25c. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)((&PTR_DAT_023175a0)[iRam00000000023660bc == 0] +
+            (int)-(uRam00000000023175b0 ^ 0xa2033083)))();
+  return;
+}
+
+ (GhidraScript)  
+INFO  /YTLite.dylib: file created (Kiet) (LocalFileSystem)  
+INFO  REPORT: Save succeeded for: /YTLite.dylib (SubscriptionAudit:/YTLite.dylib) (HeadlessAnalyzer)  
+INFO  REPORT: Import succeeded (HeadlessAnalyzer)  

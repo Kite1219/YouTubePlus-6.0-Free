@@ -1,0 +1,75 @@
+{
+  "build": "YouTubePlus Personal 6.0-test.1",
+  "output": "C:\\Users\\Kiet\\.codex\\.chatgpt-projects\\g-p-6acbfd0c578c81918d04030c234c5004\\ytplus-analysis\\YouTubePlus-Personal-6.0-test.1-unsigned.ipa",
+  "size": 148814956,
+  "sha256": "f7476f5c8c74350d867c6d1645b8106d1ee2f58437cb6d29a8701a99f1aef7b2",
+  "source_sha256": "9181a5f7fd13116e8cdcc26d4ecc91a99b95a0b902ccd7ac8a4053fbc4ca0565",
+  "original_library_sha256": "aec278e47289639a7dc8b22cc4257df9b9f75336d6e187dd82da0d981c1ae59c",
+  "patched_library_sha256": "e5fcfe886c1089b300be474590530ddd5659f8cde62cec0142fe1ae0291a383c",
+  "youtube_version": "21.43.5",
+  "bundle_id": "com.google.ios.youtube",
+  "patches": [
+    {
+      "address": "0xc24bc",
+      "file_offset": 795836,
+      "original": "ff8306d1fc6f14a9",
+      "replacement": "20008052c0035fd6",
+      "purpose": "Local feature eligibility always true; feature preference values are still read normally"
+    },
+    {
+      "address": "0xc1bd8",
+      "file_offset": 793560,
+      "original": "ff4301d1f44f03a9",
+      "replacement": "000080d2c0035fd6",
+      "purpose": "Do not load a third-party membership JWT or linked-device credential"
+    },
+    {
+      "address": "0xc4b48",
+      "file_offset": 805704,
+      "original": "e923b96dfc6f01a9",
+      "replacement": "000080d2c0035fd6",
+      "purpose": "Disable the membership fetch-token client; return no membership response without networking"
+    },
+    {
+      "address": "0xcac80",
+      "file_offset": 830592,
+      "original": "ff4302d1",
+      "replacement": "c0035fd6",
+      "purpose": "Disable the access/subscription reminder presenter"
+    },
+    {
+      "address": "0x34b38c",
+      "file_offset": 3453836,
+      "original": "e20317aa",
+      "replacement": "e2031faa",
+      "purpose": "Clear the now-empty membership section header"
+    },
+    {
+      "address": "0x34b3e8",
+      "file_offset": 3453928,
+      "original": "753f0094",
+      "replacement": "1f2003d5",
+      "purpose": "Do not populate the membership section with status/login/device controls"
+    }
+  ],
+  "removed_stale_signing_files": [
+    "Payload/YouTube.app/_CodeSignature/",
+    "Payload/YouTube.app/_CodeSignature/CodeResources",
+    "Payload/YouTube.app/Frameworks/widevine_cdm_secured_ios.framework/_CodeSignature/",
+    "Payload/YouTube.app/Frameworks/widevine_cdm_secured_ios.framework/_CodeSignature/CodeResources"
+  ],
+  "checks": [
+    "Exact original embedded library SHA-256 matched",
+    "ZIP integrity passed",
+    "All retained members byte-identical except YTLite.dylib",
+    "Original input IPA unchanged",
+    "Ghidra independently verified patched instructions and return values",
+    "Eight bounded offline preference-preservation cases passed"
+  ],
+  "runtime_tested": false,
+  "limits": [
+    "Requires signing before installation",
+    "iPhone/iPad launch and feature behavior require device testing",
+    "Obfuscated binary may have additional integrity or subscription paths not covered by static tracing"
+  ]
+}

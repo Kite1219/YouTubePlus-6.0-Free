@@ -1,0 +1,25 @@
+{
+  "output": "C:\\Users\\Kiet\\.codex\\.chatgpt-projects\\g-p-6acbfd0c578c81918d04030c234c5004\\ytplus-analysis\\YouTubePlus_6.0_YouTube_21.13.6_unsigned.ipa",
+  "base": "C:\\Users\\Kiet\\Desktop\\Apps\\IPAs\\21.13.6_YouTubePlus_5.2b4.ipa",
+  "youtube_version": "21.13.6",
+  "tweak_version": "6.0",
+  "dependency_path_changes": [
+    [
+      "/Library/MobileSubstrate/DynamicLibraries/YTLite.dylib",
+      "@rpath/YTLite.dylib"
+    ],
+    [
+      "/Library/Frameworks/CydiaSubstrate.framework/CydiaSubstrate",
+      "@rpath/CydiaSubstrate.framework/CydiaSubstrate"
+    ]
+  ],
+  "sha256": "86240af5b1b8b39569151acac0564191e721f7dc58892a0015a0842ae86283ae",
+  "size": 136999640,
+  "verification": "ZIP integrity and byte-for-byte replacement checks passed",
+  "limits": [
+    "Unsigned; sign before installing",
+    "YouTube 21.13.6 compatibility with tweak 6.0 is not runtime tested",
+    "Existing optional tweaks retained",
+    "Subscription checks intact"
+  ]
+}

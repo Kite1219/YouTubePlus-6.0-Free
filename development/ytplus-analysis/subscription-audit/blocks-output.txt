@@ -1,0 +1,505 @@
+[0.016s][warning][cds] Archived non-system classes are disabled because the java.system.class.loader property is specified (value = "ghidra.GhidraClassLoader"). To use archived non-system classes, this property must not be set
+INFO  Using log config file: jar:file:/C:/Users/Kiet/Documents/Codex/2026-10-11/https-github-com-morluto-rea-https/tools/ghidra_12.1.4_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: C:\Users\Kiet\.codex\.chatgpt-projects\g-p-6acbfd0c578c81918d04030c234c5004\ytplus-analysis\subscription-audit\ghidra-blocks.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Users\Kiet\.codex\.chatgpt-projects\g-p-6acbfd0c578c81918d04030c234c5004\ytplus-analysis\settings\ghidra\ghidra_12.1.4_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (1419 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (4477 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    C:\Users\Kiet\.codex\.chatgpt-projects\g-p-6acbfd0c578c81918d04030c234c5004\ytplus-analysis\subscription-audit
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\8051\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: C:\Users\Kiet\AppData\Local\Temp\ytplus-subscription-audit-20261108\SubscriptionAudit (HeadlessAnalyzer)  
+INFO  Opening project: C:\Users\Kiet\AppData\Local\Temp\ytplus-subscription-audit-20261108\SubscriptionAudit (HeadlessProject)  
+INFO  REPORT: Processing project file: /YTLite.dylib (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: SubscriptionBlocks.java  (HeadlessAnalyzer)  
+INFO  SCRIPT: C:\Users\Kiet\.codex\.chatgpt-projects\g-p-6acbfd0c578c81918d04030c234c5004\ytplus-analysis\subscription-audit\SubscriptionBlocks.java (HeadlessAnalyzer)  
+INFO  SubscriptionBlocks.java> BLOCK 0034b31c (GhidraScript)  
+INFO  SubscriptionBlocks.java> 
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_0034b31c(undefined4 *param_1)
+
+{
+  undefined *puVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  undefined8 unaff_x19;
+  undefined *puStack_30;
+  undefined8 uStack_28;
+  undefined *puStack_20;
+  undefined *puStack_18;
+  
+  *param_1 = 1;
+  _objc_retain();
+  func_0x0035b15c(PTR__OBJC_CLASS___DVNSection_02255530,PTR_s_sectionWithIdentifier__022532e8,
+                  &PTR____CFConstantStringClassReference_023148c0);
+  uVar2 = _objc_retainAutoreleasedReturnValue();
+  func_0x0035b17c(&PTR____CFConstantStringClassReference_02314880,PTR_s_ytl_localized_0224d818);
+  uVar3 = _objc_retainAutoreleasedReturnValue();
+  func_0x0035b19c(uVar2,PTR_s_setHeader__022532f0,uVar3);
+  _objc_release(uVar3);
+  puVar1 = PTR_s_setCellsProvider__022533b0;
+  puStack_30 = PTR___NSConcreteStackBlock_020c08b0;
+  uStack_28 = _UNK_018c5548;
+  puStack_20 = &DAT_0034b418;
+  puStack_18 = &UNK_020c5eb8;
+  _objc_retain();
+  func_0x0035b1bc(uVar2,puVar1,&puStack_30);
+  _objc_release(unaff_x19);
+  _objc_release();
+                    /* WARNING: Could not recover jumptable at 0x017a4754. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)PTR__objc_autoreleaseReturnValue_020c2220)(uVar2);
+  return;
+}
+
+ (GhidraScript)  
+INFO  SubscriptionBlocks.java> BLOCK 0034b1d8 (GhidraScript)  
+INFO  SubscriptionBlocks.java> 
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_0034b1d8(undefined4 *param_1)
+
+{
+  undefined *puVar1;
+  undefined8 uVar2;
+  undefined8 uVar3;
+  undefined8 unaff_x19;
+  undefined *puStack_30;
+  undefined8 uStack_28;
+  undefined *puStack_20;
+  undefined *puStack_18;
+  
+  DAT_0231484c = DAT_02314840 ^ 0x39;
+  bRam000000000231484d = bRam0000000002314841 ^ 0x19;
+  bRam000000000231484e = bRam0000000002314842 ^ 0xb9;
+  bRam000000000231484f = bRam0000000002314843 ^ 0xf4;
+  bRam0000000002314850 = bRam0000000002314844 ^ 0x6c;
+  bRam0000000002314851 = bRam0000000002314845 ^ 0x57;
+  uRam0000000002314852 = uRam0000000002314846;
+  bRam0000000002314853 = bRam0000000002314847 ^ 0xd1;
+  bRam0000000002314854 = bRam0000000002314848 ^ 0xae;
+  bRam0000000002314855 = bRam0000000002314849 ^ 0x4c;
+  bRam0000000002314856 = bRam000000000231484a ^ 0xbc;
+  bRam0000000002314857 = bRam000000000231484b ^ 0x68;
+  DAT_02314838 = DAT_02314830 ^ 0x66;
+  bRam0000000002314839 = bRam0000000002314831 ^ 4;
+  bRam000000000231483a = bRam0000000002314832 ^ 0x7f;
+  bRam000000000231483b = bRam0000000002314833 ^ 0xa9;
+  bRam000000000231483c = bRam0000000002314834 ^ 0x5c;
+  bRam000000000231483d = bRam0000000002314835 ^ 4;
+  bRam000000000231483e = bRam0000000002314836 ^ 0x19;
+  bRam000000000231483f = bRam0000000002314837 ^ 0x7d;
+  *param_1 = 1;
+  _objc_retain();
+  func_0x0035b15c(PTR__OBJC_CLASS___DVNSection_02255530,PTR_s_sectionWithIdentifier__022532e8,
+                  &PTR____CFConstantStringClassReference_023148c0);
+  uVar2 = _objc_retainAutoreleasedReturnValue();
+  func_0x0035b17c(&PTR____CFConstantStringClassReference_02314880,PTR_s_ytl_localized_0224d818);
+  uVar3 = _objc_retainAutoreleasedReturnValue();
+  func_0x0035b19c(uVar2,PTR_s_setHeader__022532f0,uVar3);
+  _objc_release(uVar3);
+  puVar1 = PTR_s_setCellsProvider__022533b0;
+  puStack_30 = PTR___NSConcreteStackBlock_020c08b0;
+  uStack_28 = _UNK_018c5548;
+  puStack_20 = &DAT_0034b418;
+  puStack_18 = &UNK_020c5eb8;
+  _objc_retain();
+  func_0x0035b1bc(uVar2,puVar1,&puStack_30);
+  _objc_release(unaff_x19);
+  _objc_release();
+                    /* WARNING: Could not recover jumptable at 0x017a4754. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)PTR__objc_autoreleaseReturnValue_020c2220)(uVar2);
+  return;
+}
+
+ (GhidraScript)  
+INFO  SubscriptionBlocks.java> BLOCK 0034bff4 (GhidraScript)  
+INFO  SubscriptionBlocks.java> 
+void FUN_0034bff4(undefined4 *param_1)
+
+{
+  uint uVar1;
+  long unaff_x29;
+  
+  *param_1 = 1;
+  uVar1 = func_0x0035b3e0();
+  *(uint *)(unaff_x29 + -0x44) = uVar1;
+                    /* WARNING: Could not recover jumptable at 0x0034c02c. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)(*(long *)(*(long *)(unaff_x29 + -0x40) + (ulong)uVar1 * 8) +
+            (long)(int)-(uRam0000000002317538 ^ 0x69016ef6)))();
+  return;
+}
+
+ (GhidraScript)  
+INFO  SubscriptionBlocks.java> BLOCK 0034bd78 (GhidraScript)  
+INFO  SubscriptionBlocks.java> 
+void FUN_0034bd78(undefined4 *param_1)
+
+{
+  uint uVar1;
+  long unaff_x29;
+  
+  DAT_02314ba2 = DAT_02314b94 ^ 0x6b;
+  bRam0000000002314ba3 = bRam0000000002314b95 ^ 99;
+  bRam0000000002314ba4 = bRam0000000002314b96 ^ 0x9c;
+  bRam0000000002314ba5 = bRam0000000002314b97 ^ 0xac;
+  bRam0000000002314ba6 = bRam0000000002314b98 ^ 0x2c;
+  bRam0000000002314ba7 = bRam0000000002314b99 ^ 0xef;
+  bRam0000000002314ba8 = bRam0000000002314b9a ^ 0xac;
+  bRam0000000002314ba9 = bRam0000000002314b9b ^ 0x5b;
+  bRam0000000002314baa = bRam0000000002314b9c ^ 0x9b;
+  bRam0000000002314bab = bRam0000000002314b9d ^ 0x3d;
+  bRam0000000002314bac = bRam0000000002314b9e ^ 0x6b;
+  bRam0000000002314bad = bRam0000000002314b9f ^ 99;
+  bRam0000000002314bae = bRam0000000002314ba0 ^ 0x2b;
+  bRam0000000002314baf = bRam0000000002314ba1 ^ 0x40;
+  DAT_02314b88 = DAT_02314b7c ^ 0xf8;
+  bRam0000000002314b89 = bRam0000000002314b7d ^ 0x29;
+  bRam0000000002314b8a = bRam0000000002314b7e ^ 0x70;
+  bRam0000000002314b8b = bRam0000000002314b7f ^ 0x77;
+  bRam0000000002314b8c = bRam0000000002314b80 ^ 0xf;
+  bRam0000000002314b8d = bRam0000000002314b81 ^ 0x56;
+  bRam0000000002314b8e = bRam0000000002314b82 ^ 0x4d;
+  bRam0000000002314b8f = bRam0000000002314b83 ^ 0x1a;
+  bRam0000000002314b90 = bRam0000000002314b84 ^ 0x3a;
+  bRam0000000002314b91 = bRam0000000002314b85 ^ 0x93;
+  bRam0000000002314b92 = bRam0000000002314b86 ^ 0xc0;
+  bRam0000000002314b93 = bRam0000000002314b87 ^ 0x26;
+  DAT_02314b6e = DAT_02314b60 ^ 0x5f;
+  bRam0000000002314b6f = bRam0000000002314b61 ^ 0x41;
+  bRam0000000002314b70 = bRam0000000002314b62 ^ 0x12;
+  bRam0000000002314b71 = bRam0000000002314b63 ^ 0x9b;
+  bRam0000000002314b72 = bRam0000000002314b64 ^ 3;
+  bRam0000000002314b73 = bRam0000000002314b65 ^ 0xaf;
+  bRam0000000002314b74 = bRam0000000002314b66 ^ 99;
+  bRam0000000002314b75 = bRam0000000002314b67 ^ 0x36;
+  bRam0000000002314b76 = bRam0000000002314b68 ^ 0x62;
+  bRam0000000002314b77 = bRam0000000002314b69 ^ 0x17;
+  bRam0000000002314b78 = bRam0000000002314b6a ^ 0x50;
+  bRam0000000002314b79 = bRam0000000002314b6b ^ 0x8e;
+  bRam0000000002314b7a = bRam0000000002314b6c ^ 0x75;
+  bRam0000000002314b7b = bRam0000000002314b6d ^ 0xa2;
+  *param_1 = 1;
+  uVar1 = func_0x0035b3e0();
+  *(uint *)(unaff_x29 + -0x44) = uVar1;
+                    /* WARNING: Could not recover jumptable at 0x0034c02c. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)(*(long *)(*(long *)(unaff_x29 + -0x40) + (ulong)uVar1 * 8) +
+            (long)(int)-(uRam0000000002317538 ^ 0x69016ef6)))();
+  return;
+}
+
+ (GhidraScript)  
+INFO  SubscriptionBlocks.java> BLOCK 0034c898 (GhidraScript)  
+INFO  SubscriptionBlocks.java> 
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_0034c898(undefined4 *param_1)
+
+{
+  undefined **ppuVar1;
+  undefined **ppuVar2;
+  undefined **ppuVar3;
+  undefined *puVar4;
+  undefined *puVar5;
+  int iVar6;
+  int iVar7;
+  uint uVar8;
+  undefined8 uVar9;
+  undefined8 uVar10;
+  undefined8 uVar11;
+  long unaff_x29;
+  undefined1 auStack_50 [16];
+  undefined1 auStack_40 [16];
+  undefined *puStack_30;
+  undefined8 uStack_28;
+  undefined *puStack_20;
+  undefined *puStack_18;
+  
+  *param_1 = 1;
+  *(undefined1 **)(unaff_x29 + -0x98) = auStack_40;
+  *(undefined1 **)(unaff_x29 + -0xa0) = auStack_50;
+  _objc_retain();
+  puVar4 = PTR_s_isEqualToString__0224d3f8;
+  uVar9 = _objc_retain();
+  iVar6 = func_0x0035b4e8(uVar9,puVar4,&PTR____CFConstantStringClassReference_02314fc0);
+  *(int *)(unaff_x29 + -0x8c) = iVar6;
+  iVar7 = func_0x0035b510();
+  uVar8 = func_0x0035b538();
+  _objc_release();
+  puVar5 = PTR__OBJC_CLASS___DVNCell_02255528;
+  puVar4 = PTR_s_ytl_localized_0224d818;
+  ppuVar3 = &PTR____CFConstantStringClassReference_02314f40;
+  if (iVar7 == 0) {
+    ppuVar3 = &PTR____CFConstantStringClassReference_02314e80;
+  }
+  ppuVar1 = &PTR____CFConstantStringClassReference_02314e40;
+  if (iVar7 == 0) {
+    ppuVar1 = &PTR____CFConstantStringClassReference_02314dc0;
+  }
+  ppuVar2 = &PTR____CFConstantStringClassReference_02314f00;
+  if (iVar6 == 0) {
+    ppuVar2 = ppuVar3;
+  }
+  ppuVar3 = &PTR____CFConstantStringClassReference_02314e00;
+  if (iVar6 == 0) {
+    ppuVar3 = ppuVar1;
+  }
+  _objc_retain(ppuVar3);
+  func_0x0035b55c(ppuVar2,puVar4);
+  uVar9 = _objc_retainAutoreleasedReturnValue();
+  func_0x0035b57c(PTR__OBJC_CLASS___YTPAssets_022550d0,PTR_s_imageWithName__0224d820,ppuVar3);
+  uVar10 = _objc_retainAutoreleasedReturnValue();
+  _objc_release(ppuVar3);
+  func_0x0035b59c(puVar5,PTR_s_cellWithTitle_subtitle_icon_type_022533f8,uVar9,0,uVar10,0xe,0);
+  uVar11 = _objc_retainAutoreleasedReturnValue();
+  _objc_release(uVar10);
+  _objc_release(uVar9);
+  puStack_30 = PTR___NSConcreteStackBlock_020c08b0;
+  uStack_28 = _UNK_018c5548;
+  puStack_20 = &DAT_0034cbb0;
+  puStack_18 = &UNK_020c5f08;
+  _objc_retain();
+  func_0x0035b5bc(uVar11,PTR_s_setSelfHandler__02253478,&puStack_30);
+  *(uint *)(unaff_x29 + -0x7c) = uVar8;
+                    /* WARNING: Could not recover jumptable at 0x0034caa0. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)(*(long *)(*(long *)(unaff_x29 + -0x78) + (ulong)uVar8 * 8) +
+            (long)(int)-(uRam00000000023175d0 ^ 0x78f1498a)))();
+  return;
+}
+
+ (GhidraScript)  
+INFO  SubscriptionBlocks.java> BLOCK 0034c260 (GhidraScript)  
+INFO  SubscriptionBlocks.java> 
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_0034c260(undefined4 *param_1)
+
+{
+  undefined **ppuVar1;
+  undefined **ppuVar2;
+  undefined **ppuVar3;
+  undefined *puVar4;
+  undefined *puVar5;
+  int iVar6;
+  int iVar7;
+  uint uVar8;
+  undefined8 uVar9;
+  undefined8 uVar10;
+  undefined8 uVar11;
+  long unaff_x29;
+  undefined1 auStack_50 [16];
+  undefined1 auStack_40 [16];
+  undefined *puStack_30;
+  undefined8 uStack_28;
+  undefined *puStack_20;
+  undefined *puStack_18;
+  
+  DAT_02314d0c = DAT_02314cfe ^ 0x22;
+  bRam0000000002314d0d = bRam0000000002314cff ^ 0xbd;
+  bRam0000000002314d0e = bRam0000000002314d00 ^ 0x88;
+  bRam0000000002314d0f = bRam0000000002314d01 ^ 0x50;
+  bRam0000000002314d10 = bRam0000000002314d02 ^ 9;
+  bRam0000000002314d11 = bRam0000000002314d03 ^ 3;
+  bRam0000000002314d12 = bRam0000000002314d04 ^ 0x6b;
+  bRam0000000002314d13 = bRam0000000002314d05 ^ 0xb7;
+  uRam0000000002314d14 = uRam0000000002314d06;
+  bRam0000000002314d15 = bRam0000000002314d07 ^ 0xdc;
+  bRam0000000002314d16 = bRam0000000002314d08 ^ 0xdb;
+  bRam0000000002314d17 = bRam0000000002314d09 ^ 0xee;
+  bRam0000000002314d18 = bRam0000000002314d0a ^ 0x8f;
+  bRam0000000002314d19 = bRam0000000002314d0b ^ 0x10;
+  DAT_02314ceb = DAT_02314ce4 ^ 0x9c;
+  bRam0000000002314cec = bRam0000000002314ce5 ^ 0xb;
+  bRam0000000002314ced = bRam0000000002314ce6 ^ 0xae;
+  bRam0000000002314cee = bRam0000000002314ce7 ^ 0xc1;
+  bRam0000000002314cef = bRam0000000002314ce8 ^ 0x53;
+  bRam0000000002314cf0 = bRam0000000002314ce9 ^ 0xf7;
+  bRam0000000002314cf1 = bRam0000000002314cea ^ 0x67;
+  DAT_02314cd7 = DAT_02314cca ^ 0x1b;
+  bRam0000000002314cd8 = bRam0000000002314ccb ^ 0x35;
+  bRam0000000002314cd9 = bRam0000000002314ccc ^ 0x26;
+  bRam0000000002314cda = bRam0000000002314ccd ^ 0x71;
+  bRam0000000002314cdb = bRam0000000002314cce ^ 0xb;
+  bRam0000000002314cdc = bRam0000000002314ccf ^ 0x41;
+  bRam0000000002314cdd = bRam0000000002314cd0 ^ 0x92;
+  bRam0000000002314cde = bRam0000000002314cd1 ^ 0xf9;
+  bRam0000000002314cdf = bRam0000000002314cd2 ^ 199;
+  bRam0000000002314ce0 = bRam0000000002314cd3 ^ 100;
+  bRam0000000002314ce1 = bRam0000000002314cd4 ^ 0xc2;
+  bRam0000000002314ce2 = bRam0000000002314cd5 ^ 0xf;
+  bRam0000000002314ce3 = bRam0000000002314cd6 ^ 0x55;
+  DAT_02314cbd = DAT_02314cb0 ^ 0x9e;
+  bRam0000000002314cbe = bRam0000000002314cb1 ^ 0x4e;
+  bRam0000000002314cbf = bRam0000000002314cb2 ^ 0x6b;
+  bRam0000000002314cc0 = bRam0000000002314cb3 ^ 0xc2;
+  bRam0000000002314cc1 = bRam0000000002314cb4 ^ 0xa5;
+  bRam0000000002314cc2 = bRam0000000002314cb5 ^ 0xa3;
+  bRam0000000002314cc3 = bRam0000000002314cb6 ^ 0x3d;
+  bRam0000000002314cc4 = bRam0000000002314cb7 ^ 0xc0;
+  bRam0000000002314cc5 = bRam0000000002314cb8 ^ 0x18;
+  bRam0000000002314cc6 = bRam0000000002314cb9 ^ 200;
+  bRam0000000002314cc7 = bRam0000000002314cba ^ 0xaa;
+  bRam0000000002314cc8 = bRam0000000002314cbb ^ 0xe2;
+  bRam0000000002314cc9 = bRam0000000002314cbc ^ 0x93;
+  DAT_02314cab = DAT_02314ca6 ^ 0xf;
+  bRam0000000002314cac = bRam0000000002314ca7 ^ 0xc;
+  bRam0000000002314cad = ~bRam0000000002314ca8;
+  bRam0000000002314cae = bRam0000000002314ca9 ^ 0xd5;
+  bRam0000000002314caf = bRam0000000002314caa ^ 0xf9;
+  DAT_02314ca0 = DAT_02314c9a ^ 0x91;
+  bRam0000000002314ca1 = bRam0000000002314c9b ^ 0xa4;
+  bRam0000000002314ca2 = bRam0000000002314c9c ^ 0x61;
+  bRam0000000002314ca3 = bRam0000000002314c9d ^ 0xdf;
+  bRam0000000002314ca4 = bRam0000000002314c9e ^ 0x90;
+  bRam0000000002314ca5 = bRam0000000002314c9f ^ 0x95;
+  DAT_02314c8c = DAT_02314c7e ^ 0x93;
+  bRam0000000002314c8d = bRam0000000002314c7f ^ 0x4e;
+  bRam0000000002314c8e = bRam0000000002314c80 ^ 0x80;
+  bRam0000000002314c8f = bRam0000000002314c81 ^ 0x15;
+  bRam0000000002314c90 = bRam0000000002314c82 ^ 0x19;
+  bRam0000000002314c91 = bRam0000000002314c83 ^ 0xf3;
+  bRam0000000002314c92 = bRam0000000002314c84 ^ 0xe6;
+  bRam0000000002314c93 = bRam0000000002314c85 ^ 0xd9;
+  bRam0000000002314c94 = bRam0000000002314c86 ^ 0xbe;
+  bRam0000000002314c95 = bRam0000000002314c87 ^ 0xdd;
+  bRam0000000002314c96 = bRam0000000002314c88 ^ 0x7f;
+  bRam0000000002314c97 = bRam0000000002314c89 ^ 0xe8;
+  bRam0000000002314c98 = bRam0000000002314c8a ^ 0x94;
+  bRam0000000002314c99 = bRam0000000002314c8b ^ 0xf2;
+  DAT_02314d40 = DAT_02314d20 ^ 0xfe;
+  bRam0000000002314d41 = bRam0000000002314d21 ^ 0x67;
+  bRam0000000002314d42 = bRam0000000002314d22 ^ 0xfa;
+  bRam0000000002314d43 = bRam0000000002314d23 ^ 0xcc;
+  bRam0000000002314d44 = bRam0000000002314d24 ^ 0xd9;
+  bRam0000000002314d45 = bRam0000000002314d25 ^ 0x95;
+  bRam0000000002314d46 = bRam0000000002314d26 ^ 0x3c;
+  bRam0000000002314d47 = bRam0000000002314d27 ^ 0x65;
+  bRam0000000002314d48 = bRam0000000002314d28 ^ 0x88;
+  bRam0000000002314d49 = bRam0000000002314d29 ^ 0x60;
+  bRam0000000002314d4a = bRam0000000002314d2a ^ 0x83;
+  bRam0000000002314d4b = bRam0000000002314d2b ^ 0x91;
+  bRam0000000002314d4c = bRam0000000002314d2c ^ 0xd2;
+  bRam0000000002314d4d = bRam0000000002314d2d ^ 0x93;
+  bRam0000000002314d4e = bRam0000000002314d2e ^ 0x84;
+  bRam0000000002314d4f = bRam0000000002314d2f ^ 0xa0;
+  bRam0000000002314d50 = bRam0000000002314d30 ^ 0x37;
+  DAT_02314cf8 = DAT_02314cf2 ^ 0xbd;
+  bRam0000000002314cf9 = bRam0000000002314cf3 ^ 0xe1;
+  bRam0000000002314cfa = bRam0000000002314cf4 ^ 0xcf;
+  bRam0000000002314cfb = bRam0000000002314cf5 ^ 0x74;
+  bRam0000000002314cfc = bRam0000000002314cf6 ^ 0x7f;
+  bRam0000000002314cfd = bRam0000000002314cf7 ^ 0x4e;
+  DAT_02314c77 = DAT_02314c70 ^ 0xe6;
+  bRam0000000002314c78 = bRam0000000002314c71 ^ 0xaf;
+  bRam0000000002314c79 = bRam0000000002314c72 ^ 0xfa;
+  bRam0000000002314c7a = bRam0000000002314c73 ^ 0x8a;
+  bRam0000000002314c7b = bRam0000000002314c74 ^ 0xd4;
+  bRam0000000002314c7c = bRam0000000002314c75 ^ 0xbb;
+  bRam0000000002314c7d = bRam0000000002314c76 ^ 0x32;
+  *param_1 = 1;
+  *(undefined1 **)(unaff_x29 + -0x98) = auStack_40;
+  *(undefined1 **)(unaff_x29 + -0xa0) = auStack_50;
+  _objc_retain();
+  puVar4 = PTR_s_isEqualToString__0224d3f8;
+  uVar9 = _objc_retain();
+  iVar6 = func_0x0035b4e8(uVar9,puVar4,&PTR____CFConstantStringClassReference_02314fc0);
+  *(int *)(unaff_x29 + -0x8c) = iVar6;
+  iVar7 = func_0x0035b510();
+  uVar8 = func_0x0035b538();
+  _objc_release();
+  puVar5 = PTR__OBJC_CLASS___DVNCell_02255528;
+  puVar4 = PTR_s_ytl_localized_0224d818;
+  ppuVar3 = &PTR____CFConstantStringClassReference_02314f40;
+  if (iVar7 == 0) {
+    ppuVar3 = &PTR____CFConstantStringClassReference_02314e80;
+  }
+  ppuVar1 = &PTR____CFConstantStringClassReference_02314e40;
+  if (iVar7 == 0) {
+    ppuVar1 = &PTR____CFConstantStringClassReference_02314dc0;
+  }
+  ppuVar2 = &PTR____CFConstantStringClassReference_02314f00;
+  if (iVar6 == 0) {
+    ppuVar2 = ppuVar3;
+  }
+  ppuVar3 = &PTR____CFConstantStringClassReference_02314e00;
+  if (iVar6 == 0) {
+    ppuVar3 = ppuVar1;
+  }
+  _objc_retain(ppuVar3);
+  func_0x0035b55c(ppuVar2,puVar4);
+  uVar9 = _objc_retainAutoreleasedReturnValue();
+  func_0x0035b57c(PTR__OBJC_CLASS___YTPAssets_022550d0,PTR_s_imageWithName__0224d820,ppuVar3);
+  uVar10 = _objc_retainAutoreleasedReturnValue();
+  _objc_release(ppuVar3);
+  func_0x0035b59c(puVar5,PTR_s_cellWithTitle_subtitle_icon_type_022533f8,uVar9,0,uVar10,0xe,0);
+  uVar11 = _objc_retainAutoreleasedReturnValue();
+  _objc_release(uVar10);
+  _objc_release(uVar9);
+  puStack_30 = PTR___NSConcreteStackBlock_020c08b0;
+  uStack_28 = _UNK_018c5548;
+  puStack_20 = &DAT_0034cbb0;
+  puStack_18 = &UNK_020c5f08;
+  _objc_retain();
+  func_0x0035b5bc(uVar11,PTR_s_setSelfHandler__02253478,&puStack_30);
+  *(uint *)(unaff_x29 + -0x7c) = uVar8;
+                    /* WARNING: Could not recover jumptable at 0x0034caa0. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)(*(long *)(*(long *)(unaff_x29 + -0x78) + (ulong)uVar8 * 8) +
+            (long)(int)-(uRam00000000023175d0 ^ 0x78f1498a)))();
+  return;
+}
+
+ (GhidraScript)  
+INFO  SubscriptionBlocks.java> BLOCK 000c3590 (GhidraScript)  
+INFO  SubscriptionBlocks.java> 
+void FUN_000c3590(undefined8 param_1)
+
+{
+  undefined8 uVar1;
+  undefined8 uVar2;
+  
+  func_0x000e8f5c(param_1,PTR_s_view_0224d5b8);
+  uVar1 = _objc_retainAutoreleasedReturnValue();
+  func_0x000e8f7c(uVar1,PTR_s_window_0224d6d0);
+  uVar2 = _objc_retainAutoreleasedReturnValue();
+  _objc_release(uVar1);
+                    /* WARNING: Could not recover jumptable at 0x017a4754. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)PTR__objc_autoreleaseReturnValue_020c2220)(uVar2);
+  return;
+}
+
+ (GhidraScript)  
+INFO  REPORT: Save succeeded for processed file: /YTLite.dylib (HeadlessAnalyzer)  

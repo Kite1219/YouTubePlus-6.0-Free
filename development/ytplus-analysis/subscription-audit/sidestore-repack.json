@@ -1,0 +1,40 @@
+{
+  "output": "C:\\Users\\Kiet\\.codex\\.chatgpt-projects\\g-p-6acbfd0c578c81918d04030c234c5004\\ytplus-analysis\\YouTubePlus-Personal-6.0-test.2-SideStore.ipa",
+  "bytes": 148814948,
+  "sha256": "9723a9de35b4262e560e869aee2f9391ab874b9f72de4950acd20383ce38b79a",
+  "previous_archive_sha256": "2dcf2a5a2a4ac678b85fc935510e40a58ef19b32fdf38db11b4f935773b83f0a",
+  "same_app_file_contents": true,
+  "zip_crc_passed": true,
+  "zip64": false,
+  "compression": "standard DEFLATE for files; stored directories",
+  "metadata": "fresh ZIP headers without extra fields; executable permissions normalized",
+  "permission_changes": [
+    {
+      "file": "Payload/YouTube.app/YouTube",
+      "old_mode": "0o100644",
+      "new_mode": "0o100755"
+    },
+    {
+      "file": "Payload/YouTube.app/Frameworks/libswiftCompatibilitySpan.dylib",
+      "old_mode": "0o100644",
+      "new_mode": "0o100755"
+    },
+    {
+      "file": "Payload/YouTube.app/Frameworks/CydiaSubstrate.framework/LICENSE",
+      "old_mode": "0o100644",
+      "new_mode": "0o100755"
+    },
+    {
+      "file": "Payload/YouTube.app/Frameworks/CydiaSubstrate.framework/CydiaSubstrate",
+      "old_mode": "0o100644",
+      "new_mode": "0o100755"
+    },
+    {
+      "file": "Payload/YouTube.app/Frameworks/widevine_cdm_secured_ios.framework/widevine_cdm_secured_ios",
+      "old_mode": "0o100644",
+      "new_mode": "0o100755"
+    }
+  ],
+  "sidestore_tested": false,
+  "diagnosis": "Original local ZIP was valid; repackaging is a compatibility trial, not a confirmed fix for an unobserved phone/download failure"
+}

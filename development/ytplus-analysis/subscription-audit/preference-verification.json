@@ -1,0 +1,54 @@
+{
+  "checks": [
+    {
+      "getter": "0xc1ddc",
+      "access_granted": 0,
+      "saved_value": 0,
+      "result": 0
+    },
+    {
+      "getter": "0xc1ddc",
+      "access_granted": 0,
+      "saved_value": 1,
+      "result": 0
+    },
+    {
+      "getter": "0xc1ddc",
+      "access_granted": 1,
+      "saved_value": 0,
+      "result": 0
+    },
+    {
+      "getter": "0xc1ddc",
+      "access_granted": 1,
+      "saved_value": 1,
+      "result": 1
+    },
+    {
+      "getter": "0xc2aa4",
+      "access_granted": 0,
+      "saved_value": 0,
+      "result": 0
+    },
+    {
+      "getter": "0xc2aa4",
+      "access_granted": 0,
+      "saved_value": 37,
+      "result": 0
+    },
+    {
+      "getter": "0xc2aa4",
+      "access_granted": 1,
+      "saved_value": 0,
+      "result": 0
+    },
+    {
+      "getter": "0xc2aa4",
+      "access_granted": 1,
+      "saved_value": 37,
+      "result": 37
+    }
+  ],
+  "result": "8 preference-preservation cases passed",
+  "scope": "Bounded offline instruction interpretation with mocked external calls; not iOS runtime testing"
+}

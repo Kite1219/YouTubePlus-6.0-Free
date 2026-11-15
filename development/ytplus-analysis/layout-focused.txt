@@ -1,0 +1,353 @@
+[0.018s][warning][cds] Archived non-system classes are disabled because the java.system.class.loader property is specified (value = "ghidra.GhidraClassLoader"). To use archived non-system classes, this property must not be set
+INFO  Using log config file: jar:file:/C:/Users/Kiet/Documents/Codex/2026-10-11/https-github-com-morluto-rea-https/tools/ghidra_12.1.4_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: C:\Users\Kiet\.codex\.chatgpt-projects\g-p-6acbfd0c578c81918d04030c234c5004\ytplus-analysis\settings\ghidra\ghidra_12.1.4_PUBLIC\application.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Users\Kiet\.codex\.chatgpt-projects\g-p-6acbfd0c578c81918d04030c234c5004\ytplus-analysis\settings\ghidra\ghidra_12.1.4_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (1559 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Starting cache cleanup: C:\Users\Kiet\AppData\Local\Packages\sandbox.{29b1bc87-04aa-4728-8e1e-23818104c75e}\AC\ghidra\fscache2 (FileCacheMaintenanceDaemon)  
+INFO  Finished cache cleanup, estimated storage used: 0 (FileCacheMaintenanceDaemon)  
+INFO  Headless startup complete (6273 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    C:\Users\Kiet\.codex\.chatgpt-projects\g-p-6acbfd0c578c81918d04030c234c5004\ytplus-analysis
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    C:\Users\Kiet\Documents\Codex\2026-10-11\https-github-com-morluto-rea-https\tools\ghidra_12.1.4_PUBLIC\Ghidra\Processors\8051\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: C:\Users\Kiet\AppData\Local\Temp\ytplus-layout-analysis\YTLayout (HeadlessAnalyzer)  
+INFO  Opening project: C:\Users\Kiet\AppData\Local\Temp\ytplus-layout-analysis\YTLayout (HeadlessProject)  
+INFO  REPORT: Processing project file: /YTLite.dylib (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: LayoutInspect.java  (HeadlessAnalyzer)  
+INFO  SCRIPT: C:\Users\Kiet\.codex\.chatgpt-projects\g-p-6acbfd0c578c81918d04030c234c5004\ytplus-analysis\LayoutInspect.java (HeadlessAnalyzer)  
+INFO  LayoutInspect.java> FUNCTION 0018e89c YTPPivotTabBarController::tabBar:didSelectItem: (GhidraScript)  
+INFO  LayoutInspect.java> 
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Unknown calling convention -- yet parameter storage is locked */
+/* Function Stack Size: 0x20 bytes */
+
+void YTPPivotTabBarController::tabBar_didSelectItem_(ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  undefined8 uVar1;
+  ulong uVar2;
+  ulong uVar3;
+  
+  uVar1 = FUN_001941d0(param_3,PTR_s_items_0224e670);
+  uVar2 = FUN_001941f0(uVar1,PTR_s_indexOfObject__0224e708,param_4);
+  uVar1 = FUN_00194210(param_1,PTR_s_itemViews_0224f0b0);
+  uVar3 = FUN_00194230(uVar1,PTR_s_count_0224c2e8);
+                    /* WARNING: Could not recover jumptable at 0x0018e9b4. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)((&PTR_LAB_022adf08)[uVar2 < uVar3] + (int)-(uRam00000000022adf18 ^ 0x5be2f216)))();
+  return;
+}
+
+ (GhidraScript)  
+INFO  LayoutInspect.java> FUNCTION 0018ec34 YTPPivotTabBarController::firstTabRectInTabBar: (GhidraScript)  
+INFO  LayoutInspect.java> 
+/* WARNING: Unknown calling convention -- yet parameter storage is locked */
+/* Function Stack Size: 0x18 bytes */
+
+CGRect YTPPivotTabBarController::firstTabRectInTabBar_(ID param_1,SEL param_2,ID param_3)
+
+{
+  double in_d1;
+  double in_d2;
+  double in_d3;
+  CGRect CVar1;
+  
+                    /* WARNING: Could not recover jumptable at 0x0018ecf4. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  CVar1.field0_0x0.field0_0x0 =
+       (double)(*(code *)((&PTR_LAB_022adfa0)[iRam0000000002364158 == 0] +
+                         (int)-(uRam00000000022adfb0 ^ 0xf7642504)))();
+  CVar1.field0_0x0.field1_0x8 = in_d1;
+  CVar1.field1_0x10.field1_0x8 = in_d3;
+  CVar1.field1_0x10.field0_0x0 = in_d2;
+  return CVar1;
+}
+
+ (GhidraScript)  
+INFO  LayoutInspect.java> FUNCTION 0018f094 YTPPivotTabBarController::contextMenuInteraction:configurationForMenuAtLocation: (GhidraScript)  
+INFO  LayoutInspect.java> 
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Unknown calling convention -- yet parameter storage is locked */
+/* Function Stack Size: 0x28 bytes */
+
+ID YTPPivotTabBarController::contextMenuInteraction_configurationForMenuAtLocation_
+             (ID param_1,SEL param_2,ID param_3,CGPoint param_4)
+
+{
+  undefined8 uVar1;
+  ulong uVar2;
+  ID IVar3;
+  
+  uVar1 = FUN_001946f4(param_3,PTR_s_view_0224d5b8);
+  FUN_00194714(param_1,PTR_s_firstTabRectInTabBar__02250848,uVar1);
+  uVar2 = FUN_00194734();
+                    /* WARNING: Could not recover jumptable at 0x0018f14c. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  IVar3 = (*(code *)((&PTR_DAT_022ae038)[uVar2 & 0xffffffff] +
+                    (int)-(uRam00000000022ae048 ^ 0xf604499f)))();
+  return IVar3;
+}
+
+ (GhidraScript)  
+INFO  LayoutInspect.java> FUNCTION 0018f218 YTPPivotTabBarController::menuAnchorInTabBar: (GhidraScript)  
+INFO  LayoutInspect.java> 
+/* WARNING: Function: _objc_retain replaced with injection: _objc_retain_fixup */
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Unknown calling convention -- yet parameter storage is locked */
+/* Function Stack Size: 0x18 bytes */
+
+ID YTPPivotTabBarController::menuAnchorInTabBar_(ID param_1,SEL param_2,ID param_3)
+
+{
+  long lVar1;
+  ID IVar2;
+  
+  lVar1 = FUN_001947c0(param_1,PTR_s_menuAnchor_02250850);
+                    /* WARNING: Could not recover jumptable at 0x0018f2c0. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  IVar2 = (*(code *)((&PTR_DAT_022ae078)[lVar1 == 0] + (int)-(uRam00000000022ae088 ^ 0xa012a3c1)))
+                    (0);
+  return IVar2;
+}
+
+ (GhidraScript)  
+INFO  LayoutInspect.java> FUNCTION 0018f534 YTPPivotTabBarController::menuPreviewForInteraction: (GhidraScript)  
+INFO  LayoutInspect.java> 
+/* WARNING: Function: _objc_retainAutoreleasedReturnValue replaced with injection:
+   _objc_retain_fixup */
+/* WARNING: Function: _objc_release replaced with injection: _objc_release_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Unknown calling convention -- yet parameter storage is locked */
+/* Function Stack Size: 0x18 bytes */
+
+ID YTPPivotTabBarController::menuPreviewForInteraction_(ID param_1,SEL param_2,ID param_3)
+
+{
+  undefined *puVar1;
+  undefined *puVar2;
+  undefined8 uVar3;
+  undefined8 uVar4;
+  undefined8 uVar5;
+  ID IVar6;
+  double dVar7;
+  undefined8 in_d1;
+  undefined8 in_d2;
+  undefined8 in_d3;
+  
+  uVar3 = FUN_00194a60(param_3,PTR_s_view_0224d5b8);
+  uVar3 = FUN_00194a80(param_1,PTR_s_menuAnchorInTabBar__02250860,uVar3);
+  uVar4 = FUN_00194aa0(PTR__OBJC_CLASS___UIPreviewParameters_02255658);
+  uVar5 = FUN_00194ac0(PTR__OBJC_CLASS___UIColor_022550f0,PTR_s_clearColor_0224d540);
+  FUN_00194ae0(uVar4,PTR_s_setBackgroundColor__0224d4a0,uVar5);
+  puVar2 = PTR__OBJC_CLASS___UIBezierPath_02255488;
+  puVar1 = PTR_s_bounds_0224dd50;
+  uVar5 = FUN_00194b00(uVar3,PTR_s_bounds_0224dd50);
+  FUN_00194b20(uVar3,puVar1);
+  dVar7 = (double)FUN_00194b40();
+  uVar5 = FUN_00194b60(uVar5,in_d1,in_d2,in_d3,dVar7 * 0.5,puVar2,
+                       PTR_s_bezierPathWithRoundedRect_corner_02250868);
+  FUN_00194b80(uVar4,PTR_s_setVisiblePath__02250870,uVar5);
+  uVar5 = FUN_00194ba0(PTR__OBJC_CLASS___UITargetedPreview_02255660);
+  IVar6 = FUN_00194bc0(uVar5,PTR_s_initWithView_parameters__02250878,uVar3,uVar4);
+  return IVar6;
+}
+
+ (GhidraScript)  
+INFO  LayoutInspect.java> FUNCTION 0018f6bc YTPPivotTabBarController::contextMenuInteraction:previewForHighlightingMenuWithConfiguration: (GhidraScript)  
+INFO  LayoutInspect.java> 
+/* WARNING: Unknown calling convention -- yet parameter storage is locked */
+/* Function Stack Size: 0x20 bytes */
+
+ID YTPPivotTabBarController::contextMenuInteraction_previewForHighlightingMenuWithConfiguration_
+             (ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  ID IVar1;
+  
+  IVar1 = FUN_00194be0(param_1,PTR_s_menuPreviewForInteraction__02250880);
+  return IVar1;
+}
+
+ (GhidraScript)  
+INFO  LayoutInspect.java> FUNCTION 0018f6c8 YTPPivotTabBarController::contextMenuInteraction:previewForDismissingMenuWithConfiguration: (GhidraScript)  
+INFO  LayoutInspect.java> 
+/* WARNING: Unknown calling convention -- yet parameter storage is locked */
+/* Function Stack Size: 0x20 bytes */
+
+ID YTPPivotTabBarController::contextMenuInteraction_previewForDismissingMenuWithConfiguration_
+             (ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+  ID IVar1;
+  
+  IVar1 = FUN_00194c00(param_1,PTR_s_menuPreviewForInteraction__02250880);
+  return IVar1;
+}
+
+ (GhidraScript)  
+INFO  LayoutInspect.java> FUNCTION 0018f6d4 YTPPivotTabBarController::pivotBar (GhidraScript)  
+INFO  LayoutInspect.java> 
+/* WARNING: Function: _objc_loadWeakRetained replaced with injection: _objc_load_fixup */
+/* WARNING: Function: _objc_autoreleaseReturnValue replaced with injection: _objc_retain_fixup */
+/* WARNING: Unknown calling convention -- yet parameter storage is locked */
+/* Function Stack Size: 0x10 bytes */
+
+ID YTPPivotTabBarController::pivotBar(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 8);
+}
+
+ (GhidraScript)  
+INFO  LayoutInspect.java> FUNCTION 0018f6ec YTPPivotTabBarController::setPivotBar: (GhidraScript)  
+INFO  LayoutInspect.java> 
+/* WARNING: Function: _objc_storeWeak replaced with injection: _objc_store_fixup */
+/* WARNING: Unknown calling convention -- yet parameter storage is locked */
+/* Function Stack Size: 0x18 bytes */
+
+void YTPPivotTabBarController::setPivotBar_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 8) = param_3;
+  CallSupervisor(0xab0c);
+  return;
+}
+
+ (GhidraScript)  
+INFO  LayoutInspect.java> FUNCTION 0018f720 YTPPivotTabBarController::itemViews (GhidraScript)  
+INFO  LayoutInspect.java> 
+/* WARNING: Unknown calling convention -- yet parameter storage is locked */
+/* Function Stack Size: 0x10 bytes */
+
+ID YTPPivotTabBarController::itemViews(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x10);
+}
+
+ (GhidraScript)  
+INFO  LayoutInspect.java> FUNCTION 0018f728 YTPPivotTabBarController::setItemViews: (GhidraScript)  
+INFO  LayoutInspect.java> 
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Unknown calling convention -- yet parameter storage is locked */
+/* Function Stack Size: 0x18 bytes */
+
+void YTPPivotTabBarController::setItemViews_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x10) = param_3;
+  CallSupervisor(0xc17a);
+  return;
+}
+
+ (GhidraScript)  
+INFO  LayoutInspect.java> FUNCTION 0018f75c YTPPivotTabBarController::menuAnchor (GhidraScript)  
+INFO  LayoutInspect.java> 
+/* WARNING: Unknown calling convention -- yet parameter storage is locked */
+/* Function Stack Size: 0x10 bytes */
+
+ID YTPPivotTabBarController::menuAnchor(ID param_1,SEL param_2)
+
+{
+  return *(ID *)(param_1 + 0x18);
+}
+
+ (GhidraScript)  
+INFO  LayoutInspect.java> FUNCTION 0018f764 YTPPivotTabBarController::setMenuAnchor: (GhidraScript)  
+INFO  LayoutInspect.java> 
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Unknown calling convention -- yet parameter storage is locked */
+/* Function Stack Size: 0x18 bytes */
+
+void YTPPivotTabBarController::setMenuAnchor_(ID param_1,SEL param_2,ID param_3)
+
+{
+  *(ID *)(param_1 + 0x18) = param_3;
+  CallSupervisor(0x58fd);
+  return;
+}
+
+ (GhidraScript)  
+INFO  LayoutInspect.java> FUNCTION 0018f798 YTPPivotTabBarController::.cxx_destruct (GhidraScript)  
+INFO  LayoutInspect.java> 
+/* WARNING: Function: _objc_storeStrong replaced with injection: _objc_store_fixup */
+/* WARNING: Unknown calling convention -- yet parameter storage is locked */
+/* Function Stack Size: 0x10 bytes */
+
+void YTPPivotTabBarController::_cxx_destruct(ID param_1,SEL param_2)
+
+{
+  *(undefined8 *)(param_1 + 0x18) = 0;
+  *(undefined8 *)(param_1 + 0x10) = 0;
+  _objc_destroyWeak(param_1 + 8);
+  return;
+}
+
+ (GhidraScript)  
+INFO  LayoutInspect.java> FUNCTION 00192b50 YTPLiquidGlass::placeTabBar:inPivotBar: (GhidraScript)  
+INFO  LayoutInspect.java> 
+/* WARNING: Unknown calling convention -- yet parameter storage is locked */
+/* Function Stack Size: 0x20 bytes */
+
+void YTPLiquidGlass::placeTabBar_inPivotBar_(ID param_1,SEL param_2,ID param_3,ID param_4)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x00192bd8. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)((&PTR_DAT_022ae820)[iRam00000000023641cc == 0] +
+            (int)-(uRam00000000022ae830 ^ 0x6d86bf1f)))();
+  return;
+}
+
+ (GhidraScript)  
+INFO  LayoutInspect.java> FUNCTION 00192e48 YTPLiquidGlass::layoutTabBarInPivotBar: (GhidraScript)  
+INFO  LayoutInspect.java> 
+/* WARNING: Unknown calling convention -- yet parameter storage is locked */
+/* Function Stack Size: 0x18 bytes */
+
+void YTPLiquidGlass::layoutTabBarInPivotBar_(ID param_1,SEL param_2,ID param_3)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x00192ffc. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)((&PTR_DAT_022ae840)[iRam00000000023641d0 == 0] +
+            (int)-(uRam00000000022ae850 ^ 0x1c0a7248)))();
+  return;
+}
+
+ (GhidraScript)  
+INFO  REPORT: Save succeeded for processed file: /YTLite.dylib (HeadlessAnalyzer)  

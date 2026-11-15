@@ -1,0 +1,13 @@
+{
+  "matches": {
+    "YTPlayerViewController": true,
+    "YTMainAppControlsOverlayView": true,
+    "YTPlayerPIPController": true,
+    "isPlayableInBackground": true,
+    "isPictureInPictureSupported": true,
+    "canEnablePictureInPicture": true,
+    "maybeTogglePictureInPicture": true,
+    "setAllowsPictureInPicturePlayback:": false
+  },
+  "scope": "String/selector presence only; not proof of method ownership, hook compatibility, or runtime behavior"
+}

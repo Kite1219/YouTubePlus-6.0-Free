@@ -1,0 +1,61 @@
+[
+  {
+    "name": "DVNPatreonContext",
+    "address": "0x222c448",
+    "methods": [
+      {
+        "kind": "instance",
+        "name": "presentationAnchorForWebAuthenticationSession:",
+        "types": "@24@0:8@16",
+        "implementation": "0xc3590"
+      }
+    ]
+  },
+  {
+    "name": "DVNValueStore",
+    "address": "0x2239820",
+    "methods": []
+  },
+  {
+    "name": "YTL",
+    "address": "0x224a7a0",
+    "methods": [
+      {
+        "kind": "instance",
+        "name": "ytl_localized",
+        "types": "@16@0:8",
+        "implementation": "0x49a448"
+      }
+    ]
+  },
+  {
+    "name": "YTLite",
+    "address": "0x224ac90",
+    "methods": [
+      {
+        "kind": "instance",
+        "name": "imageWithName:",
+        "types": "@24@0:8@16",
+        "implementation": "0x4a6e7c"
+      },
+      {
+        "kind": "instance",
+        "name": "originalImageWithName:",
+        "types": "@24@0:8@16",
+        "implementation": "0x4a6ee4"
+      },
+      {
+        "kind": "instance",
+        "name": "imageWithName:tintColor:",
+        "types": "@32@0:8@16@24",
+        "implementation": "0x4a6f00"
+      },
+      {
+        "kind": "class",
+        "name": "ytl_defaultBundle",
+        "types": "@16@0:8",
+        "implementation": "0x4a61cc"
+      }
+    ]
+  }
+]

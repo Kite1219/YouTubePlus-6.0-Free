@@ -1,0 +1,867 @@
+[
+  {
+    "path": "ytplus-analysis/archive-development.py",
+    "size": 7266,
+    "sha256": "3664a9d9a9e79379e4d910aaddd69adeb67df4dbfc63edefab41665ad599e219"
+  },
+  {
+    "path": "ytplus-analysis/build-result.json",
+    "size": 988,
+    "sha256": "db9d59da8df85767762d8102d1e92729bd4472125170049db535ccf26e1080a2"
+  },
+  {
+    "path": "ytplus-analysis/distribution.html",
+    "size": 12152,
+    "sha256": "e8e0bbe8c4b39df3af0b51fd9aff65b4b66b9ebc862df4179d0e43b6bed36b0e"
+  },
+  {
+    "path": "ytplus-analysis/extracted/Library/Application Support/YTLite.bundle/ar.lproj/Localizable.strings",
+    "size": 83141,
+    "sha256": "dc20757b1d970a023d3ff3e61f60c7d49353cc9cb95fbd9978885a32ef55215b"
+  },
+  {
+    "path": "ytplus-analysis/extracted/Library/Application Support/YTLite.bundle/Assets.car",
+    "size": 1024616,
+    "sha256": "7e8254795dcc78569050609d43252a872a346582d50ef7e6f52acb2cdedb7e17"
+  },
+  {
+    "path": "ytplus-analysis/extracted/Library/Application Support/YTLite.bundle/en.lproj/Localizable.strings",
+    "size": 59065,
+    "sha256": "499ecef5d229c4ebba627e651aa65d6bce3a52d69f680f431af486a7f83cef47"
+  },
+  {
+    "path": "ytplus-analysis/extracted/Library/Application Support/YTLite.bundle/es.lproj/Localizable.strings",
+    "size": 87980,
+    "sha256": "f6d620ac176e65e32f728d688c8ff295e42c8409f328ed1ed9b5885b05653042"
+  },
+  {
+    "path": "ytplus-analysis/extracted/Library/Application Support/YTLite.bundle/fr.lproj/Localizable.strings",
+    "size": 77568,
+    "sha256": "b5e1c04e8ad92b44316c5f56efbd6ba558d208054a48716b898a9c2490846989"
+  },
+  {
+    "path": "ytplus-analysis/extracted/Library/Application Support/YTLite.bundle/Info.plist",
+    "size": 363,
+    "sha256": "5e8beea91290c056f5f8f5bacb3a6ffc353fb22db3ba84dc31b6ed36693d28e1"
+  },
+  {
+    "path": "ytplus-analysis/extracted/Library/Application Support/YTLite.bundle/it.lproj/Localizable.strings",
+    "size": 67420,
+    "sha256": "88d56ea47153aaa50ba958d1abdbf00c9c9fb597ba9f2d6d7d4ea10453bf8846"
+  },
+  {
+    "path": "ytplus-analysis/extracted/Library/Application Support/YTLite.bundle/ja.lproj/Localizable.strings",
+    "size": 60039,
+    "sha256": "34adb9e85313facb53c98b9deadbfdd41deb10f1c497618b690dfc25faf1f0a8"
+  },
+  {
+    "path": "ytplus-analysis/extracted/Library/Application Support/YTLite.bundle/ko.lproj/Localizable.strings",
+    "size": 60278,
+    "sha256": "1fff3447c854656452816b7638852d69e8d998b0258d8e3da346fb1dcf1afc9e"
+  },
+  {
+    "path": "ytplus-analysis/extracted/Library/Application Support/YTLite.bundle/pl.lproj/Localizable.strings",
+    "size": 90065,
+    "sha256": "e80825b56c4fafac9c803ce10c372859f0dbf79360da4dc5e5dadee45486b7c4"
+  },
+  {
+    "path": "ytplus-analysis/extracted/Library/Application Support/YTLite.bundle/ru.lproj/Localizable.strings",
+    "size": 97931,
+    "sha256": "a85ad680f2af5e3afeae257b6a352734c983d224890e7d4db089366a1bbcf2fc"
+  },
+  {
+    "path": "ytplus-analysis/extracted/Library/Application Support/YTLite.bundle/silence.m4a",
+    "size": 6946,
+    "sha256": "c17dda0d7fd7b251e32d9321f2faf98601785185bbcfa8b23a3728620fca3d71"
+  },
+  {
+    "path": "ytplus-analysis/extracted/Library/Application Support/YTLite.bundle/SponsorAudio.m4a",
+    "size": 6094,
+    "sha256": "bfe134f5eca363146c94a1571c05a72e81952194b7f763c42d803da3af6b3d8a"
+  },
+  {
+    "path": "ytplus-analysis/extracted/Library/Application Support/YTLite.bundle/tr.lproj/Localizable.strings",
+    "size": 86457,
+    "sha256": "1f082c56e96a28961274a3a25dcdb847bb9d62297a59868ea563ae897bc5c2ba"
+  },
+  {
+    "path": "ytplus-analysis/extracted/Library/Application Support/YTLite.bundle/vi.lproj/Localizable.strings",
+    "size": 86391,
+    "sha256": "39f33de66cb9303bf07661518e3198be6201be3584ea8f7570d1bb972bbef1d0"
+  },
+  {
+    "path": "ytplus-analysis/extracted/Library/Application Support/YTLite.bundle/YouTubeSans.ttf",
+    "size": 531504,
+    "sha256": "bb231afce6c38226220cb3aae1a07604c42ab92377daa7e6ada10bd90f4c34a8"
+  },
+  {
+    "path": "ytplus-analysis/extracted/Library/Application Support/YTLite.bundle/zh-Hans.lproj/Localizable.strings",
+    "size": 48518,
+    "sha256": "17bed8227b9f0d88666312bb95a76be8b178093cad1d2b63520d07adff8866df"
+  },
+  {
+    "path": "ytplus-analysis/extracted/Library/Application Support/YTLite.bundle/zh-Hant.lproj/Localizable.strings",
+    "size": 49244,
+    "sha256": "0f46df2c6e8ee2d6dc9efafc7eccd76fb03f560b3a24efdb8112bf1081c17067"
+  },
+  {
+    "path": "ytplus-analysis/extracted/Library/MobileSubstrate/DynamicLibraries/YTLite.dylib",
+    "size": 39144352,
+    "sha256": "a697e0397db6df0a223fc3e7080f6b32f1d023ba1a34340140d4c600db6df7c2"
+  },
+  {
+    "path": "ytplus-analysis/extracted/Library/MobileSubstrate/DynamicLibraries/YTLite.plist",
+    "size": 120,
+    "sha256": "939db595cc0215733971af528d140596e06c193bc6aed10a93f3ce0b60ef083c"
+  },
+  {
+    "path": "ytplus-analysis/findings.md",
+    "size": 2428,
+    "sha256": "fa66bce4533df6eed0ad535e1841933c5ed043c8e4fb1653cdac92e2639617c6"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/build-host.py",
+    "size": 3039,
+    "sha256": "e60bb5ae9f93470cc5ad08042eb058c2a10ba0638e64cab5daf9ed65508ff43a"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/create_test4_tests.py",
+    "size": 7315,
+    "sha256": "ccbcc71a3d181487d5bc9bf5a1c46c936ce6c29b15f7199daa397d97464ac806"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/decode_player_keys.py",
+    "size": 816,
+    "sha256": "16f0c6dbd125916ff1e342b745b3be6488dab795e2c322e2f0ac65676c07aa5d"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/inspect_main_player.py",
+    "size": 2645,
+    "sha256": "ae4a335804e5be0f78ba4cd5230f9d3e61fde13ec1e578566be387e3604c2efd"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/integration-build.json",
+    "size": 5022,
+    "sha256": "9a2aeea2ad61fd32df9d44b1f9864ecd95e46f39faf2687a4f30d82fbd6a11cb"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/manual-pip-test4-build.json",
+    "size": 1433,
+    "sha256": "34355f9ca54816d3f3817c3f76d73af5f16193b9caca810feae10f167df2b22e"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/manual-pip-test4-notes.md",
+    "size": 3715,
+    "sha256": "d9b8cb67a45cea3d4d0eb7d40c45d7746104c78d32fd3ce44ad4485f8363c815"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/native-host-tests-test4.json",
+    "size": 180,
+    "sha256": "7a56827aa8d4a12d9dcbf9fb65c5d3c1b0cfeac61c1ea83e08361551d49de256"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/native-host-tests.json",
+    "size": 180,
+    "sha256": "b9df99929c6255a5cfc682f5dfc0b62bd3f3362b3e188e174fa92707756f919e"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/package_integrated.py",
+    "size": 5439,
+    "sha256": "446bba4d475271517435e71f3a2e3bdd0bca43e4bf8fa5ce1011d787617a7d3d"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/package_manual_fix.py",
+    "size": 2465,
+    "sha256": "5bea07e2b0bd8620c41d9ceb5cd4faf4aac5bba0913f48acce965fddda96e7e2"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/PersonalPlayback-host.o",
+    "size": 15990,
+    "sha256": "2c22de7704dbb488c27be05091605d75ed346407ad8667366ba2f3e332ae218c"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/PersonalPlayback-host.rs",
+    "size": 18163,
+    "sha256": "41b5ebb82634f6fddb4757716264680e5292eb623fc5aeb3b83e8d76d66c5f81"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/PersonalPlayback-test.dll",
+    "size": 6144,
+    "sha256": "54195ddcdc9b9f0b508e5713e3bef425a082a065c5aef9ef8247b22b47bea034"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/PersonalPlayback-test.lib",
+    "size": 2672,
+    "sha256": "f945d2878438975ba5300fdb867bf9f2633115597bc418830f773f0f49b96dbe"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/PersonalPlayback-test3.dylib",
+    "size": 51224,
+    "sha256": "a7e18dbe04e22057935ae20b933748a2a44afdbad229d4944799d8120f4f8523"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/PersonalPlayback-test3.rs",
+    "size": 8718,
+    "sha256": "80c1ba44f7d9ebf75071439c9ef9749e261ca7b96fabe6e480cfbee9ab2298d2"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/PersonalPlayback-test4.dll",
+    "size": 10240,
+    "sha256": "a54ad2a8eabc085ef3dc18bf7c36c5db05fd259c0f8dc7ea0e7a8865257db56a"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/PersonalPlayback-test4.lib",
+    "size": 3504,
+    "sha256": "e4691b76164dd7afce4ffdb7d66d8bb470e09603c9881e8c009d0a697bd95bb7"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/PersonalPlayback.dylib",
+    "size": 52192,
+    "sha256": "7415b0edb85ff9897d277034b78cf99ddc55cd2cb48e075bd6341f3771a264c7"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/PersonalPlayback.o",
+    "size": 17248,
+    "sha256": "6a5360e3b6ad5f171e9c2d19de80e4d1cc72b59bbc0b6a557adc902283b2ec02"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/PersonalPlayback.rs",
+    "size": 14401,
+    "sha256": "edf7747c79c86596dfb05f527bc000d3243ffe6cd70796443516476c0a5c7fd2"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/README.md",
+    "size": 4966,
+    "sha256": "4219f588434bf769ac6b80119970c2305af17675c7d88b3dbf398e798900c954"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/test4-package-audit-output.txt",
+    "size": 4985,
+    "sha256": "bee1f4c3b29a828060106e5de4d7da1cd3fae4bd3b95a3d68c039a3ecac0ee9b"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/test_manual_pip.py",
+    "size": 13749,
+    "sha256": "1cb068646d52c81efd33781789b6a4105baf4906cbcd9bcfe44103c5816eb5fe"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/test_playback.py",
+    "size": 6622,
+    "sha256": "8b17e78fb09b0532e8bd92d08662541bfa7ba55129cd9f1d180a5d278fa589fb"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/upgrade_manual_pip.py",
+    "size": 6492,
+    "sha256": "fea6cb451c4ffba7faef0d570ab8113eb8446cd3c7787deccd5fc3c971fe725e"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/YouPiP-integrated.dylib",
+    "size": 89712,
+    "sha256": "7ef399483596e54191f6796b187d7fd68cfb3664e7bf601a03b7d8d087a19574"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/YouPiP-LICENSE.txt",
+    "size": 1107,
+    "sha256": "9587a34ac966e01fa5769bd74f634d820c68a6bec90a4c688e013c7e86648397"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/YouPiP.dylib",
+    "size": 89712,
+    "sha256": "c85db5b6bde883462082ba24abfe452e9c454dc7a4961ff4ab81eb7127066117"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/YouPiP.json",
+    "size": 21528,
+    "sha256": "18c380e4c11b1a8c340da15e3c6a9ccfee9d3e802b9c9ee630c66f73e718a393"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/youtube-21.43.5-player-objc.json",
+    "size": 299760,
+    "sha256": "bd56e0b5cffd0b6a8eb8767cbbdd6cf2dcbe6935f15cbe50b41af8a185619936"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/YTLite-free.dylib",
+    "size": 15884944,
+    "sha256": "5691b31ce17a039cdc8b917b56792641409e989a01e0dff74e3c180ddf33e14d"
+  },
+  {
+    "path": "ytplus-analysis/free-player-audit/YTLite-free.json",
+    "size": 1224088,
+    "sha256": "553732fedd7878492d98f73f15866a53b98c885efc50881a5d5bfdfa6d64ade5"
+  },
+  {
+    "path": "ytplus-analysis/ghidra-output.txt",
+    "size": 67645,
+    "sha256": "4b794d5f516f96efbe36b004fddcdb4ed9a2a1e7121de5c69dc7f54d8636e775"
+  },
+  {
+    "path": "ytplus-analysis/ghidra.log",
+    "size": 84229,
+    "sha256": "940cfe709ea8bf3faa4fd15484a3e4588c76794372d3c12893ceab55bdd34ad0"
+  },
+  {
+    "path": "ytplus-analysis/inspect_base.py",
+    "size": 208,
+    "sha256": "a8ae7ccd187e9f5c724e09377ed07fb6a31ae56d2a3b3972c1a035d427db3c88"
+  },
+  {
+    "path": "ytplus-analysis/inspect_free_player.py",
+    "size": 1247,
+    "sha256": "db6b62b1cdde0a692ce5856c388bce127dc8ebd0c924df13ef58ccfe6c7016ab"
+  },
+  {
+    "path": "ytplus-analysis/inspect_package.py",
+    "size": 910,
+    "sha256": "0dd62a4ecf539d34137017b9adf233187ce9c8e791737665ba74aedb76113ba0"
+  },
+  {
+    "path": "ytplus-analysis/inspect_source_zip.py",
+    "size": 599,
+    "sha256": "1617d87df26169c1d5fcabaf8303362d72e8b1c3e3bff90b8b6c82ec68c048ce"
+  },
+  {
+    "path": "ytplus-analysis/layout-focused.txt",
+    "size": 17939,
+    "sha256": "c1c2c962bebc91e8ee466dc715c44d42f2a71679240f8696d40be913f7c77288"
+  },
+  {
+    "path": "ytplus-analysis/LayoutInspect.java",
+    "size": 772,
+    "sha256": "51d03355366895daea4d8a0ddfa4dc1052f30c68b68de0fc249d2a4692dcffe3"
+  },
+  {
+    "path": "ytplus-analysis/official-source.json",
+    "size": 47567,
+    "sha256": "464fbeec9f3d0e438edeb6f8b3c4866fe3987f36a2a07ca548e3ba1ad44f8fcf"
+  },
+  {
+    "path": "ytplus-analysis/package_ipa.py",
+    "size": 2570,
+    "sha256": "5181cb7fbff9722153f68463722737cbf5ac6b748d24e1c5e90778d793444581"
+  },
+  {
+    "path": "ytplus-analysis/private-release.json",
+    "size": 379,
+    "sha256": "932e91b801ea54eee582d6c7aad6b079508a9c9ec213eedc97f00754d5f4651b"
+  },
+  {
+    "path": "ytplus-analysis/publish-private.py",
+    "size": 4277,
+    "sha256": "80918cfec9652d330af0f70dd8a9362aa79737961a0ef902a3d69e155563e45f"
+  },
+  {
+    "path": "ytplus-analysis/rea-layout-search.json",
+    "size": 1303,
+    "sha256": "e660f3763767dc1ef8301699c00e171c563a5db1a82b9ba6a55e857fd9166497"
+  },
+  {
+    "path": "ytplus-analysis/settings/ghidra/ghidra_12.1.4_PUBLIC/application.log",
+    "size": 18875,
+    "sha256": "d6c1b10a7a740050862ac41d31413f1756f75c4bf1d81c389ee427f0c3b63c82"
+  },
+  {
+    "path": "ytplus-analysis/settings/ghidra/ghidra_12.1.4_PUBLIC/osgi/compiled-bundles/9b22b46c/GeneratedActivator.class",
+    "size": 608,
+    "sha256": "a2f624d0f57afb41ff14a431437e0676a406fee3b202fc24bdae1e5a9e308e7a"
+  },
+  {
+    "path": "ytplus-analysis/settings/ghidra/ghidra_12.1.4_PUBLIC/osgi/compiled-bundles/9b22b46c/GeneratedActivator.java",
+    "size": 419,
+    "sha256": "3892739bddc8305f310f72b2d28ea3ced87608ef84cfc04692e8888823f9ad84"
+  },
+  {
+    "path": "ytplus-analysis/settings/ghidra/ghidra_12.1.4_PUBLIC/osgi/compiled-bundles/9b22b46c/LayoutInspect.class",
+    "size": 2806,
+    "sha256": "9e6bfce8bff225e47e8a7e6152def41d1a0188598a940f276b636e9545734729"
+  },
+  {
+    "path": "ytplus-analysis/settings/ghidra/ghidra_12.1.4_PUBLIC/osgi/compiled-bundles/9b22b46c/META-INF/MANIFEST.MF",
+    "size": 554,
+    "sha256": "bc1cd5904afef0aa9840a22dd521301c5a8628c80e82c87a3ffb25e9e2341ba6"
+  },
+  {
+    "path": "ytplus-analysis/settings/ghidra/ghidra_12.1.4_PUBLIC/osgi/compiled-bundles/c0b65c9b/GateDump.class",
+    "size": 1866,
+    "sha256": "4478b15e71ffae432e71af5e3c9026fe0c0943132c1ca327063a2187a396d6c8"
+  },
+  {
+    "path": "ytplus-analysis/settings/ghidra/ghidra_12.1.4_PUBLIC/osgi/compiled-bundles/c0b65c9b/GateEmulation.class",
+    "size": 6352,
+    "sha256": "87dcbc110c58e98fb1fd1dfceab57379c82005f8aa9b5bfc99f806963688876e"
+  },
+  {
+    "path": "ytplus-analysis/settings/ghidra/ghidra_12.1.4_PUBLIC/osgi/compiled-bundles/c0b65c9b/GatePlayerTrace.class",
+    "size": 4242,
+    "sha256": "c0cbc884bd4bd1320d35abdf97a2f277a8e4a72c12ddf9d4ba68ce29c31f2a12"
+  },
+  {
+    "path": "ytplus-analysis/settings/ghidra/ghidra_12.1.4_PUBLIC/osgi/compiled-bundles/c0b65c9b/GateVerify.class",
+    "size": 4548,
+    "sha256": "986bc01d277822e6c8121a6730260c7af09a8efdacb75c5db26210d3b42c9ff8"
+  },
+  {
+    "path": "ytplus-analysis/settings/ghidra/ghidra_12.1.4_PUBLIC/osgi/compiled-bundles/c0b65c9b/GeneratedActivator.class",
+    "size": 608,
+    "sha256": "a2f624d0f57afb41ff14a431437e0676a406fee3b202fc24bdae1e5a9e308e7a"
+  },
+  {
+    "path": "ytplus-analysis/settings/ghidra/ghidra_12.1.4_PUBLIC/osgi/compiled-bundles/c0b65c9b/GeneratedActivator.java",
+    "size": 419,
+    "sha256": "3892739bddc8305f310f72b2d28ea3ced87608ef84cfc04692e8888823f9ad84"
+  },
+  {
+    "path": "ytplus-analysis/settings/ghidra/ghidra_12.1.4_PUBLIC/osgi/compiled-bundles/c0b65c9b/META-INF/MANIFEST.MF",
+    "size": 671,
+    "sha256": "38af932ee4e53060bf40115cbe90117884715c646e860a39ce1fc6aa1a13d0d3"
+  },
+  {
+    "path": "ytplus-analysis/settings/ghidra/ghidra_12.1.4_PUBLIC/osgi/compiled-bundles/c0b65c9b/SubscriptionBlocks.class",
+    "size": 2786,
+    "sha256": "4484e385e251cf8149bd1b709e86cb836b709c9e53784448d375555b5ac2ce3c"
+  },
+  {
+    "path": "ytplus-analysis/settings/ghidra/ghidra_12.1.4_PUBLIC/osgi/compiled-bundles/c0b65c9b/SubscriptionInspect.class",
+    "size": 5110,
+    "sha256": "d06b83b9e93a4fff7e0fda8cf1681654e207352e459caed791ad654226b9ff87"
+  },
+  {
+    "path": "ytplus-analysis/settings/ghidra/ghidra_12.1.4_PUBLIC/osgi/felixcache/bundle0/bundle.id",
+    "size": 1,
+    "sha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+  },
+  {
+    "path": "ytplus-analysis/settings/ghidra/ghidra_12.1.4_PUBLIC/osgi/felixcache/bundle0/last.java.version",
+    "size": 4,
+    "sha256": "ce60da21a19e0a3d484fc4ee3f868999745b7f23475772ea8c87c7bde54c4b43"
+  },
+  {
+    "path": "ytplus-analysis/settings/ghidra/ghidra_12.1.4_PUBLIC/osgi/felixcache/bundle1/bundle.info",
+    "size": 206,
+    "sha256": "e5b4615f22660b5153a92557ceef74c26fb44d5d4d871c1cad51191d63707cd8"
+  },
+  {
+    "path": "ytplus-analysis/settings/ghidra/ghidra_12.1.4_PUBLIC/osgi/felixcache/bundle1/version0.0/revision.location",
+    "size": 176,
+    "sha256": "b9674f508ee870ce784653a80009c13d8df864cbba63801e02bbbb976ab8e78f"
+  },
+  {
+    "path": "ytplus-analysis/settings/ghidra/ghidra_12.1.4_PUBLIC/osgi/parallel.lock",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "ytplus-analysis/settings/ghidra/ghidra_12.1.4_PUBLIC/preferences",
+    "size": 50,
+    "sha256": "d21c0397a5375dbbba9fe567647db141f8b8981fa4a8c955e477ddfabc3a6d37"
+  },
+  {
+    "path": "ytplus-analysis/settings/ghidra/ghidra_12.1.4_PUBLIC/script.log",
+    "size": 8457905,
+    "sha256": "1ab7b02fead97dd11ede7df1d160a42d184675bfabcadfc0df4c0f0e620de8c6"
+  },
+  {
+    "path": "ytplus-analysis/settings/ghidra/ghidra_12.1.4_PUBLIC/tools/_code_browser.tcd",
+    "size": 38435,
+    "sha256": "7f3b72bbcccef22e476da60f88101885b1ec625fae79a58cbb78a9a81dacbd0d"
+  },
+  {
+    "path": "ytplus-analysis/settings/ghidra/ghidra_12.1.4_PUBLIC/tools/_debugger.tcd",
+    "size": 46088,
+    "sha256": "efa89df0d486fe15de6c1abdbfb3a1fbcde70596c7f6c96fd9fd547cd1477ed4"
+  },
+  {
+    "path": "ytplus-analysis/settings/ghidra/ghidra_12.1.4_PUBLIC/tools/_emulator.tcd",
+    "size": 116623,
+    "sha256": "bdc4262723f9b714ef8e2038f39c09b1aa567fb57acb9edf3d597b4bd892385a"
+  },
+  {
+    "path": "ytplus-analysis/settings/ghidra/ghidra_12.1.4_PUBLIC/tools/_version _tracking.tcd",
+    "size": 1656,
+    "sha256": "42a672303407e4d56e3042c396cc9d37a72965c653aa6aec62160cadcd98e1c0"
+  },
+  {
+    "path": "ytplus-analysis/strings.txt",
+    "size": 3060183,
+    "sha256": "7f37b0486392a949cf6ec5461bde1bc50e430677c62e7d40c1289b3cccc57e0a"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/__pycache__/emulate_gate.cpython-312.pyc",
+    "size": 15408,
+    "sha256": "edf31321d18c5a2a8451b655a3ef884c59ff4e8922783b977e58134c6a742a06"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/access-error-regression.json",
+    "size": 2592,
+    "sha256": "4ee663c06685fb702b4f338a300a53d580e5618a89a5110583d78b633bf74107"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/access-localization.json",
+    "size": 644,
+    "sha256": "32fe53858e4723024b6933fb3fc04c134dcd3bfa35bbd1197032f90192b2a1bb"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/active-flag-references.json",
+    "size": 1771,
+    "sha256": "a17ee1021a153221ab6d0e0df525a02b962ab06a6d2284120e46da921031411f"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/audit_getter_coverage.py",
+    "size": 1361,
+    "sha256": "a1795f7fc8ef16ec8889e68ed553cffcce642f8db125fb2c778ea41806096cda"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/audit_package.py",
+    "size": 4037,
+    "sha256": "fc2e2a7d692b328187bf758777d8ce1cf8612a0ca94252154e6bbf25d3f5ff6a"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/blocks-output.txt",
+    "size": 24633,
+    "sha256": "274bcb55483c11052b7fce6ed30fe965c3154278b89b957a0167b4cd51221be5"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/broader-verification.md",
+    "size": 4900,
+    "sha256": "92d11e6de3ddb6aca53095544c9e8e99ea7a8473b84e013392af4cdd312b08a5"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/build_personal.py",
+    "size": 3363,
+    "sha256": "000c75f9477d95c0e564e81c19a6d804bc41175b6b162e63bfa8b59c9555c02f"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/build_personal_test2.py",
+    "size": 3624,
+    "sha256": "ae04794c4f11c6b48d933ad50a5592db2e246e419ff07a2e9912312b59f4c49f"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/categories.json",
+    "size": 1324,
+    "sha256": "e95b88be6b4886fef0b0c021ab5357ec6034eb6c38db4454334fe9f9f8705ddd"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/cleanup-record.json",
+    "size": 695,
+    "sha256": "9d48b74c6fad92411f147b45ec807d7af4427b0fe46eb5800546d659933a40bd"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/confirm_patch_targets.py",
+    "size": 323,
+    "sha256": "3e3019c2476d6c0385a34084db9f395d9e2804320b91dfee0e20d759f983a743"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/core-dump.txt",
+    "size": 1339099,
+    "sha256": "cb213d67734d645ab2188dc044f5d71e79e7f3995d5307fb21a2464244a6e32f"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/core-traces-summary.txt",
+    "size": 63628,
+    "sha256": "66b453a1843b959508213d3f0a6df46aa8b99026b7c6b45ccac29ddca8bfa462"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/core-traces.json",
+    "size": 865028,
+    "sha256": "c24281452d2cc5da28a21c21ed39cbca21e40e7be1b30e167842c268f1ec23c4"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/decode_gate.py",
+    "size": 1070,
+    "sha256": "c5597bc7a65dd718418f8c3e591ee7dc09c3eda606a605613c11103a10b2b1f2"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/decompile-output.txt",
+    "size": 12751,
+    "sha256": "da7600f54d3b294020b37a83ebf54009a5ea8e18e5fe7fbcdeca20dce006a2cf"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/emulate_gate.py",
+    "size": 5825,
+    "sha256": "45a864d10aabfe68ecdfff3ec4ca25da938b8015281e16e2d7f1faa95bf95c02"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/feature-getter-coverage.json",
+    "size": 1910,
+    "sha256": "43dc81b5c4f03675ffc15ce2d8b67de5c81516a0f7ac7a045bbdbf0d55196c9a"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/find_active_flag.py",
+    "size": 1075,
+    "sha256": "3864f7886c157b6c40a0488ff004dd4ce55fc5ae8b7d40a44dc081c5efd8715b"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/find_calls.py",
+    "size": 414,
+    "sha256": "c632903d2cf08bb5a7928b8c7de37ed04b7ab1e09da2f7010456c642c82a63e9"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/find_calls_fast.py",
+    "size": 780,
+    "sha256": "45cb12b90089f6eb5a9acc741d0533df2556822ed1cacba10153a709391c5005"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/findings.md",
+    "size": 2860,
+    "sha256": "2dfa0dc3e4784c0335a0f32504b39bed61aa2c63b03cc43d0618b577f5a5e07e"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/function-starts.json",
+    "size": 1344156,
+    "sha256": "eacab432ad4d538e091fb465560cf9ec6776c17a59619f8bc10e36928f7fd77f"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/function_starts.py",
+    "size": 497,
+    "sha256": "5f541f382642c7d304c60c72f1c6a6d83e302001dd9c458186205dfd290d88f8"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/gate-classes.json",
+    "size": 30161,
+    "sha256": "065284d8e005c84a9913c73f1c7e6662f4c1d4a62abcf935fead4098421bad11"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/gate-dump.txt",
+    "size": 1091042,
+    "sha256": "88466861d9a2b0e092dfd8d45aa6ab64421b620849bd74d2ef033867afa5b29d"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/GateDump.java",
+    "size": 453,
+    "sha256": "c04d3b24dcf0dd052646e6c77b699d95dbbd8100a91fa8c8666405eea16591c8"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/GateEmulation.java",
+    "size": 3653,
+    "sha256": "90543896359d80f87890ce3df89dc32d807fc36faf2517f96ab9ec6f6b372fd8"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/GatePlayerTrace.java",
+    "size": 2170,
+    "sha256": "1a796692b10fd3dff80aaa8269ed2143cf451cfffe0ca1dcd2e87ffdc3f9d4cb"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/GateVerify.java",
+    "size": 1418,
+    "sha256": "65eebe3ad675d533101c7f7902fe589e9346915f23548338fc45b93b39e81b9d"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/ghidra-blocks.log",
+    "size": 25169,
+    "sha256": "04f661a810a37deea3c9b33bd5c25d84bae5fd4825286c0d88acd876d036cefc"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/ghidra-followup.log",
+    "size": 10328444,
+    "sha256": "014d778c4d9666841a50fc6e05f554890750f59a8c38a54666af44b0c76a212a"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/ghidra.log",
+    "size": 25790,
+    "sha256": "5ad0d9795f34d04b7f5bce31627d1012973caa61fff9d1b32087ff75223be97d"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/independent-emulation.txt",
+    "size": 9912,
+    "sha256": "10b5ba61fe1e0f4f6b56bf1aed446c1ad4c6d44d9676d110e184f0f54c8a5b12"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/inspect_pip.py",
+    "size": 1212,
+    "sha256": "037a98ab534e71217dda2e8875ce19fbdd9d78be8cfe149e1e0906346951266e"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/locate_pip.py",
+    "size": 787,
+    "sha256": "1de0468916d3b17422259be3ccd3d0539a6daf8c9583bf9a22e384b58bcea435"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/macho.json",
+    "size": 2850591,
+    "sha256": "03c8fe7c14542fcc077e57921bb20655b4b352e8e83638b85e2d59f6baa16e2f"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/main-player-symbol-presence.json",
+    "size": 468,
+    "sha256": "91a006848e779876b82e83a5d1a0b99569f51b2a4b365e3a82a839378a5d35bc"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/middle-dump.txt",
+    "size": 2366379,
+    "sha256": "c9cac63f1a41ad16b61fd6532bbfa2fb72cd0f63d29f525f2051281128296c15"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/objc.json",
+    "size": 797507,
+    "sha256": "f6a6e27ededf9b8dc0cfaaf4cf909a85525d9d92d47b8c4d79bc07e05c86e487"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/package-dependency-audit-test3.json",
+    "size": 37615,
+    "sha256": "8287dd3c74ea53902b08df257c248a84327d652b8707b6fe0f90c61b79610f83"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/package-dependency-audit-test4.json",
+    "size": 37618,
+    "sha256": "ed8d6891ab41ebd9170a3f232af1b979be5b54aa9fddf05da10083682d3ceaa5"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/package-dependency-audit.json",
+    "size": 32559,
+    "sha256": "b9d13d34b58a779bd49e38f00d63b42bcf8b12f581786fb0455330120f6344c9"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/patched-verification-test2.txt",
+    "size": 7405,
+    "sha256": "40a5def5b1e5d61845b94c06d5cfa4c9becaa38133dabea4c0f7443a73ab388a"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/patched-verification.txt",
+    "size": 7238,
+    "sha256": "c409a0e1c44afa3b90ae2284adfeedb6b69fb5bf8da0e11232e77fba9f10de99"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/personal-build-notes.md",
+    "size": 2849,
+    "sha256": "1a1c3ede123463af1ae4c14dee121de7ba6e57c0f47d7843919747693d009f1d"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/personal-build-test2.json",
+    "size": 3922,
+    "sha256": "8a2fab3c844ad0e451111e0e461a68040ae122ffd0a206d8763e905a1854d2e6"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/personal-build.json",
+    "size": 3075,
+    "sha256": "f78df7bd8fc98120bf9ac1b4edc3f7cb2b645d8a4a82fbd2f6720475c8065d61"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/player-integration-dump.txt",
+    "size": 1226836,
+    "sha256": "9f0e36ae5320f58daea61b0de3e181208b29155aa935d1fc2ee30f67374513c0"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/player-semantics-trace.txt",
+    "size": 10222,
+    "sha256": "b36111d3c8b4ede33e73ef4262d79d871f86908f6b184fc1069ce037da2fdb33"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/player-setting-labels.txt",
+    "size": 10892,
+    "sha256": "7b2ae3b1978fa67e7667e0d18f939dc4efa61773b11269b7966bcc1c98e35acf"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/player-settings-dump.txt",
+    "size": 1491912,
+    "sha256": "1be2f66dff98c50834d335bba139f30c692241d8e2d5edda3aa455fbadbfb30e"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/preference-verification.json",
+    "size": 1111,
+    "sha256": "9befd82323de7a5df58ca3f665aee4ae8004cf6960bc0a20d4b3c9b8540c61ef"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/repack_sidestore.py",
+    "size": 2540,
+    "sha256": "8a74c72e6a03a898dbc5f41a5f5d34a0f6cb66c8d36ae97224577a13dff9eee7"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/reproduce_flag.py",
+    "size": 461,
+    "sha256": "1fdaf998e72045501aa6e4692072f58fe7560f6355ce4086f9e3ccebbe3c1b1f"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/run-ghidra.ps1",
+    "size": 983,
+    "sha256": "715a040d24088d2a7e24a44e2ecec05c2365ba3d82f6721be60f310061768d11"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/sidestore-repack.json",
+    "size": 1604,
+    "sha256": "7f344c7434c839a25b0d140ea74fdd569cc3e1f6ccfa4e08677eae9e0a7745df"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/strings-decoded.bin",
+    "size": 38955408,
+    "sha256": "f13aa81990db8dd534837003269266f4130c5d8ba569a44f2ffee44a9bd94cca"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/subscription-strings.json",
+    "size": 2605,
+    "sha256": "a2e41d7c78a546e918dc8dfa26e804ebb9e0c87167415ac5146689216610e213"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/SubscriptionBlocks.java",
+    "size": 777,
+    "sha256": "d838f1dbd8134c132bf450bef9fa0cf6a9a649ca41eaf7f1f9829330b2f1f5d9"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/SubscriptionInspect.java",
+    "size": 1809,
+    "sha256": "3688a76625b10bbad6f1e6c3cf613c2611ee75ccc67b0a99c87f650fa012ea3f"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/test2-diagnosis.md",
+    "size": 3276,
+    "sha256": "291cfe9ef7c9951d41204cfe5902c355d99ca812434e3e1de64e561a537a5dcf"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/trace_core.py",
+    "size": 625,
+    "sha256": "1bccc69a511ccf13db57253565b3e96d0a43a408ba361185ef73622a391c9c81"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/verify_access_error.py",
+    "size": 1847,
+    "sha256": "8336610fe944eba26f6198f741b24473de471360ce69b0476a28cbff9eeb058a"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/verify_preferences.py",
+    "size": 1097,
+    "sha256": "7e8407eebb64cfe8685a06eb9d6e9e26005bf46e12bb792077af3c80daeb4d78"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/wrappers-dump.txt",
+    "size": 159387,
+    "sha256": "43756fc9a1fef749bb9fc527c252ee5e84426891ffae28fa08c7e7494d67983d"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/wrappers2-dump.txt",
+    "size": 204656,
+    "sha256": "2b8e5f81dc76fab7e1240d38cc7a00d0bfb54239ce3b7e5da2ac0067fc90e1aa"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/YTLite-Personal.dylib",
+    "size": 38955408,
+    "sha256": "9337149f71c490be69f92dcfe502b6cef44eeb02ff65ce6f81cb20a346d227a1"
+  },
+  {
+    "path": "ytplus-analysis/subscription-audit/YTLite.dylib",
+    "size": 38955408,
+    "sha256": "aec278e47289639a7dc8b22cc4257df9b9f75336d6e187dd82da0d981c1ae59c"
+  },
+  {
+    "path": "ytplus-analysis/verify_official.py",
+    "size": 938,
+    "sha256": "0e09ea1bea93ea66a754710c5b5b4483b36dc83b32ae09cba92ba278dd925ed5"
+  },
+  {
+    "path": "ytplus-analysis/YouTubePlus-Personal-6.0-test.4-ManualPiP.ipa",
+    "size": 148862988,
+    "sha256": "4ad31f12f9008ad233cbfadc59e4a0796133d88fec7957a545d6daf627b19044"
+  },
+  {
+    "path": "ytplus-analysis/YouTubePlus_6.0_YouTube_21.43.5_official.ipa",
+    "size": 149520411,
+    "sha256": "9181a5f7fd13116e8cdcc26d4ecc91a99b95a0b902ccd7ac8a4053fbc4ca0565"
+  },
+  {
+    "path": "ytplus-analysis/ytplus-6.0.deb",
+    "size": 14028894,
+    "sha256": "9822234413eeb085faec8f77864360156900bd62f281294b38b05e066777a55d"
+  },
+  {
+    "path": "inputs/21.13.6_YouTubePlus_5.2b4.ipa",
+    "size": 126776343,
+    "sha256": "bfe2e4ac71bfd37acd6de12b04e0d34a46b195ffdc3b3fd6d998ab2fd776670b"
+  }
+]

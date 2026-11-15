@@ -1,0 +1,120 @@
+{
+  "library_sha256": "9337149f71c490be69f92dcfe502b6cef44eeb02ff65ce6f81cb20a346d227a1",
+  "cases": [
+    {
+      "getter": "0xc1ddc",
+      "build": "test1",
+      "remote_access_error": 0,
+      "saved": 0,
+      "actual": 0
+    },
+    {
+      "getter": "0xc1ddc",
+      "build": "test1",
+      "remote_access_error": 0,
+      "saved": 1,
+      "actual": 1
+    },
+    {
+      "getter": "0xc1ddc",
+      "build": "test1",
+      "remote_access_error": 1,
+      "saved": 0,
+      "actual": 0
+    },
+    {
+      "getter": "0xc1ddc",
+      "build": "test1",
+      "remote_access_error": 1,
+      "saved": 1,
+      "actual": 0
+    },
+    {
+      "getter": "0xc1ddc",
+      "build": "test2",
+      "remote_access_error": 0,
+      "saved": 0,
+      "actual": 0
+    },
+    {
+      "getter": "0xc1ddc",
+      "build": "test2",
+      "remote_access_error": 0,
+      "saved": 1,
+      "actual": 1
+    },
+    {
+      "getter": "0xc1ddc",
+      "build": "test2",
+      "remote_access_error": 1,
+      "saved": 0,
+      "actual": 0
+    },
+    {
+      "getter": "0xc1ddc",
+      "build": "test2",
+      "remote_access_error": 1,
+      "saved": 1,
+      "actual": 1
+    },
+    {
+      "getter": "0xc2aa4",
+      "build": "test1",
+      "remote_access_error": 0,
+      "saved": 0,
+      "actual": 0
+    },
+    {
+      "getter": "0xc2aa4",
+      "build": "test1",
+      "remote_access_error": 0,
+      "saved": 37,
+      "actual": 37
+    },
+    {
+      "getter": "0xc2aa4",
+      "build": "test1",
+      "remote_access_error": 1,
+      "saved": 0,
+      "actual": 0
+    },
+    {
+      "getter": "0xc2aa4",
+      "build": "test1",
+      "remote_access_error": 1,
+      "saved": 37,
+      "actual": 0
+    },
+    {
+      "getter": "0xc2aa4",
+      "build": "test2",
+      "remote_access_error": 0,
+      "saved": 0,
+      "actual": 0
+    },
+    {
+      "getter": "0xc2aa4",
+      "build": "test2",
+      "remote_access_error": 0,
+      "saved": 37,
+      "actual": 37
+    },
+    {
+      "getter": "0xc2aa4",
+      "build": "test2",
+      "remote_access_error": 1,
+      "saved": 0,
+      "actual": 0
+    },
+    {
+      "getter": "0xc2aa4",
+      "build": "test2",
+      "remote_access_error": 1,
+      "saved": 37,
+      "actual": 37
+    }
+  ],
+  "passed": 16,
+  "result": "Reproduced test1 settings blocked by access-error flag; test2 preserves saved settings with error flag clear or set",
+  "scope": "Offline instruction interpretation with mocked external calls, not an iOS device test"
+}

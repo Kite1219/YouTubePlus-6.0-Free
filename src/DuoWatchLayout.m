@@ -6,7 +6,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-static IMP TPRegularOriginal, TPInsetsOriginal;
+static IMP TPRegularOriginal, TPCompactOriginal, TPInsetsOriginal;
 static __thread __unsafe_unretained UIView *TPLayoutOwner;
 static char TPGeometryKey,TPStripKey;
 @interface TPWatchGeometryState : NSObject
@@ -149,7 +149,8 @@ static NSDictionary *TPGeometrySnapshot(UIView *view) {
     return @{@"windowBounds":NSStringFromCGRect(window.bounds),@"windowInsets":NSStringFromUIEdgeInsets(window.safeAreaInsets),@"screenBounds":NSStringFromCGRect(window.screen.bounds),@"rootController":window.rootViewController?NSStringFromClass(window.rootViewController.class):@"nil",@"presentedController":window.rootViewController.presentedViewController?NSStringFromClass(window.rootViewController.presentedViewController.class):@"nil",@"horizontalSizeClass":@(view.traitCollection.horizontalSizeClass),@"verticalSizeClass":@(view.traitCollection.verticalSizeClass),@"ancestors":ancestors,@"controllers":controllers,@"constraints":constraints,@"feedWindowRect":feed?NSStringFromCGRect([feed convertRect:feed.bounds toView:window]):@"nil",@"panelWindowRect":panel?NSStringFromCGRect([panel convertRect:panel.bounds toView:window]):@"nil"};
 }
 static void TPRegularLayout(UIView *view,SEL selector) {
-    if(TPLayoutOwner==view){((void(*)(id,SEL))TPRegularOriginal)(view,selector);return;}
+    IMP original=selector==NSSelectorFromString(@"layoutSubviews_compact")?TPCompactOriginal:TPRegularOriginal;
+    if(TPLayoutOwner==view){((void(*)(id,SEL))original)(view,selector);return;}
     BOOL eligible=TPWatchGeometryEligible(view);
     static NSString *lastSignature;
     NSString *signature=view.window?[NSString stringWithFormat:@"%@/%@/%@/%d",NSStringFromCGRect(view.window.bounds),NSStringFromCGRect(view.frame),NSStringFromUIEdgeInsets(view.safeAreaInsets),eligible]:@"detached";
@@ -165,7 +166,7 @@ static void TPRegularLayout(UIView *view,SEL selector) {
         TPWatchExpandTrailing(view,view.window);
     }
     UIView *previous=TPLayoutOwner;TPLayoutOwner=eligible?view:nil;
-    @try{((void(*)(id,SEL))TPRegularOriginal)(view,selector);}
+    @try{((void(*)(id,SEL))original)(view,selector);}
     @finally{TPLayoutOwner=previous;}
     if(eligible){TPWatchExpandTrailing(feed,view.window);TPWatchExpandTrailing(panel,view.window);}
     TPClearAppStrip(view,eligible);
@@ -175,16 +176,17 @@ BOOL TPInstallDuoWatchLayout(void) {
     if(TPRegularOriginal)return YES;
     Class host=NSClassFromString(@"YTWatchView");
     Method regular=class_getInstanceMethod(host,NSSelectorFromString(@"layoutSubviews_regular"));
+    Method compact=class_getInstanceMethod(host,NSSelectorFromString(@"layoutSubviews_compact"));
     Method insets=class_getInstanceMethod(host,NSSelectorFromString(@"watchNextSafeAreaInsets"));
-    if(!host || !regular || !insets || strcmp(method_getTypeEncoding(regular),"v16@0:8")!=0)return NO;
+    if(!host || !regular || !compact || !insets || strcmp(method_getTypeEncoding(regular),"v16@0:8")!=0 || strcmp(method_getTypeEncoding(compact),"v16@0:8")!=0)return NO;
     char *returnType=method_copyReturnType(insets);
     BOOL valid=strcmp(returnType,@encode(UIEdgeInsets))==0;free(returnType);if(!valid)return NO;
-    TPRegularOriginal=method_getImplementation(regular);TPInsetsOriginal=method_getImplementation(insets);
+    TPRegularOriginal=method_getImplementation(regular);TPCompactOriginal=method_getImplementation(compact);TPInsetsOriginal=method_getImplementation(insets);
     class_replaceMethod(host,NSSelectorFromString(@"watchNextSafeAreaInsets"),(IMP)TPWatchInsets,method_getTypeEncoding(insets));
     class_replaceMethod(host,NSSelectorFromString(@"layoutSubviews_regular"),(IMP)TPRegularLayout,method_getTypeEncoding(regular));
+    class_replaceMethod(host,NSSelectorFromString(@"layoutSubviews_compact"),(IMP)TPRegularLayout,method_getTypeEncoding(compact));
     return YES;
 }
 #ifndef TP_FIXTURE
 __attribute__((constructor)) static void TPInitialize(void) {dispatch_async(dispatch_get_main_queue(),^{ TPInstallDuoWatchLayout(); });}
 #endif
-

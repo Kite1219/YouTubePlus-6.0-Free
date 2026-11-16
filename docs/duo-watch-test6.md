@@ -7,6 +7,7 @@ The user confirmed test.5 did not change the visible strip. Its checks validated
 Static inspection of the pinned main executable confirms:
 
 - `YTWatchView.layoutSubviews_regular`: `v16@0:8`, implementation `0x101563af0`.
+- `YTWatchView.layoutSubviews_compact`: `v16@0:8`, implementation `0x1015631d0`. The parent layout branches on the host's `isLargeLayout` decision; both paths are hooked.
 - `YTWatchView.watchNextSafeAreaInsets`: returns `UIEdgeInsets`, implementation `0x101567ecc`.
 - The regular layout uses that private inset getter when calculating the feed's trailing extent.
 - The watch view owns `_watchNextWrapperView` and `_engagementPanelView`; `YTWatchLayerView` has an app-owned `_statusBarView` placeholder.

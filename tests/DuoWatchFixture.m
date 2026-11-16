@@ -23,6 +23,7 @@ extern BOOL TPInstallDuoWatchLayout(void);
 - (BOOL)isFullscreen;
 - (UIEdgeInsets)watchNextSafeAreaInsets;
 - (void)layoutSubviews_regular;
+- (void)layoutSubviews_compact;
 @end
 @implementation YTWatchView
 - (instancetype)initWithFrame:(CGRect)rect {
@@ -36,6 +37,12 @@ extern BOOL TPInstallDuoWatchLayout(void);
 - (UIEdgeInsets)safeAreaInsets{return self.hostInsets;}
 - (UIEdgeInsets)watchNextSafeAreaInsets{return self.hostInsets;}
 - (void)layoutSubviews_regular {
+    self.layoutCalls++;
+    CGFloat right=self.retainNativePadding?84:[self watchNextSafeAreaInsets].right;
+    _watchNextWrapperView.frame=CGRectMake(550,0,self.bounds.size.width-550-right,self.bounds.size.height);
+    _engagementPanelView.frame=_watchNextWrapperView.frame;
+}
+- (void)layoutSubviews_compact {
     self.layoutCalls++;
     CGFloat right=self.retainNativePadding?84:[self watchNextSafeAreaInsets].right;
     _watchNextWrapperView.frame=CGRectMake(550,0,self.bounds.size.width-550-right,self.bounds.size.height);
@@ -67,6 +74,9 @@ extern BOOL TPInstallDuoWatchLayout(void);
     check(fabs(CGRectGetMaxX(watch->_watchNextWrapperView.frame)-951)<0.5,@"recommendations now reach actual window edge");
     check(fabs(CGRectGetMaxX(watch->_engagementPanelView.frame)-951)<0.5,@"engagement panel reaches actual window edge");
     CGRect after=watch->_watchNextWrapperView.frame;
+    [watch layoutSubviews_compact];
+    check(fabs(CGRectGetMaxX(watch->_watchNextWrapperView.frame)-951)<0.5,@"compact watch path repairs the same right-side gap");
+    check([watch watchNextSafeAreaInsets].right==84,@"compact path restores native control insets after layout");
     check([watch watchNextSafeAreaInsets].right==84,@"native control insets unchanged outside column layout");
     check(watch.safeAreaInsets.right==84 && self.window.safeAreaInsets.right==0,@"both distinct UIKit safe-area values preserved");
     NSInteger count=watch.layoutCalls;[watch layoutSubviews_regular];

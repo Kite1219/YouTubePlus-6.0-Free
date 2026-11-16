@@ -41,7 +41,7 @@ static void TPPrepare(UIView *view) {
     BOOL phone=UIDevice.currentDevice.userInterfaceIdiom==UIUserInterfaceIdiomPhone;
     BOOL rtl=view.effectiveUserInterfaceLayoutDirection==UIUserInterfaceLayoutDirectionRightToLeft;
     BOOL eligible=window && TPDuoEligible(window.bounds.size,window.safeAreaInsets,phone,full,rtl)
-        && !view.hidden && view.alpha>0.01
+        && !view.hidden && view.alpha>0.01 && CGAffineTransformIsIdentity(view.transform)
         && CGRectGetWidth(view.bounds)>=CGRectGetWidth(window.bounds)*0.80
         && CGRectGetHeight(view.bounds)>=CGRectGetHeight(window.bounds)*0.80;
     TPDuoWatchState *state=objc_getAssociatedObject(view,&TPStateKey);

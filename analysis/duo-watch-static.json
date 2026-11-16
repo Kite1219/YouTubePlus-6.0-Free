@@ -1,0 +1,44 @@
+{
+  "baseSHA256": "4ad31f12f9008ad233cbfadc59e4a0796133d88fec7957a545d6daf627b19044",
+  "host": "YTWatchView",
+  "methods": [
+    {
+      "name": "layoutSubviews",
+      "types": "v16@0:8",
+      "imp": "0x10156296c"
+    },
+    {
+      "name": "layoutSubviews_regular",
+      "types": "v16@0:8",
+      "imp": "0x101563af0"
+    },
+    {
+      "name": "watchNextSafeAreaInsets",
+      "types": "{UIEdgeInsets=dddd}16@0:8",
+      "imp": "0x101567ecc"
+    },
+    {
+      "name": "isFullscreen",
+      "types": "B16@0:8",
+      "imp": "0x101568dc0"
+    }
+  ],
+  "fields": [
+    {
+      "name": "_horizontalSafeAreaInsetSupportEnabled",
+      "type": "B",
+      "offset": 147
+    },
+    {
+      "name": "_watchNextExtendsToScreenEdgeEnabled",
+      "type": "B",
+      "offset": 149
+    },
+    {
+      "name": "_engagementPanelExtendsToScreenEdgeEnabled",
+      "type": "B",
+      "offset": 160
+    }
+  ],
+  "note": "Static metadata and disassembly confirm the native flags and original layout width-extension path; this does not prove physical device geometry."
+}

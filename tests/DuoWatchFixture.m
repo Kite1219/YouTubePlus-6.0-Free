@@ -74,6 +74,8 @@ extern BOOL TPInstallDuoWatchLayout(void);
     check(!watch->_watchNextExtendsToScreenEdgeEnabled,@"rotation without side inset restores flags");
     self.window.testInsets=safe;watch.frame=CGRectMake(0,0,300,200);[watch layoutSubviews];
     check(!watch->_watchNextExtendsToScreenEdgeEnabled,@"miniplayer unchanged");
+    watch.frame=self.window.bounds;watch.transform=CGAffineTransformMakeScale(0.3,0.3);[watch layoutSubviews];
+    check(!watch->_watchNextExtendsToScreenEdgeEnabled,@"scaled transition view unchanged");watch.transform=CGAffineTransformIdentity;
     watch.frame=self.window.bounds;watch->_watchNextExtendsToScreenEdgeEnabled=YES;[watch layoutSubviews];watch.fullscreen=YES;[watch layoutSubviews];
     check(watch->_watchNextExtendsToScreenEdgeEnabled && !watch->_engagementPanelExtendsToScreenEdgeEnabled,@"preexisting native flag choices preserved");
     BOOL passed=YES;for(NSDictionary *r in results)if(![r[@"passed"]boolValue])passed=NO;

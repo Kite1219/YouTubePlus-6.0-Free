@@ -1,88 +1,118 @@
 #import <UIKit/UIKit.h>
-#import <objc/runtime.h>
-extern BOOL TPDuoEligible(CGSize,UIEdgeInsets,BOOL,BOOL,BOOL);
+extern BOOL TPWatchGeometryEligible(UIView *);
+extern BOOL TPWatchExpandTrailing(UIView *,UIWindow *);
 extern BOOL TPInstallDuoWatchLayout(void);
 @interface TPFixtureWindow : UIWindow
 @property UIEdgeInsets testInsets;
 @end
 @implementation TPFixtureWindow
-- (UIEdgeInsets)safeAreaInsets { return self.testInsets; }
+- (UIEdgeInsets)safeAreaInsets{return self.testInsets;}
 @end
-
-// Surrogate host exercises the production hook on actual UIKit objects.
-// It is not YouTube and does not establish physical Duo rendering.
+@interface YTWatchLayerView : UIView
+@end
+@implementation YTWatchLayerView
+@end
 @interface YTWatchView : UIView {
-@public BOOL _watchNextExtendsToScreenEdgeEnabled;
-@public BOOL _engagementPanelExtendsToScreenEdgeEnabled;
+@public UIView *_watchNextWrapperView;
+@public UIView *_engagementPanelView;
 }
 @property BOOL fullscreen;
+@property BOOL retainNativePadding;
 @property NSInteger layoutCalls;
-@property UIView *feed;
-@property UIView *panel;
+@property UIEdgeInsets hostInsets;
 - (BOOL)isFullscreen;
+- (UIEdgeInsets)watchNextSafeAreaInsets;
+- (void)layoutSubviews_regular;
 @end
 @implementation YTWatchView
-- (instancetype)initWithFrame:(CGRect)frame {
-    if((self=[super initWithFrame:frame])){
-        self.feed=[UIView new];self.panel=[UIView new];[self addSubview:self.feed];[self addSubview:self.panel];
+- (instancetype)initWithFrame:(CGRect)rect {
+    if((self=[super initWithFrame:rect])){
+        self.hostInsets=UIEdgeInsetsMake(0,0,0,84);
+        _watchNextWrapperView=[UIView new];_engagementPanelView=[UIView new];
+        [self addSubview:_watchNextWrapperView];[self addSubview:_engagementPanelView];
     }return self;
 }
-- (BOOL)isFullscreen {return self.fullscreen;}
-- (void)layoutSubviews {
-    [super layoutSubviews];self.layoutCalls++;
-    CGFloat reserved=self.window.safeAreaInsets.right;
-    self.feed.frame=CGRectMake(550,0,self.bounds.size.width-550-reserved+(_watchNextExtendsToScreenEdgeEnabled?reserved:0),self.bounds.size.height);
-    self.panel.frame=CGRectMake(550,0,self.bounds.size.width-550-reserved+(_engagementPanelExtendsToScreenEdgeEnabled?reserved:0),self.bounds.size.height);
+- (BOOL)isFullscreen{return self.fullscreen;}
+- (UIEdgeInsets)safeAreaInsets{return self.hostInsets;}
+- (UIEdgeInsets)watchNextSafeAreaInsets{return self.hostInsets;}
+- (void)layoutSubviews_regular {
+    self.layoutCalls++;
+    CGFloat right=self.retainNativePadding?84:[self watchNextSafeAreaInsets].right;
+    _watchNextWrapperView.frame=CGRectMake(550,0,self.bounds.size.width-550-right,self.bounds.size.height);
+    _engagementPanelView.frame=_watchNextWrapperView.frame;
 }
 @end
-
 @interface FixtureApp : UIResponder <UIApplicationDelegate>
-@property (nonatomic,strong) TPFixtureWindow *window;
+@property(nonatomic,strong) TPFixtureWindow *window;
 @end
 @implementation FixtureApp
 - (BOOL)application:(UIApplication*)app didFinishLaunchingWithOptions:(NSDictionary*)options {
     self.window=[[TPFixtureWindow alloc]initWithFrame:CGRectMake(0,0,951,669)];
     self.window.rootViewController=[UIViewController new];[self.window makeKeyAndVisible];
-    dispatch_async(dispatch_get_main_queue(),^{ [self runChecks]; });return YES;
+    dispatch_async(dispatch_get_main_queue(),^{[self runChecks];});return YES;
 }
 - (void)runChecks {
-    NSMutableArray *results=[NSMutableArray new];
-    void(^check)(BOOL,NSString*)=^(BOOL ok,NSString *name){[results addObject:@{@"name":name,@"passed":@(ok)}];};
-    UIEdgeInsets safe=UIEdgeInsetsMake(0,0,0,84);
-    check(TPDuoEligible(CGSizeMake(951,669),safe,YES,NO,NO),@"large landscape phone eligible");
-    check(!TPDuoEligible(CGSizeMake(844,390),safe,YES,NO,NO),@"ordinary landscape phone unchanged");
-    check(!TPDuoEligible(CGSizeMake(951,669),safe,NO,NO,NO),@"iPad unchanged");
-    check(!TPDuoEligible(CGSizeMake(669,951),safe,YES,NO,NO),@"portrait unchanged");
-    check(!TPDuoEligible(CGSizeMake(951,669),safe,YES,YES,NO),@"fullscreen unchanged");
-    check(!TPDuoEligible(CGSizeMake(951,669),UIEdgeInsetsZero,YES,NO,NO),@"no reserved strip unchanged");
-    check(!TPDuoEligible(CGSizeMake(951,669),safe,YES,NO,YES),@"RTL unsupported geometry unchanged");
-    check(TPInstallDuoWatchLayout(),@"exact host hook installed");
-    self.window.bounds=CGRectMake(0,0,951,669);self.window.testInsets=safe;
-    YTWatchView *watch=[[YTWatchView alloc]initWithFrame:self.window.bounds];
-    [self.window.rootViewController.view addSubview:watch];
-    [watch layoutSubviews];
-    check(watch->_watchNextExtendsToScreenEdgeEnabled && watch->_engagementPanelExtendsToScreenEdgeEnabled,@"both native edge extension paths enabled");
-    check(fabs(CGRectGetMaxX(watch.feed.frame)-951)<0.5 && fabs(CGRectGetMaxX(watch.panel.frame)-951)<0.5,@"feed and panel extend to window edge");
-    check(UIEdgeInsetsEqualToEdgeInsets(self.window.safeAreaInsets,safe),@"system safe-area information preserved");
-    NSInteger calls=watch.layoutCalls;[watch layoutSubviews];
-    check(watch.layoutCalls==calls+1,@"one original layout call without recursion");
-    watch.fullscreen=YES;[watch layoutSubviews];
-    check(!watch->_watchNextExtendsToScreenEdgeEnabled && !watch->_engagementPanelExtendsToScreenEdgeEnabled,@"original flags restored for fullscreen");
-    watch.fullscreen=NO;[watch layoutSubviews];watch.hidden=YES;[watch layoutSubviews];
-    check(!watch->_watchNextExtendsToScreenEdgeEnabled,@"hidden preview state restored");
-    watch.hidden=NO;self.window.testInsets=UIEdgeInsetsZero;[watch layoutSubviews];
-    check(!watch->_watchNextExtendsToScreenEdgeEnabled,@"rotation without side inset restores flags");
-    self.window.testInsets=safe;watch.frame=CGRectMake(0,0,300,200);[watch layoutSubviews];
-    check(!watch->_watchNextExtendsToScreenEdgeEnabled,@"miniplayer unchanged");
-    watch.frame=self.window.bounds;watch.transform=CGAffineTransformMakeScale(0.3,0.3);[watch layoutSubviews];
-    check(!watch->_watchNextExtendsToScreenEdgeEnabled,@"scaled transition view unchanged");watch.transform=CGAffineTransformIdentity;
-    watch.frame=self.window.bounds;watch->_watchNextExtendsToScreenEdgeEnabled=YES;[watch layoutSubviews];watch.fullscreen=YES;[watch layoutSubviews];
-    check(watch->_watchNextExtendsToScreenEdgeEnabled && !watch->_engagementPanelExtendsToScreenEdgeEnabled,@"preexisting native flag choices preserved");
-    BOOL passed=YES;for(NSDictionary *r in results)if(![r[@"passed"]boolValue])passed=NO;
-    NSDictionary *report=@{@"passed":@(passed),@"checks":results,@"fixtureOnly":@YES,@"physicalDeviceTested":@NO};
+    NSMutableArray *checks=[NSMutableArray new];
+    void(^check)(BOOL,NSString*)=^(BOOL ok,NSString *name){[checks addObject:@{@"name":name,@"passed":@(ok)}];};
+    self.window.bounds=CGRectMake(0,0,951,669);self.window.testInsets=UIEdgeInsetsZero;
+    YTWatchLayerView *layer=[[YTWatchLayerView alloc]initWithFrame:self.window.bounds];
+    [self.window.rootViewController.view addSubview:layer];
+    YTWatchView *watch=[[YTWatchView alloc]initWithFrame:layer.bounds];[layer addSubview:watch];
+    [watch layoutSubviews_regular];
+    CGRect before=watch->_watchNextWrapperView.frame;
+    check(fabs(CGRectGetMaxX(before)-867)<0.5,@"reproduce 84-point native watch-column gap");
+    check(TPInstallDuoWatchLayout(),@"verified regular-layout and native-inset hooks installed");
+    check(TPWatchGeometryEligible(watch),@"watch eligible even when UIWindow right inset is zero");
+    [watch layoutSubviews_regular];
+    check(fabs(CGRectGetMaxX(watch->_watchNextWrapperView.frame)-951)<0.5,@"recommendations now reach actual window edge");
+    check(fabs(CGRectGetMaxX(watch->_engagementPanelView.frame)-951)<0.5,@"engagement panel reaches actual window edge");
+    CGRect after=watch->_watchNextWrapperView.frame;
+    check([watch watchNextSafeAreaInsets].right==84,@"native control insets unchanged outside column layout");
+    check(watch.safeAreaInsets.right==84 && self.window.safeAreaInsets.right==0,@"both distinct UIKit safe-area values preserved");
+    NSInteger count=watch.layoutCalls;[watch layoutSubviews_regular];
+    check(watch.layoutCalls==count+1,@"exactly one original layout call");
+    watch.retainNativePadding=YES;[watch layoutSubviews_regular];
+    check(fabs(CGRectGetMaxX(watch->_watchNextWrapperView.frame)-951)<0.5,@"measured frame fallback repairs retained native padding");
+    watch.retainNativePadding=NO;
+    watch.frame=CGRectMake(0,0,867,669);[watch layoutSubviews_regular];
+    check(fabs(CGRectGetMaxX([watch convertRect:watch.bounds toView:self.window])-951)<0.5,@"narrow outer watch viewport expands before native child layout");
+    watch.fullscreen=YES;[watch layoutSubviews_regular];
+    check(!TPWatchGeometryEligible(watch) && [watch watchNextSafeAreaInsets].right==84,@"fullscreen keeps original native insets");
+    watch.fullscreen=NO;watch.frame=layer.bounds;watch.hidden=YES;[watch layoutSubviews_regular];
+    check(!TPWatchGeometryEligible(watch),@"hidden preview unchanged");watch.hidden=NO;
+    watch.transform=CGAffineTransformMakeScale(.3,.3);
+    check(!TPWatchGeometryEligible(watch),@"scaled miniplayer unchanged");watch.transform=CGAffineTransformIdentity;
+    UIView *small=[[UIView alloc]initWithFrame:CGRectMake(0,0,300,200)];[layer addSubview:small];
+    check(!TPWatchExpandTrailing(small,self.window),@"small content is not expanded");
+    UIView *wideGap=[[UIView alloc]initWithFrame:CGRectMake(0,0,600,669)];[layer addSubview:wideGap];
+    check(!TPWatchExpandTrailing(wideGap,self.window),@"intentional broad sidebar gap is not expanded");
+    // Exercise real Auto Layout external anchors without removing vertical or internal control constraints.
+    UIView *constrained=[UIView new];constrained.translatesAutoresizingMaskIntoConstraints=NO;[layer addSubview:constrained];
+    NSLayoutConstraint *left=[constrained.leadingAnchor constraintEqualToAnchor:layer.leadingAnchor constant:550];
+    NSLayoutConstraint *right=[constrained.trailingAnchor constraintEqualToAnchor:layer.trailingAnchor constant:-84];
+    NSLayoutConstraint *top=[constrained.topAnchor constraintEqualToAnchor:layer.topAnchor constant:10];
+    NSLayoutConstraint *height=[constrained.heightAnchor constraintEqualToConstant:640];
+    [NSLayoutConstraint activateConstraints:@[left,right,top,height]];[layer layoutIfNeeded];
+    UIView *control=[UIView new];control.translatesAutoresizingMaskIntoConstraints=NO;[constrained addSubview:control];
+    NSLayoutConstraint *aspect=[control.widthAnchor constraintEqualToAnchor:control.heightAnchor];aspect.active=YES;
+    check(TPWatchExpandTrailing(constrained,self.window),@"identified external horizontal constraints repaired");
+    [layer layoutIfNeeded];
+    check(fabs(CGRectGetMaxX(constrained.frame)-951)<0.5 && fabs(constrained.frame.origin.y-10)<0.5,@"Auto Layout expands horizontally while retaining vertical placement");
+    check(!left.active && !right.active && top.active && height.active && aspect.active,@"only conflicting external horizontal anchors displaced");
+    NSUInteger installed=layer.constraints.count;TPWatchExpandTrailing(constrained,self.window);[layer layoutIfNeeded];
+    check(layer.constraints.count==installed,@"repeated layout does not duplicate constraints");
+    [constrained removeFromSuperview];UIView *newParent=[[UIView alloc]initWithFrame:layer.bounds];[layer addSubview:newParent];[newParent addSubview:constrained];
+    NSLayoutConstraint *newRight=[constrained.trailingAnchor constraintEqualToAnchor:newParent.trailingAnchor constant:-84];
+    [NSLayoutConstraint activateConstraints:@[[constrained.leadingAnchor constraintEqualToAnchor:newParent.leadingAnchor constant:550],newRight,[constrained.topAnchor constraintEqualToAnchor:newParent.topAnchor],[constrained.heightAnchor constraintEqualToConstant:640]]];[newParent layoutIfNeeded];
+    check(TPWatchExpandTrailing(constrained,self.window),@"reparented Auto Layout view reinstalls constraints on its current parent");[newParent layoutIfNeeded];
+    check(fabs(CGRectGetMaxX(constrained.frame)-951)<0.5 && !newRight.active,@"reparented content uses the current window conversion");
+    self.window.bounds=CGRectMake(0,0,669,951);
+    check(!TPWatchGeometryEligible(watch),@"portrait geometry not modified");
+    BOOL passed=YES;for(NSDictionary *c in checks)if(![c[@"passed"]boolValue])passed=NO;
+    NSDictionary *report=@{@"passed":@(passed),@"checks":checks,@"fixtureOnly":@YES,@"physicalDeviceTested":@NO,@"beforeFeedRect":NSStringFromCGRect(before),@"afterFeedRect":NSStringFromCGRect(after)};
     NSData *data=[NSJSONSerialization dataWithJSONObject:report options:NSJSONWritingPrettyPrinted error:nil];
-    NSString *file=[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES).firstObject stringByAppendingPathComponent:@"fixture.json"];
-    [data writeToFile:file atomically:YES];NSLog(@"FIXTURE %@",passed?@"PASS":@"FAIL");exit(passed?0:1);
+    NSString *path=[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES).firstObject stringByAppendingPathComponent:@"fixture.json"];
+    [data writeToFile:path atomically:YES];NSLog(@"FIXTURE %@",passed?@"PASS":@"FAIL");exit(passed?0:1);
 }
 @end
 int main(int argc,char**argv){@autoreleasepool{return UIApplicationMain(argc,argv,nil,NSStringFromClass(FixtureApp.class));}}

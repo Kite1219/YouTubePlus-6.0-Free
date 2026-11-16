@@ -5,7 +5,7 @@ permissions:
   contents: read
 jobs:
   build:
-    runs-on: macos-15-intel
+    runs-on: macos-15
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
@@ -22,13 +22,13 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: gh release download v6.0-test.4 --pattern 'YouTubePlus-6.0-Free-test.4.ipa' --dir build
       - name: Package and compare every archive member
-        run: python3 tools/package_duo.py --base build/YouTubePlus-6.0-Free-test.4.ipa --helper build/DuoWatchLayout.dylib --output build/YouTubePlus-6.0-Free-test.5.ipa
+        run: python3 tools/package_duo.py --base build/YouTubePlus-6.0-Free-test.4.ipa --helper build/DuoWatchLayout.dylib --output build/YouTubePlus-6.0-Free-test.6.ipa
       - uses: actions/upload-artifact@v4
         with:
-          name: youtubeplus-duo-test5
+          name: youtubeplus-duo-test6
           path: |
-            build/YouTubePlus-6.0-Free-test.5.ipa
-            build/YouTubePlus-6.0-Free-test.5.validation.json
+            build/YouTubePlus-6.0-Free-test.6.ipa
+            build/YouTubePlus-6.0-Free-test.6.validation.json
             build/fixture.json
             build/apple-sdk.txt
             build/xcode.txt

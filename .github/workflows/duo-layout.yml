@@ -1,6 +1,11 @@
 name: Build Duo watch layout
 on:
   workflow_dispatch:
+    inputs:
+      skip_simulator:
+        description: Build an explicitly unverified device IPA without the simulator stage
+        type: boolean
+        default: false
 permissions:
   contents: read
 jobs:
@@ -10,6 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Validate native layout behavior with UIKit fixture
+        if: ${{ !inputs.skip_simulator }}
         timeout-minutes: 10
         run: bash tools/run_fixture.sh
       - name: Build device helper using Apple SDK
@@ -34,3 +40,4 @@ jobs:
             build/xcode.txt
             build/DuoWatchLayout.dylib
           retention-days: 3
+

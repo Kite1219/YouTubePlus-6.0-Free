@@ -101,6 +101,8 @@ extern BOOL TPInstallDuoWatchLayout(void);
     check(!left.active && !right.active && top.active && height.active && aspect.active,@"only conflicting external horizontal anchors displaced");
     NSUInteger installed=layer.constraints.count;TPWatchExpandTrailing(constrained,self.window);[layer layoutIfNeeded];
     check(layer.constraints.count==installed,@"repeated layout does not duplicate constraints");
+    right.active=YES;TPWatchExpandTrailing(constrained,self.window);
+    check(!right.active,@"native reactivation of displaced trailing anchor is handled");
     [constrained removeFromSuperview];UIView *newParent=[[UIView alloc]initWithFrame:layer.bounds];[layer addSubview:newParent];[newParent addSubview:constrained];
     NSLayoutConstraint *newRight=[constrained.trailingAnchor constraintEqualToAnchor:newParent.trailingAnchor constant:-84];
     [NSLayoutConstraint activateConstraints:@[[constrained.leadingAnchor constraintEqualToAnchor:newParent.leadingAnchor constant:550],newRight,[constrained.topAnchor constraintEqualToAnchor:newParent.topAnchor],[constrained.heightAnchor constraintEqualToConstant:640]]];[newParent layoutIfNeeded];

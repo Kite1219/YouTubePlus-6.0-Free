@@ -1,8 +1,10 @@
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 #import <objc/runtime.h>
 #import <objc/message.h>
 #include <math.h>
 #include <string.h>
+#include <stdlib.h>
 
 static IMP TPRegularOriginal, TPInsetsOriginal;
 static __thread UIView *TPLayoutOwner;
@@ -96,6 +98,7 @@ BOOL TPWatchExpandTrailing(UIView *view,UIWindow *window) {
         }
         objc_setAssociatedObject(view,&TPGeometryKey,state,OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
+    if(!state.manual)[NSLayoutConstraint deactivateConstraints:state.displaced];
     if(state.manual){
         CGRect frame=view.frame;frame.size.width=right-CGRectGetMinX(frame);
         if(fabs(frame.size.width-view.frame.size.width)>0.5)view.frame=frame;

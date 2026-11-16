@@ -10,6 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Validate native layout behavior with UIKit fixture
+        timeout-minutes: 6
         run: bash tools/run_fixture.sh
       - name: Build device helper using Apple SDK
         run: |

@@ -1,5 +1,5 @@
 #!/bin/bash
-set -euo pipefail
+set -euxo pipefail
 mkdir -p build/Fixture.app
 SDK=$(xcrun --sdk iphonesimulator --show-sdk-path)
 ARCH=$(uname -m)
@@ -10,9 +10,9 @@ PLIST
 codesign -s - build/Fixture.app
 DEVICE=$(xcrun simctl list devices available -j | python3 -c 'import json,sys;d=json.load(sys.stdin);print(next(v["udid"] for k,vs in d["devices"].items() if "iOS" in k for v in vs if "iPhone" in v["name"]))')
 xcrun simctl boot "$DEVICE" || true
-xcrun simctl bootstatus "$DEVICE" -b
+python3 -u -c 'import subprocess,sys;subprocess.run(["xcrun","simctl","bootstatus",sys.argv[1],"-b"],check=True,timeout=180)' "$DEVICE"
 xcrun simctl install "$DEVICE" build/Fixture.app
-xcrun simctl launch --console "$DEVICE" local.youtubeplus.duofixture
+python3 -u -c 'import subprocess,sys;subprocess.run(["xcrun","simctl","launch","--console",sys.argv[1],"local.youtubeplus.duofixture"],check=True,timeout=90)' "$DEVICE"
 CONTAINER=$(xcrun simctl get_app_container "$DEVICE" local.youtubeplus.duofixture data)
 cp "$CONTAINER/Documents/fixture.json" build/fixture.json
 python3 -c 'import json; r=json.load(open("build/fixture.json"));print(r);assert r["passed"]'

@@ -20,6 +20,7 @@ jobs:
         run: bash tools/run_fixture.sh
       - name: Build device helper using Apple SDK
         run: |
+          mkdir -p build
           xcrun --sdk iphoneos clang -arch arm64 -miphoneos-version-min=16.0 -fobjc-arc -dynamiclib src/DuoWatchLayout.m -framework Foundation -framework UIKit -framework CoreGraphics -framework QuartzCore -Wl,-install_name,@executable_path/Frameworks/DuoWatchLayout.dylib -o build/DuoWatchLayout.dylib
           xcrun --sdk iphoneos --show-sdk-version > build/apple-sdk.txt
           xcodebuild -version > build/xcode.txt

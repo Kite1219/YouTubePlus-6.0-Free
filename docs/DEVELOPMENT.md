@@ -25,3 +25,7 @@ After preparation, old scripts work against copies inside `.work/ytplus-analysis
 - [Complete backup manifest](../releases/backup-manifest.json)
 
 This change moves existing file blobs unchanged. No IPA was rebuilt or changed. The full backup and its checksums remain attached to the release; actual iOS PiP behavior still requires device testing.
+
+## Native Duo watch-page helper (test.5)
+
+The independent [DuoWatchLayout helper](../src/DuoWatchLayout.m) is built with Apple's UIKit SDK by the **Build Duo watch layout** GitHub Actions workflow. It uses the pinned test.4 IPA as its base. See [the implementation notes](duo-watch-test5.md), [UIKit fixture](../tests/DuoWatchFixture.m), and [release validation](../analysis/releases/test5-validation.json). This workflow avoids the historical workspace layout and produces a ready-to-sign IPA artifact. It does not execute the full YouTube IPA in the simulator.

@@ -1,0 +1,101 @@
+{
+  "baseSHA256": "4ad31f12f9008ad233cbfadc59e4a0796133d88fec7957a545d6daf627b19044",
+  "ipaSHA256": "25f73b613c1f8446accf4dc93d3df775f4c8a9938852fb966f040f2265e5e887",
+  "helperSHA256": "71cae088a2ca82c376afec8b85902ccfaadc50d43e39a52120268b9a9cb5877a",
+  "ipaBytes": 148868179,
+  "changed": [
+    "Payload/YouTube.app/YouTube"
+  ],
+  "added": [
+    "Payload/YouTube.app/Frameworks/DuoWatchLayout.dylib"
+  ],
+  "allOtherMembersIdentical": true,
+  "playbackHelperIdentical": true,
+  "InfoPlistIdentical": true,
+  "zipCRC": "passed",
+  "deviceTested": false,
+  "sourceCommit": "f8342733000398562934c26995401aa5bb417a02",
+  "workflowRun": "https://github.com/Kite1219/YouTubePlus-6.0-Free/actions/runs/43935440777",
+  "fixture": {
+    "passed": true,
+    "fixtureOnly": true,
+    "checks": [
+      {
+        "name": "large landscape phone eligible",
+        "passed": true
+      },
+      {
+        "name": "ordinary landscape phone unchanged",
+        "passed": true
+      },
+      {
+        "name": "iPad unchanged",
+        "passed": true
+      },
+      {
+        "name": "portrait unchanged",
+        "passed": true
+      },
+      {
+        "name": "fullscreen unchanged",
+        "passed": true
+      },
+      {
+        "name": "no reserved strip unchanged",
+        "passed": true
+      },
+      {
+        "name": "RTL unsupported geometry unchanged",
+        "passed": true
+      },
+      {
+        "name": "exact host hook installed",
+        "passed": true
+      },
+      {
+        "name": "both native edge extension paths enabled",
+        "passed": true
+      },
+      {
+        "name": "feed and panel extend to window edge",
+        "passed": true
+      },
+      {
+        "name": "system safe-area information preserved",
+        "passed": true
+      },
+      {
+        "name": "one original layout call without recursion",
+        "passed": true
+      },
+      {
+        "name": "original flags restored for fullscreen",
+        "passed": true
+      },
+      {
+        "name": "hidden preview state restored",
+        "passed": true
+      },
+      {
+        "name": "rotation without side inset restores flags",
+        "passed": true
+      },
+      {
+        "name": "miniplayer unchanged",
+        "passed": true
+      },
+      {
+        "name": "scaled transition view unchanged",
+        "passed": true
+      },
+      {
+        "name": "preexisting native flag choices preserved",
+        "passed": true
+      }
+    ],
+    "physicalDeviceTested": false
+  },
+  "appleSDK": "18.5",
+  "xcode": "Xcode 16.4\nBuild version 16F6"
+}
+

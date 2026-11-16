@@ -132,30 +132,10 @@ static void TPClearAppStrip(UIView *watch,BOOL eligible) {
         } else if(saved){strip.backgroundColor=saved[@"color"]==NSNull.null?nil:saved[@"color"];strip.opaque=[saved[@"opaque"]boolValue];objc_setAssociatedObject(strip,&TPStripKey,nil,OBJC_ASSOCIATION_RETAIN_NONATOMIC);}
     }
 }
-static NSDictionary *TPGeometrySnapshot(UIView *view) {
-    UIWindow *window=view.window;if(!window)return @{};
-    NSMutableArray *ancestors=[NSMutableArray new],*controllers=[NSMutableArray new],*constraints=[NSMutableArray new];
-    for(UIView *v=view;v && ancestors.count<16;v=v.superview){
-        [ancestors addObject:@{@"class":NSStringFromClass(v.class),@"bounds":NSStringFromCGRect(v.bounds),@"frame":NSStringFromCGRect(v.frame),@"windowRect":NSStringFromCGRect([v convertRect:v.bounds toView:window]),@"safeInsets":NSStringFromUIEdgeInsets(v.safeAreaInsets),@"transform":NSStringFromCGAffineTransform(v.transform),@"clips":@(v.clipsToBounds),@"layerMasks":@(v.layer.masksToBounds),@"hasMask":@(v.layer.mask!=nil),@"cornerRadius":@(v.layer.cornerRadius)}];
-        if(v==window)break;
-    }
-    for(UIResponder *r=view;r && controllers.count<24;r=r.nextResponder)
-        if([r isKindOfClass:UIViewController.class])[controllers addObject:NSStringFromClass(r.class)];
-    for(NSLayoutConstraint *c in [view.constraints arrayByAddingObjectsFromArray:view.superview.constraints ?: @[]]){
-        if(!c.active || constraints.count>=64)continue;
-        [constraints addObject:@{@"first":c.firstItem?NSStringFromClass([c.firstItem class]):@"nil",@"second":c.secondItem?NSStringFromClass([c.secondItem class]):@"nil",@"firstAttribute":@(c.firstAttribute),@"secondAttribute":@(c.secondAttribute),@"constant":@(c.constant),@"priority":@(c.priority)}];
-    }
-    UIView *feed=TPObjectView(view,"_watchNextWrapperView"),*panel=TPObjectView(view,"_engagementPanelView");
-    return @{@"windowBounds":NSStringFromCGRect(window.bounds),@"windowInsets":NSStringFromUIEdgeInsets(window.safeAreaInsets),@"screenBounds":NSStringFromCGRect(window.screen.bounds),@"rootController":window.rootViewController?NSStringFromClass(window.rootViewController.class):@"nil",@"presentedController":window.rootViewController.presentedViewController?NSStringFromClass(window.rootViewController.presentedViewController.class):@"nil",@"horizontalSizeClass":@(view.traitCollection.horizontalSizeClass),@"verticalSizeClass":@(view.traitCollection.verticalSizeClass),@"ancestors":ancestors,@"controllers":controllers,@"constraints":constraints,@"feedWindowRect":feed?NSStringFromCGRect([feed convertRect:feed.bounds toView:window]):@"nil",@"panelWindowRect":panel?NSStringFromCGRect([panel convertRect:panel.bounds toView:window]):@"nil"};
-}
 static void TPRegularLayout(UIView *view,SEL selector) {
     IMP original=selector==NSSelectorFromString(@"layoutSubviews_compact")?TPCompactOriginal:TPRegularOriginal;
     if(TPLayoutOwner==view){((void(*)(id,SEL))original)(view,selector);return;}
     BOOL eligible=TPWatchGeometryEligible(view);
-    static NSString *lastSignature;
-    NSString *signature=view.window?[NSString stringWithFormat:@"%@/%@/%@/%d",NSStringFromCGRect(view.window.bounds),NSStringFromCGRect(view.frame),NSStringFromUIEdgeInsets(view.safeAreaInsets),eligible]:@"detached";
-    BOOL record=view.window && ![signature isEqualToString:lastSignature];
-    NSDictionary *before=record?TPGeometrySnapshot(view):nil;
     UIView *feed=TPObjectView(view,"_watchNextWrapperView"),*panel=TPObjectView(view,"_engagementPanelView");
     NSMutableArray<UIView *> *layers=[NSMutableArray new];
     for(UIView *v=view.superview;v && v!=view.window;v=v.superview)
@@ -170,7 +150,6 @@ static void TPRegularLayout(UIView *view,SEL selector) {
     @finally{TPLayoutOwner=previous;}
     if(eligible){TPWatchExpandTrailing(feed,view.window);TPWatchExpandTrailing(panel,view.window);}
     TPClearAppStrip(view,eligible);
-    if(record){lastSignature=signature;[NSUserDefaults.standardUserDefaults setObject:@{@"build":@"test.6",@"eligible":@(eligible),@"before":before,@"after":TPGeometrySnapshot(view)} forKey:@"YouTubePlusWatchGeometry"];} // Geometry only; no account, URL or text data.
 }
 BOOL TPInstallDuoWatchLayout(void) {
     if(TPRegularOriginal)return YES;

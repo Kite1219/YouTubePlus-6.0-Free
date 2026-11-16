@@ -51,16 +51,21 @@ extern BOOL TPInstallDuoWatchLayout(void);
 @end
 @interface FixtureApp : UIResponder <UIApplicationDelegate>
 @property(nonatomic,strong) TPFixtureWindow *window;
+@property BOOL ranChecks;
 @end
 @implementation FixtureApp
 - (BOOL)application:(UIApplication*)app didFinishLaunchingWithOptions:(NSDictionary*)options {
     self.window=[[TPFixtureWindow alloc]initWithFrame:CGRectMake(0,0,951,669)];
     self.window.rootViewController=[UIViewController new];[self.window makeKeyAndVisible];
-    dispatch_async(dispatch_get_main_queue(),^{[self runChecks];});return YES;
+    return YES;
+}
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    if(self.ranChecks)return;self.ranChecks=YES;
+    dispatch_async(dispatch_get_main_queue(),^{[self runChecks];});
 }
 - (void)runChecks {
     NSMutableArray *checks=[NSMutableArray new];
-    void(^check)(BOOL,NSString*)=^(BOOL ok,NSString *name){[checks addObject:@{@"name":name,@"passed":@(ok)}];};
+    void(^check)(BOOL,NSString*)=^(BOOL ok,NSString *name){[checks addObject:@{@"name":name,@"passed":@(ok)}];NSLog(@"CHECK %@ %@",ok?@"PASS":@"FAIL",name);};
     self.window.bounds=CGRectMake(0,0,951,669);self.window.testInsets=UIEdgeInsetsZero;
     YTWatchLayerView *layer=[[YTWatchLayerView alloc]initWithFrame:self.window.bounds];
     [self.window.rootViewController.view addSubview:layer];

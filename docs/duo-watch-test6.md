@@ -23,7 +23,7 @@ For manually positioned views, the helper changes the frame during the native la
 
 Only an empty, app-owned status placeholder that actually matches a full-height narrow trailing strip can have its opaque background cleared, with its previous appearance restored outside that condition. Genuine system indicator views are never hidden, recreated or covered. No global clipping or safe-area override is installed; video fit/fill behavior is untouched.
 
-The last meaningful before/after geometry, ancestor clipping/masks, controller classes, size classes and constraint attributes are recorded locally in `YouTubePlusWatchGeometry` preferences. This contains no account details, video URLs, view text or chat messages. No user action is required and nothing is uploaded by the app.
+The app performs the geometry calculation directly in its layout callbacks. It has no report popup, logging workflow, or additional data-upload feature. Before/after rectangles in validation reports are measurements of the test fixture; they are not claimed as physical-device measurements.
 
 ## Validation and limits
 

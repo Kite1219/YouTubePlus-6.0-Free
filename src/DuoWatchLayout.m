@@ -7,7 +7,7 @@
 #include <stdlib.h>
 
 static IMP TPRegularOriginal, TPInsetsOriginal;
-static __thread UIView *TPLayoutOwner;
+static __thread __unsafe_unretained UIView *TPLayoutOwner;
 static char TPGeometryKey,TPStripKey;
 @interface TPWatchGeometryState : NSObject
 @property(nonatomic,weak) UIView *parent;

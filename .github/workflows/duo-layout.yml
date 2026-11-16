@@ -1,0 +1,35 @@
+name: Build Duo watch layout
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate native layout behavior with UIKit fixture
+        run: bash tools/run_fixture.sh
+      - name: Build device helper using Apple SDK
+        run: |
+          xcrun --sdk iphoneos clang -arch arm64 -miphoneos-version-min=16.0 -fobjc-arc -dynamiclib src/DuoWatchLayout.m -framework Foundation -framework UIKit -Wl,-install_name,@executable_path/Frameworks/DuoWatchLayout.dylib -o build/DuoWatchLayout.dylib
+          xcrun --sdk iphoneos --show-sdk-version > build/apple-sdk.txt
+          xcodebuild -version > build/xcode.txt
+      - name: Download and validate pinned base release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release download v6.0-test.4 --pattern 'YouTubePlus-6.0-Free-test.4.ipa' --dir build
+      - name: Package and compare every archive member
+        run: python3 tools/package_duo.py --base build/YouTubePlus-6.0-Free-test.4.ipa --helper build/DuoWatchLayout.dylib --output build/YouTubePlus-6.0-Free-test.5.ipa
+      - uses: actions/upload-artifact@v4
+        with:
+          name: youtubeplus-duo-test5
+          path: |
+            build/YouTubePlus-6.0-Free-test.5.ipa
+            build/YouTubePlus-6.0-Free-test.5.validation.json
+            build/fixture.json
+            build/apple-sdk.txt
+            build/xcode.txt
+            build/DuoWatchLayout.dylib
+          retention-days: 3

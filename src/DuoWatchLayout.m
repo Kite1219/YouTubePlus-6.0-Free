@@ -78,6 +78,7 @@ BOOL TPWatchExpandTrailing(UIView *view,UIWindow *window) {
     CGFloat gap=CGRectGetMaxX(window.bounds)-CGRectGetMaxX(before);
     TPWatchGeometryState *state=objc_getAssociatedObject(view,&TPGeometryKey);
     if(state && state.parent!=parent){TPRestore(view);state=nil;}
+    if(state && !state.manual)[NSLayoutConstraint deactivateConstraints:state.displaced];
     if(!isfinite(gap) || gap<32 || gap>200 || before.size.width<150 || before.size.height<window.bounds.size.height*0.60)return NO;
     CGRect target=[parent convertRect:window.bounds fromView:window];
     CGFloat right=CGRectGetMaxX(target);
@@ -98,7 +99,6 @@ BOOL TPWatchExpandTrailing(UIView *view,UIWindow *window) {
         }
         objc_setAssociatedObject(view,&TPGeometryKey,state,OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
-    if(!state.manual)[NSLayoutConstraint deactivateConstraints:state.displaced];
     if(state.manual){
         CGRect frame=view.frame;frame.size.width=right-CGRectGetMinX(frame);
         if(fabs(frame.size.width-view.frame.size.width)>0.5)view.frame=frame;
@@ -187,3 +187,4 @@ BOOL TPInstallDuoWatchLayout(void) {
 #ifndef TP_FIXTURE
 __attribute__((constructor)) static void TPInitialize(void) {dispatch_async(dispatch_get_main_queue(),^{ TPInstallDuoWatchLayout(); });}
 #endif
+

@@ -1,0 +1,28 @@
+{
+  "baseSHA256": "4ad31f12f9008ad233cbfadc59e4a0796133d88fec7957a545d6daf627b19044",
+  "ipaSHA256": "db62288f7fb34509f7395e6848001b0aa123418dc370cf98ab1e564c75fce09f",
+  "helperSHA256": "a1e54d4e100034249219fdc2a105851ce4d398ef665450704f5002d6c4750491",
+  "ipaBytes": 148876778,
+  "changed": [
+    "Payload/YouTube.app/YouTube"
+  ],
+  "added": [
+    "Payload/YouTube.app/Frameworks/DuoWatchLayout.dylib"
+  ],
+  "allOtherMembersIdentical": true,
+  "playbackHelperIdentical": true,
+  "InfoPlistIdentical": true,
+  "zipCRC": "passed",
+  "deviceTested": false,
+  "sourceCommit": "2476f3fe1576c795146b504a64364cbaa370291e",
+  "workflowRun": "https://github.com/Kite1219/YouTubePlus-6.0-Free/actions/runs/43949242237",
+  "fixture": {
+    "passed": null,
+    "checks": [],
+    "status": "Not completed: simulator installation timed out; device-only packaging explicitly requested by the user.",
+    "physicalDeviceTested": false
+  },
+  "appleSDK": "18.5",
+  "xcode": "Xcode 16.4\nBuild version 16F6"
+}
+

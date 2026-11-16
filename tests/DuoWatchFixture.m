@@ -37,7 +37,7 @@ extern BOOL TPInstallDuoWatchLayout(void);
 @end
 
 @interface FixtureApp : UIResponder <UIApplicationDelegate>
-@property TPFixtureWindow *window;
+@property (nonatomic,strong) TPFixtureWindow *window;
 @end
 @implementation FixtureApp
 - (BOOL)application:(UIApplication*)app didFinishLaunchingWithOptions:(NSDictionary*)options {

@@ -1,5 +1,7 @@
 # Youtube Plus 6.0 Free
 
+**iPhone Duo watch-page strip: unresolved on the reported device.** Test.5 was reported ineffective. Test.6 is held as a draft: compilation and package verification passed, but UI validation did not complete and no physical-device result is confirmed.
+
 Personal build based on YouTubePlus 6.0 / YouTube 21.43.5.
 
 [Download the latest IPA](https://github.com/Kite1219/YouTubePlus-6.0-Free/releases/latest) · [Development guide](docs/DEVELOPMENT.md)

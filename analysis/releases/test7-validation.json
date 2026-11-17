@@ -1,0 +1,27 @@
+{
+  "baseSHA256": "4ad31f12f9008ad233cbfadc59e4a0796133d88fec7957a545d6daf627b19044",
+  "ipaSHA256": "c61b3be6ba9bb22c2d85f50cb7815bfb03dbc24aec545e3de4862e2c1d99cab2",
+  "helperSHA256": "e0a0494aa09a5a99bbf0a4bde0acd62dcaf6b9246ff19f4462479637790683aa",
+  "ipaBytes": 148871993,
+  "changed": [
+    "Payload/YouTube.app/YouTube"
+  ],
+  "added": [
+    "Payload/YouTube.app/Frameworks/DuoWatchLayout.dylib"
+  ],
+  "allOtherMembersIdentical": true,
+  "playbackHelperIdentical": true,
+  "InfoPlistIdentical": true,
+  "zipCRC": "passed",
+  "deviceTested": false,
+  "sourceCommit": "ecb80da5d9fa777e0df46f0c81eee687b32b7701",
+  "workflowRun": "https://github.com/Kite1219/YouTubePlus-6.0-Free/actions/runs/43995847640",
+  "simulatorRun": false,
+  "physicalDeviceTested": false,
+  "basis": "Two user-provided physical-device layout reports and native ARM64 method inspection",
+  "independentMemberComparison": "passed",
+  "mainExecutableOnlyLoadCommandChanged": true,
+  "oldLayoutHelperAndDiagnosticBadgeAbsent": true,
+  "appleSDK": "27.1",
+  "xcode": "Xcode 27.1\nBuild version 27A9275"
+}

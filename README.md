@@ -2,17 +2,19 @@
 
 Personal build based on YouTubePlus 6.0 / YouTube 21.43.5.
 
-**iPhone Duo watch-page strip: unresolved on the reported device.** Test.5 was reported ineffective. Test.6 is retained as a draft and is not a confirmed fix.
+Latest update: **test.7 — iPhone Duo watch-page content and larger video**. Built from the two reports copied from the affected physical device. The updated rendering still needs device confirmation.
 
-## One-tap layout diagnostics
+## Download
 
-[Download the diagnostic IPA](https://github.com/Kite1219/YouTubePlus-6.0-Free/releases/download/layout-diagnostics.1/YouTubePlus-6.0-Diagnostics-1.ipa) · [Release and validation reports](https://github.com/Kite1219/YouTubePlus-6.0-Free/releases/tag/layout-diagnostics.1)
+[Download the latest IPA](https://github.com/Kite1219/YouTubePlus-6.0-Free/releases/latest) · [test.7 release and validation](https://github.com/Kite1219/YouTubePlus-6.0-Free/releases/tag/v6.0-test.7)
 
-Sign and install it with your usual sideloading setup. Open the affected video page, tap the purple **Copy diagnostics** button near the bottom-left edge, and paste the report into the chat. Nothing is uploaded automatically.
+Sign and install it with your usual sideloading setup.
 
-This edition measures the actual app window, status-area geometry, view hierarchy, clipping, constraints, safe areas and native layout calls. It excludes view text, account details, credentials, chat messages, screenshots, video URLs and network logs. Existing test.6 playback, PiP and layout-library bytes are preserved.
+The device reports identified an 84-point gap inside recommendations and chat even though the app window already fills the screen. This update corrects those inner views and lets the native video sizing calculation reuse the recovered space. For the supplied layout, the calculated video width grows from 563 to 647 points, with a 304-point side column. Video aspect ratio is preserved and genuine system indicators remain visible; chat header/footer buttons retain their native safe placement.
 
-The collector passed 12 smoke checks on the iPhone Duo simulator's outer display, including one-tap clipboard capture and privacy exclusions. Archive CRC and independent member comparisons also passed. **The simulator smoke app tests the collector, not the complete YouTube IPA or the unfolded watch-page fix.** A report from the affected device is needed for that diagnosis. [Source, usage and limitations](diagnostics/README.md).
+Built with Apple's iOS SDK. Archive CRC and independent comparison of every unchanged member passed. Existing background audio, PiP libraries, settings and resources remain byte-identical to test.4. The old layout helper and diagnostic badge are absent. **No simulator run was performed, and calculated target dimensions are not a captured result from the new IPA.** [Implementation, device evidence and limits](docs/duo-watch-test7.md).
+
+Earlier test.5 was reported ineffective; test.6 remains a draft. The [one-tap diagnostic edition](diagnostics/README.md) and its source remain available for future investigation.
 
 ## Development
 

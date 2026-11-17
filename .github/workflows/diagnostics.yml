@@ -38,9 +38,9 @@ jobs:
             build/YouTubePlus-6.0-Diagnostics-1.validation.json
             build/diagnostic-smoke.json
             build/diagnostic-smoke.png
+            build/diagnostic-inner-display.png
             build/simulator-devices.json
             build/apple-sdk.txt
             build/xcode.txt
             build/LayoutDiagnostics.dylib
           retention-days: 3
-

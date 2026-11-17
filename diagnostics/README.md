@@ -32,4 +32,4 @@ Layout observation hooks forward the original methods exactly once and do not se
 
 Workflow: **Build one-tap layout diagnostics**. It uses the preinstalled Xcode 27 runner, tests one-tap capture/privacy in an iPhone Duo simulator, then adds `LayoutDiagnostics.dylib` to the pinned test.6 IPA. Packaging verifies ZIP CRC and every unchanged member, including existing playback/PiP/layout libraries and Info.plist. The IPA is unsigned and needs the user's normal re-signing process.
 
-The simulator smoke app verifies the diagnostic tool itself. It does not claim to run the complete YouTube IPA. The actual on-device report is needed to locate the strip.
+The simulator smoke app verifies the diagnostic tool itself on the Duo simulator's outer display; both simulated displays are captured separately. It does not claim to run the complete YouTube IPA or verify the unfolded watch-page fix. The actual on-device report is needed to locate the strip.

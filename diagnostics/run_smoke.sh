@@ -30,4 +30,7 @@ while not p.exists() and time.monotonic()<deadline:time.sleep(1)
 assert p.exists(),'Diagnostic smoke app did not produce its report'
 r=json.loads(p.read_text());print(json.dumps(r,indent=2));shutil.copyfile(p,'build/diagnostic-smoke.json');assert r['passed']
 PY
-xcrun simctl io "$DEVICE" screenshot build/diagnostic-smoke.png
+# Duo has separate outer (1) and inner (3) displays. The smoke app starts on
+# the outer display; explicitly capture it rather than relying on a default.
+xcrun simctl io "$DEVICE" screenshot --display=1 build/diagnostic-smoke.png
+xcrun simctl io "$DEVICE" screenshot --display=3 build/diagnostic-inner-display.png

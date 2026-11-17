@@ -1,5 +1,7 @@
 # Comments header on the normal Duo watch page
 
+**Withdrawn on 2026-11-17:** the user reported that this build did not work and requested its removal. The release, tag and downloadable CI artifact were deleted; test.7 is latest again. The notes below describe the attempted implementation, not a successful device fix. Its source remains in commit `db1cb05d25d6be3f2d9366a5cc96e589bab8ca7d` for future investigation.
+
 The supplied screenshots confirm that test.7's recommendations layout works with comments closed. They also show the normal comments title truncated and the filter row clipped. The fullscreen comments screenshot has adequate room and must keep its existing layout.
 
 The native expanded-player calculation enforces a minimum feed width of 304 points in the measured 951-point window. Test.7 reclaims the 84-point horizontal reserve when calculating the video width, leaving a 304-point side column. The native panel then subtracts the reserve for its header controls, leaving only 220 points for the comments title, information/close buttons and filter row. Extending the body alone cannot give that header enough space.

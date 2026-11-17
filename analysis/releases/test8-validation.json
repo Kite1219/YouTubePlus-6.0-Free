@@ -23,5 +23,9 @@
   "mainExecutableOnlyLoadCommandChanged": true,
   "oldLayoutHelperAndDiagnosticBadgeAbsent": true,
   "appleSDK": "27.1",
-  "xcode": "Xcode 27.1\nBuild version 27A9275"
+  "xcode": "Xcode 27.1\nBuild version 27A9275",
+  "releaseStatus": "withdrawn",
+  "physicalDeviceOutcome": "User reported the update does not work",
+  "withdrawalDate": "2026-11-17",
+  "latestRestoredTo": "v6.0-test.7"
 }

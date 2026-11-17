@@ -1,0 +1,84 @@
+{
+  "baseSHA256": "db62288f7fb34509f7395e6848001b0aa123418dc370cf98ab1e564c75fce09f",
+  "ipaSHA256": "d49ba4e6a2f1e48d5ac1feff4d03de1566f42cefd53910090483f80c00b8f453",
+  "helperSHA256": "ed255154681e78c6725d2fe36e387796140f7900fc6f8695bfc746c50bc2fbad",
+  "ipaBytes": 148918746,
+  "changed": [
+    "Payload/YouTube.app/YouTube"
+  ],
+  "added": [
+    "Payload/YouTube.app/Frameworks/LayoutDiagnostics.dylib"
+  ],
+  "allOtherMembersIdentical": true,
+  "playbackHelperIdentical": true,
+  "InfoPlistIdentical": true,
+  "zipCRC": "passed",
+  "deviceTested": false,
+  "sourceCommit": "b60eafb3b237a4381481b0d69d2a033db1c9328c",
+  "workflowRun": "https://github.com/Kite1219/YouTubePlus-6.0-Free/actions/runs/43989068957",
+  "diagnosticSmoke": {
+    "checks": [
+      {
+        "name": "Copy diagnostics button attached to the actual scene window",
+        "passed": true
+      },
+      {
+        "name": "one button action copies valid diagnostic JSON",
+        "passed": true
+      },
+      {
+        "name": "window association does not prune the complete view tree",
+        "passed": true
+      },
+      {
+        "name": "watch wrapper and engagement panel roles captured",
+        "passed": true
+      },
+      {
+        "name": "active Auto Layout constraints captured",
+        "passed": true
+      },
+      {
+        "name": "ancestor clipping and layer masks captured",
+        "passed": true
+      },
+      {
+        "name": "loaded-image SDK and library data captured",
+        "passed": true
+      },
+      {
+        "name": "actual window and screen coordinate records captured",
+        "passed": true
+      },
+      {
+        "name": "read-only layout observer forwards and counts native layout calls",
+        "passed": true
+      },
+      {
+        "name": "view text, accessibility IDs and credential-like preferences excluded",
+        "passed": true
+      },
+      {
+        "name": "collector does not change original geometry, safe areas or constraints",
+        "passed": true
+      },
+      {
+        "name": "nonfinite geometry is safely serialized as null",
+        "passed": true
+      }
+    ],
+    "deviceClass": "iPhone",
+    "fullYouTubeTest": false,
+    "passed": true,
+    "reportBytes": 48365,
+    "windowBounds": "{{0, 0}, {466, 678}}"
+  },
+  "appleSDK": "27.1",
+  "xcode": "Xcode 27.1\nBuild version 27A9275",
+  "independentMemberComparison": "passed",
+  "mainExecutableOnlyLoadCommandChanged": true,
+  "physicalDeviceTested": false,
+  "workflowConclusion": "failure",
+  "packagingLocation": "local Windows Python",
+  "workflowLimitation": "All 12 collector checks passed; optional simulator screenshot failed because no display was selected. Packaging completed and independently validated locally."
+}

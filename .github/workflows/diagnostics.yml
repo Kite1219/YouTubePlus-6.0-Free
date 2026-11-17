@@ -1,0 +1,46 @@
+name: Build one-tap layout diagnostics
+on:
+  workflow_dispatch:
+permissions:
+  contents: write # Reading the retained draft release requires access to draft releases.
+jobs:
+  build:
+    runs-on: xcode-27
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Record Apple SDK and simulator inventory
+        run: |
+          mkdir -p build
+          xcodebuild -version | tee build/xcode.txt
+          xcrun --sdk iphoneos --show-sdk-version | tee build/apple-sdk.txt
+          xcrun simctl list devices available -j > build/simulator-devices.json
+      - name: Compile the diagnostic library
+        run: xcrun --sdk iphoneos clang -arch arm64 -miphoneos-version-min=17.0 -fobjc-arc -dynamiclib diagnostics/LayoutDiagnostics.m -framework Foundation -framework UIKit -framework CoreGraphics -framework QuartzCore -framework AVFoundation -Wl,-install_name,@executable_path/Frameworks/LayoutDiagnostics.dylib -o build/LayoutDiagnostics.dylib
+      - name: Test one-click capture and privacy on iPhone Duo simulator
+        timeout-minutes: 12
+        run: bash diagnostics/run_smoke.sh
+      - name: Download the pinned retained test.6 base
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          ASSET=$(gh api "repos/$GITHUB_REPOSITORY/releases?per_page=100" --jq '.[] | select(.tag_name == "v6.0-test.6") | .assets[] | select(.name == "YouTubePlus-6.0-Free-test.6.ipa") | .id')
+          test -n "$ASSET"
+          gh api -H 'Accept: application/octet-stream' "repos/$GITHUB_REPOSITORY/releases/assets/$ASSET" > build/YouTubePlus-6.0-Free-test.6.ipa
+      - name: Package diagnostic IPA and verify unchanged members
+        run: python3 diagnostics/package_diagnostics.py --base build/YouTubePlus-6.0-Free-test.6.ipa --helper build/LayoutDiagnostics.dylib --output build/YouTubePlus-6.0-Diagnostics-1.ipa
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: youtubeplus-diagnostics-1
+          path: |
+            build/YouTubePlus-6.0-Diagnostics-1.ipa
+            build/YouTubePlus-6.0-Diagnostics-1.validation.json
+            build/diagnostic-smoke.json
+            build/diagnostic-smoke.png
+            build/simulator-devices.json
+            build/apple-sdk.txt
+            build/xcode.txt
+            build/LayoutDiagnostics.dylib
+          retention-days: 3
+

@@ -1,0 +1,113 @@
+{
+  "source": "User-provided physical-device diagnostics",
+  "reports": [
+    {
+      "report": "mKsufXvB",
+      "sha256": "2bbf6b83d24db5041e7ab20d48a8535bed5692d6e7a834a70807e5e3e56ed0dc",
+      "os": "27.2",
+      "window": [
+        0,
+        0,
+        951,
+        669
+      ],
+      "safeInsets": [
+        0,
+        0,
+        34,
+        84
+      ],
+      "rootAlreadyFullWidth": true,
+      "nativeHooksWereRunning": true,
+      "playerFrame": [
+        0,
+        0,
+        563,
+        317
+      ],
+      "feedFrame": [
+        0,
+        0,
+        388,
+        669
+      ],
+      "innerFeedFrame": [
+        0,
+        0,
+        304,
+        669
+      ],
+      "duplicateInnerInset": 84,
+      "nativeVideoWidthWithFullUsableWidth": 647,
+      "nativeRightColumnWidth": 304
+    },
+    {
+      "report": "TWxpC8Tx",
+      "sha256": "1080ddc0a4e3a0e874bce774a4ed01bce98827531e1140ded3b0f768e805de4f",
+      "os": "27.2",
+      "window": [
+        0,
+        0,
+        951,
+        669
+      ],
+      "safeInsets": [
+        0,
+        0,
+        34,
+        84
+      ],
+      "rootAlreadyFullWidth": true,
+      "nativeHooksWereRunning": true,
+      "playerFrame": [
+        0,
+        0,
+        563,
+        317
+      ],
+      "feedFrame": [
+        0,
+        0,
+        388,
+        669
+      ],
+      "innerFeedFrame": [
+        0,
+        0,
+        304,
+        669
+      ],
+      "duplicateInnerInset": 84,
+      "nativeVideoWidthWithFullUsableWidth": 647,
+      "nativeRightColumnWidth": 304
+    }
+  ],
+  "nativeMethodEvidence": [
+    {
+      "class": "YTWatchNextView",
+      "name": "layoutSubviews",
+      "types": "v16@0:8",
+      "imp": "0x101560cec"
+    },
+    {
+      "class": "YCHLiveChatView",
+      "name": "layoutSubviews",
+      "types": "v16@0:8",
+      "imp": "0x1032426ec"
+    },
+    {
+      "class": "YTEngagementPanelView",
+      "name": "contentViewRectForHeaderFrame:footerFrame:safeX:",
+      "types": "{CGRect={CGPoint=dd}{CGSize=dd}}88@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16{CGRect={CGPoint=dd}{CGSize=dd}}48d80",
+      "imp": "0x103ef0c04"
+    },
+    {
+      "class": "YTWatchView",
+      "name": "expandedPlayerSize",
+      "types": "{CGSize=dd}16@0:8",
+      "imp": "0x101566f90"
+    }
+  ],
+  "simulatorRun": false,
+  "physicalUpdateTested": false
+}

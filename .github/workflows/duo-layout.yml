@@ -20,13 +20,13 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: gh release download v6.0-test.4 --pattern 'YouTubePlus-6.0-Free-test.4.ipa' --dir build
       - name: Package and compare every archive member
-        run: python3 tools/package_duo.py --base build/YouTubePlus-6.0-Free-test.4.ipa --helper build/DuoWatchLayout.dylib --output build/YouTubePlus-6.0-Free-test.7.ipa
+        run: python3 tools/package_duo.py --base build/YouTubePlus-6.0-Free-test.4.ipa --helper build/DuoWatchLayout.dylib --output build/YouTubePlus-6.0-Free-test.8.ipa
       - uses: actions/upload-artifact@v4
         with:
-          name: youtubeplus-duo-test7
+          name: youtubeplus-duo-test8
           path: |
-            build/YouTubePlus-6.0-Free-test.7.ipa
-            build/YouTubePlus-6.0-Free-test.7.validation.json
+            build/YouTubePlus-6.0-Free-test.8.ipa
+            build/YouTubePlus-6.0-Free-test.8.validation.json
             build/apple-sdk.txt
             build/xcode.txt
             build/DuoWatchLayout.dylib

@@ -5,20 +5,24 @@
 #include <stdlib.h>
 #include <string.h>
 
-// test.7 targets the inner 304-point content inside the measured 388-point column.
+// test.8 preserves test.7's edge-to-edge content while reserving native header width for comments.
 // Native column sizing is reused with the full available width; system indicators stay genuine.
 static IMP TPFeedOriginal,TPPanelRectOriginal,TPChatOriginal;
 static IMP TPFeedMovedOriginal,TPChatMovedOriginal;
 static IMP TPExpandedSizeOriginal,TPAppInsetsOriginal;
+static IMP TPPanelLayoutOriginal,TPPanelAddedOriginal,TPPanelRemovedOriginal;
 static __thread __unsafe_unretained UIView *TPSizeOwner;
-static char TPScrollPolicyKey;
+static char TPScrollPolicyKey,TPCommentsOpenKey;
 
-static UIView *TPObjectView(id object,const char *name) {
+static id TPObjectValue(id object,const char *name) {
     if(!object)return nil;
     Ivar field=class_getInstanceVariable(object_getClass(object),name);
     if(!field || ivar_getTypeEncoding(field)[0]!='@')return nil;
-    id value=object_getIvar(object,field);
-    return [value isKindOfClass:UIView.class] ? value : nil;
+    return object_getIvar(object,field);
+}
+static UIView *TPObjectView(id object,const char *name) {
+    id value=TPObjectValue(object,name);
+    return [value isKindOfClass:UIView.class]?value:nil;
 }
 static BOOL TPFinite(CGRect r) {
     return isfinite(r.origin.x)&&isfinite(r.origin.y)&&isfinite(r.size.width)&&isfinite(r.size.height);
@@ -54,9 +58,41 @@ static UIEdgeInsets TPAppInsets(UIView *watch,SEL selector) {
     if(TPSizeOwner==watch&&insets.right>=32&&insets.right<=200)insets.right=0;
     return insets;
 }
+// Match the app's panel identifier rather than visible/localized title text.
+// Only inspect the top navigation panel, so a covered comments panel is not counted.
+static BOOL TPCommentsPanelOpen(UIView *watch) {
+    UIView *container=TPObjectView(watch,"_engagementPanelView");
+    SEL top=NSSelectorFromString(@"topEngagementPanelNavigationView");
+    Method getter=class_getInstanceMethod(object_getClass(container),top);
+    if(!getter||strcmp(method_getTypeEncoding(getter),"@16@0:8"))return NO;
+    id navigation=((id(*)(id,SEL))objc_msgSend)(container,top);
+    if(![navigation isKindOfClass:UIView.class]||[navigation isHidden])return NO;
+    Class panelClass=NSClassFromString(@"YTEngagementPanelView");
+    NSMutableArray<UIView *> *queue=[NSMutableArray arrayWithObject:navigation];
+    NSUInteger visited=0;
+    while(queue.count&&visited++<80){
+        UIView *v=queue.firstObject;[queue removeObjectAtIndex:0];
+        if(v.hidden)continue;
+        if([v isKindOfClass:panelClass]){
+            id identifier=TPObjectValue(v,"_panelIdentifier");
+            SEL equal=NSSelectorFromString(@"equalToIdentifierString:");
+            Method m=class_getInstanceMethod(object_getClass(identifier),equal);
+            if(m&&!strcmp(method_getTypeEncoding(m),"B24@0:8@16"))
+                return ((BOOL(*)(id,SEL,id))objc_msgSend)(identifier,equal,@"engagement-panel-comments-section");
+            return NO;
+        }
+        // UIKit navigation wrappers only; do not walk collection cells or their content.
+        if(![v isKindOfClass:UIScrollView.class])[queue addObjectsFromArray:v.subviews];
+    }
+    return NO;
+}
 static CGSize TPExpandedSize(UIView *watch,SEL selector) {
     CGSize native=((CGSize(*)(id,SEL))TPExpandedSizeOriginal)(watch,selector);
     if(!TPWatchGeometryEligible(watch))return native;
+    // The native minimum feed width is also the width needed by the comments title,
+    // information/close controls and filter row, after reserving the system indicators.
+    // Keep that native minimum when comments are open instead of squeezing the header.
+    if(TPCommentsPanelOpen(watch))return native;
     UIView *previous=TPSizeOwner;
     TPSizeOwner=watch;CGSize enlarged=native;
     @try{enlarged=((CGSize(*)(id,SEL))TPExpandedSizeOriginal)(watch,selector);}
@@ -139,6 +175,39 @@ static void TPChatMoved(UIView *chat,SEL selector) {
     ((void(*)(id,SEL))TPChatMovedOriginal)(chat,selector);
     if(!TPColumnEligible(chat))TPScrollPolicy(TPObjectView(chat,"_collectionView"),NO);
 }
+static void TPCommentsWidthChanged(UIView *container,BOOL hierarchyChanged) {
+    UIView *watch=TPWatchAncestor(container);
+    if(!TPWatchGeometryEligible(watch)||TPObjectView(watch,"_engagementPanelView")!=container)return;
+    BOOL open=TPCommentsPanelOpen(watch);
+    NSNumber *previous=objc_getAssociatedObject(container,&TPCommentsOpenKey);
+    objc_setAssociatedObject(container,&TPCommentsOpenKey,@(open),OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    if((previous&&previous.boolValue!=open)||(!previous&&open)||hierarchyChanged)
+        [watch setNeedsLayout];
+}
+static void TPPanelLayout(UIView *container,SEL selector) {
+    ((void(*)(id,SEL))TPPanelLayoutOriginal)(container,selector);
+    TPCommentsWidthChanged(container,NO);
+}
+static void TPPanelAdded(UIView *container,SEL selector,UIView *child) {
+    ((void(*)(id,SEL,id))TPPanelAddedOriginal)(container,selector,child);
+    TPCommentsWidthChanged(container,YES);
+}
+static void TPPanelRemoved(UIView *container,SEL selector,UIView *child) {
+    ((void(*)(id,SEL,id))TPPanelRemovedOriginal)(container,selector,child);
+    // Removal completes before the queued parent layout, which then sees the new top panel.
+    TPCommentsWidthChanged(container,YES);
+}
+static void TPInstallCommentsWidth(void) {
+    Class c=NSClassFromString(@"YTEngagementPanelContainerView");
+    SEL layout=@selector(layoutSubviews),added=@selector(didAddSubview:),removed=@selector(willRemoveSubview:);
+    Method lm=class_getInstanceMethod(c,layout),am=class_getInstanceMethod(c,added),rm=class_getInstanceMethod(c,removed);
+    if(!lm||!am||!rm||strcmp(method_getTypeEncoding(lm),"v16@0:8")
+       ||strcmp(method_getTypeEncoding(am),"v24@0:8@16")||strcmp(method_getTypeEncoding(rm),"v24@0:8@16"))return;
+    TPPanelLayoutOriginal=method_getImplementation(lm);TPPanelAddedOriginal=method_getImplementation(am);TPPanelRemovedOriginal=method_getImplementation(rm);
+    class_replaceMethod(c,layout,(IMP)TPPanelLayout,method_getTypeEncoding(lm));
+    class_replaceMethod(c,added,(IMP)TPPanelAdded,method_getTypeEncoding(am));
+    class_replaceMethod(c,removed,(IMP)TPPanelRemoved,method_getTypeEncoding(rm));
+}
 static BOOL TPHasViewIvar(Class c,const char *name) {
     Ivar iv=class_getInstanceVariable(c,name);return iv&&ivar_getTypeEncoding(iv)[0]=='@';
 }
@@ -174,6 +243,7 @@ BOOL TPInstallDuoWatchLayout(void) {
     class_replaceMethod(panel,rect,(IMP)TPPanelContentRect,method_getTypeEncoding(method));
     class_replaceMethod(chat,layout,(IMP)TPChatLayout,"v16@0:8");
     class_replaceMethod(feed,moved,(IMP)TPFeedMoved,"v16@0:8");class_replaceMethod(chat,moved,(IMP)TPChatMoved,"v16@0:8");
+    TPInstallCommentsWidth();
     return YES;
 }
 #ifndef TP_FIXTURE

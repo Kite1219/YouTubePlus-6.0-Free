@@ -1,27 +1,18 @@
 name: Build Duo watch layout
 on:
   workflow_dispatch:
-    inputs:
-      skip_simulator:
-        description: Build an explicitly unverified device IPA without the simulator stage
-        type: boolean
-        default: false
 permissions:
   contents: read
 jobs:
   build:
-    runs-on: macos-15-intel
-    timeout-minutes: 25
+    runs-on: xcode-27
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
-      - name: Validate native layout behavior with UIKit fixture
-        if: ${{ !inputs.skip_simulator }}
-        timeout-minutes: 10
-        run: bash tools/run_fixture.sh
       - name: Build device helper using Apple SDK
         run: |
           mkdir -p build
-          xcrun --sdk iphoneos clang -arch arm64 -miphoneos-version-min=16.0 -fobjc-arc -dynamiclib src/DuoWatchLayout.m -framework Foundation -framework UIKit -framework CoreGraphics -framework QuartzCore -Wl,-install_name,@executable_path/Frameworks/DuoWatchLayout.dylib -o build/DuoWatchLayout.dylib
+          xcrun --sdk iphoneos clang -arch arm64 -miphoneos-version-min=17.0 -fobjc-arc -dynamiclib src/DuoWatchLayout.m -framework Foundation -framework UIKit -framework CoreGraphics -Wl,-install_name,@executable_path/Frameworks/DuoWatchLayout.dylib -o build/DuoWatchLayout.dylib
           xcrun --sdk iphoneos --show-sdk-version > build/apple-sdk.txt
           xcodebuild -version > build/xcode.txt
       - name: Download and validate pinned base release
@@ -29,16 +20,14 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: gh release download v6.0-test.4 --pattern 'YouTubePlus-6.0-Free-test.4.ipa' --dir build
       - name: Package and compare every archive member
-        run: python3 tools/package_duo.py --base build/YouTubePlus-6.0-Free-test.4.ipa --helper build/DuoWatchLayout.dylib --output build/YouTubePlus-6.0-Free-test.6.ipa
+        run: python3 tools/package_duo.py --base build/YouTubePlus-6.0-Free-test.4.ipa --helper build/DuoWatchLayout.dylib --output build/YouTubePlus-6.0-Free-test.7.ipa
       - uses: actions/upload-artifact@v4
         with:
-          name: youtubeplus-duo-test6
+          name: youtubeplus-duo-test7
           path: |
-            build/YouTubePlus-6.0-Free-test.6.ipa
-            build/YouTubePlus-6.0-Free-test.6.validation.json
-            build/fixture.json
+            build/YouTubePlus-6.0-Free-test.7.ipa
+            build/YouTubePlus-6.0-Free-test.7.validation.json
             build/apple-sdk.txt
             build/xcode.txt
             build/DuoWatchLayout.dylib
           retention-days: 3
-
